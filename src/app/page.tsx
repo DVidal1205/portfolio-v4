@@ -32,23 +32,23 @@ export default function Home() {
                             alt="Dylan Vidal"
                             width={500}
                             height={500}
-                            className="rounded-full border-4 border-primary-800 shadow-2xl object-cover aspect-square w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px]"
+                            className=" animate-fade-up delay-300 rounded-full border-4 border-primary-800 shadow-2xl object-cover aspect-square w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px]"
                         />
                     </div>
 
                     {/* Hero Text */}
                     <div className="space-y-3 md:space-y-4 max-w-4xl">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground animate-fade-up delay-500">
                             Hey there, I&apos;m{" "}
                             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
                                 Dylan
                             </span>
                         </h1>
-                        <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-foreground/80 font-medium">
+                        <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-foreground/80 font-medium animate-fade-up delay-700">
                             Software Engineer, Computer Science Student, and
                             Leader
                         </p>
-                        <p className="text-base sm:text-lg text-foreground/60 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+                        <p className="text-base sm:text-lg text-foreground/60 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto animate-fade-up delay-900">
                             Passionate about the pursuit of knowledge and
                             helping others break into the tech industry.
                         </p>
@@ -63,7 +63,7 @@ export default function Home() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ delay: 1, duration: 1 }}
+                        transition={{ delay: 2, duration: 1 }}
                         className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary-500/20 via-primary-400/10 to-transparent animate-pulse z-[90]"
                     />
                 )}
@@ -78,7 +78,7 @@ export default function Home() {
                             opacity: 1,
                             y: 0,
                             transition: {
-                                delay: 2,
+                                delay: 3,
                                 duration: 0.8,
                                 ease: "easeOut",
                             },

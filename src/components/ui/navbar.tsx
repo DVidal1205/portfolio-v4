@@ -29,8 +29,8 @@ export function NavbarHome() {
             link: "/projects",
         },
         {
-            name: "About",
-            link: "/about",
+            name: "Skills",
+            link: "/skills",
         },
     ];
 
