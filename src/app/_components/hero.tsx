@@ -22,11 +22,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <BackgroundGradientAnimation
-            interactive={false}
-            size={"70%"}
-            className="z-[200]"
-        >
+        <BackgroundGradientAnimation size={"70%"} className="z-[200]">
             <div className="absolute inset-0 flex items-center justify-center z-[210] px-4">
                 <div className="flex flex-col items-center justify-center space-y-6 md:space-y-8 text-center">
                     {/* Profile Image */}

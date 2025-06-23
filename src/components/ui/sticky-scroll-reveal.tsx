@@ -111,7 +111,7 @@ export const StickyScroll = ({
             <div className="div relative flex items-start px-2 lg:px-4 w-full lg:w-auto">
                 <div className="w-full lg:max-w-4xl">
                     {/* Section 1 - Passion */}
-                    <div className="my-20 lg:my-60">
+                    <div className="mb-20 lg:mb-60 lg:mt-10">
                         <motion.h2
                             initial={{ opacity: 0 }}
                             animate={{ opacity: activeCard === 0 ? 1 : 0.3 }}
@@ -186,7 +186,7 @@ export const StickyScroll = ({
                                 have been fortunate to have joined many
                                 developer communities, like{" "}
                                 <LinkPreview
-                                    url="https://blade.knighthacks.org"
+                                    url="https://guild.knighthacks.org"
                                     className="text-primary-500 hover:text-primary-400 underline transition-colors"
                                 >
                                     Knight Hacks
@@ -284,7 +284,7 @@ export const StickyScroll = ({
             {/* Desktop sticky carousel */}
             <div
                 className={cn(
-                    "sticky top-[max(theme(spacing.20),50vh-12rem)] hidden h-[29rem] w-[51rem] overflow-hidden rounded-md lg:block",
+                    "sticky top-[15rem] hidden h-[29rem] w-[51rem] overflow-hidden rounded-md lg:block",
                     contentClassName
                 )}
             >

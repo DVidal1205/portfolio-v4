@@ -37,7 +37,7 @@ export function NavbarHome() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <div className="fixed top-0 inset-x-0 z-[200]">
+        <div className="fixed top-0 inset-x-0 z-[300]">
             <Navbar>
                 <NavBody>
                     <NavbarLogo />
