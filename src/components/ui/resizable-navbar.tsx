@@ -55,6 +55,15 @@ export const Navbar = ({ children, className }: NavbarProps) => {
         offset: ["start start", "end start"],
     });
     const [visible, setVisible] = useState<boolean>(false);
+    const [showNavbar, setShowNavbar] = useState<boolean>(true);
+    const lastScrollY = useRef<number>(0);
+    const [viewportHeight, setViewportHeight] = useState<number>(0);
+
+    React.useEffect(() => {
+        if (typeof window !== "undefined") {
+            setViewportHeight(window.innerHeight);
+        }
+    }, []);
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         if (latest > 100) {
@@ -62,12 +71,29 @@ export const Navbar = ({ children, className }: NavbarProps) => {
         } else {
             setVisible(false);
         }
+        // Only activate tween logic after 100vh (client only)
+        if (viewportHeight && latest > viewportHeight) {
+            if (latest < lastScrollY.current) {
+                setShowNavbar(true);
+            } else if (latest > lastScrollY.current) {
+                setShowNavbar(false);
+            }
+        } else {
+            setShowNavbar(true);
+        }
+        lastScrollY.current = latest;
     });
 
     return (
         <motion.div
             ref={ref}
             className={cn("sticky inset-x-0 top-20 z-40 w-full", className)}
+            initial={{ y: 0, opacity: 1 }}
+            animate={{
+                y: showNavbar ? 0 : -100,
+                opacity: showNavbar ? 1 : 0,
+                transition: { type: "tween", duration: 0.3 },
+            }}
         >
             {React.Children.map(children, (child) =>
                 React.isValidElement(child)
@@ -101,8 +127,8 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
                 minWidth: "800px",
             }}
             className={cn(
-                "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-transparent px-6 py-4 lg:flex dark:bg-transparent",
-                visible && "bg-primary-800",
+                "relative z-[60] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full px-6 py-4 lg:flex",
+                visible && "bg-bg-purple-900/90",
                 className
             )}
         >
@@ -118,7 +144,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <motion.div
             onMouseLeave={() => setHovered(null)}
             className={cn(
-                "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-4 text-lg font-medium text-foreground transition duration-200 hover:text-primary-800 lg:flex lg:space-x-4",
+                "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-4 text-lg font-medium text-foreground transition-colors duration-200 hover:text-primary-800 lg:flex lg:space-x-4",
                 className
             )}
         >
@@ -126,14 +152,14 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
                 <a
                     onMouseEnter={() => setHovered(idx)}
                     onClick={onItemClick}
-                    className="relative px-6 py-3 text-neutral-300"
+                    className="relative px-6 py-3 text-neutral-300 transition-colors duration-200"
                     key={`link-${idx}`}
                     href={item.link}
                 >
                     {hovered === idx && (
                         <motion.div
                             layoutId="hovered"
-                            className="absolute inset-0 h-full w-full rounded-full bg-primary-800"
+                            className="absolute inset-0 h-full w-full rounded-full bg-primary-800 transition-colors duration-200"
                         />
                     )}
                     <span className="relative z-20">{item.name}</span>
@@ -259,7 +285,7 @@ export const NavbarButton = ({
     | React.ComponentPropsWithoutRef<"button">
 )) => {
     const baseStyles =
-        "hover:bg-primary-800 px-6 py-3 rounded-md bg-neutral-900 text-foreground text-base font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+        "hover:bg-primary-800 px-6 py-3 rounded-md bg-neutral-900 text-foreground text-base font-bold relative cursor-pointer transition duration-200 inline-block text-center";
 
     const variantStyles = {
         primary:

@@ -1,11 +1,12 @@
 "use client";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
-import { useEffect, useId, useRef, useState } from "react";
+import React, { useEffect, useId, useRef, useState } from "react";
 
 interface SlideData {
     title: string;
     src: string;
+    infoDialog?: React.ReactNode;
 }
 
 interface SlideProps {
@@ -62,7 +63,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         event.currentTarget.style.opacity = "1";
     };
 
-    const { src, title } = slide;
+    const { src, title, infoDialog } = slide;
 
     return (
         <li
@@ -91,6 +92,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                             : "none",
                 }}
             >
+                {infoDialog && current === index && (
+                    <div className="absolute top-2 right-4 z-20">
+                        {infoDialog}
+                    </div>
+                )}
                 <Image
                     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-600 ease-in-out"
                     style={{
@@ -147,10 +153,22 @@ const CarouselControl = ({
 
 interface CarouselProps {
     slides: SlideData[];
+    current?: number;
+    setCurrent?: (idx: number) => void;
 }
 
-export default function Carousel({ slides }: CarouselProps) {
-    const [current, setCurrent] = useState(0);
+export default function Carousel({
+    slides,
+    current: controlledCurrent,
+    setCurrent: controlledSetCurrent,
+}: CarouselProps) {
+    const [uncontrolledCurrent, setUncontrolledCurrent] = useState(0);
+    const isControlled =
+        controlledCurrent !== undefined && controlledSetCurrent !== undefined;
+    const current = isControlled ? controlledCurrent : uncontrolledCurrent;
+    const setCurrent = isControlled
+        ? controlledSetCurrent
+        : setUncontrolledCurrent;
 
     const handlePreviousClick = () => {
         const previous = current - 1;
@@ -208,7 +226,9 @@ export default function Carousel({ slides }: CarouselProps) {
                         title="Go to previous slide"
                         handleClick={handlePreviousClick}
                     />
-
+                    <span className="mx-2 text-white text-sm select-none">
+                        {current + 1} / {slides.length}
+                    </span>
                     <CarouselControl
                         type="next"
                         title="Go to next slide"

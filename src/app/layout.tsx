@@ -1,11 +1,12 @@
+import Footer from "@/components/ui/footer";
 import { NavbarHome } from "@/components/ui/navbar";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Sora } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const sora = Sora({
     subsets: ["latin"],
+    variable: "--font-sora",
 });
 
 const geistMono = Geist_Mono({
@@ -26,10 +27,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased h-[500vh] w-screen overflow-x-hidden`}
+                className={`${sora.variable} ${geistMono.variable} antialiased w-screen max-w-screen text-foreground overflow-x-hidden`}
             >
                 <NavbarHome />
                 {children}
+                <Footer />
             </body>
         </html>
     );

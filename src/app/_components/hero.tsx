@@ -41,7 +41,7 @@ export default function Hero() {
                         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground animate-fade-up delay-500">
                             Hey there, I&apos;m{" "}
                             <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-                                Dylan
+                                Dylan!
                             </span>
                         </h1>
                         <p className="text-lg sm:text-xl md:text-xl lg:text-2xl text-foreground/80 font-medium animate-fade-up delay-700">
