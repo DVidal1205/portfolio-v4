@@ -164,14 +164,14 @@ export function About() {
                                 </div>
                             </div>
                             <div className="mt-8 lg:hidden">
-                                <div className="aspect-video w-full overflow-hidden rounded-md">
+                                <div className="h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
                                     <Carousel slides={aboutImages} />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center">
-                        <div className="h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
+                        <div className="hidden lg:block h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
                             <Carousel slides={aboutImages} />
                         </div>
                         <div className="text-foreground text-sm md:text-lg mt-6 md:mt-16 max-w-3xl gap-2 px-2">
