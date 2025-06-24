@@ -46,14 +46,35 @@ const peopleImages = [
     {
         title: "Knight Hacks @ Bitcamp XI",
         src: "/about/people/bitcampxi.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Knight Hacks @ Bitcamp XI"
+                text="One of the biggest triumphs of my community was the **Knight Hacks** performance at **Bitcamp XI** Hackathon, held at the **University of Maryland, College Park**. After our reputation was acknowledged by UCF for our success with [Knight Hacks VI](https://www.ucf.edu/news/success-hacks-700-students-attend-ucf-knight-hacks-largest-hackathon/), we were able to secure senate funding to send **25** members of **Knight Hacks** to compete. Across **7 teams**, representing only **3%** of hackers, we took home **~25%** of the prizes. \\n\\n This was a huge win for our community, and it showed just how powerful teamwork is. Even though we were not on projects together, all 25 of us were one team, helping keep each other sane (and caffeinated), and being shoulders to lean on. With such a grand success, we were yet again acknowledged by UCF in a celebratory [article](https://www.cs.ucf.edu/2025/05/16/knight-hacks-wins-multiple-awards-from-bitcamp-xi/), allowing our win to gain even more reputation for our awesome community of technologists."
+                image="/about/people/bitcampxi.jpg"
+            />
+        ),
     },
     {
         title: "Knight Hacks VII Organizing Team",
         src: "/about/people/knighthacksvii.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Knight Hacks VII Organizing Team"
+                text="After over **3 days** of hacking, and **8+ months** of preparation, this picture was taken at the end of our 7th Hackathon, **Knight Hacks VII**. I can say confidently that running this event was one of the most **impactful** experiences of my entire life. This event would not be possible without the collective effort of the officers, directors, organizers, and operation teams members working tirelessly night after night. A perfect example of the collective efforts of a **community**."
+                image="/about/people/knighthacksvii.jpg"
+            />
+        ),
     },
     {
         title: "Knight Hacks @ HackUSF",
         src: "/about/people/hackusf.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Knight Hacks @ HackUSF"
+                text="A community can mean lots of things, and beyond just **Knight Hacks**, I am a member of the **Florida Hacker Community**. Hackathons at universities all over the state of Florida work towards the same goals as I do - help people break into technology. \\n\\n With that in mind, we **support** as many Florida Hackathons as possible, across many partner organizations just like **HackUSF** pictured above. Year after year, we show up as a united front and support the statewide community on behalf of our own."
+                image="/about/people/hackusf.jpg"
+            />
+        ),
     },
 ];
 
@@ -72,10 +93,24 @@ const progressImages = [
     {
         title: "First Hackathon Win (VoiceBoard @ Shell Hacks 2024)",
         src: "/about/progress/firstwin.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="First Hackathon Win (VoiceBoard @ Shell Hacks 2024)"
+                text="At Shell Hacks 2024, exactly **1 year** after my first Hackathon, my team and I were able to win **1st Place** in the **Google Hack for Social Good Challenge** award. This win was a huge milestone for me, as it wasn't only my first win, but was the first Hackathon where I truly felt **capable** and **confident** in my abilities as a developer. The sky is the limit. \\n\\n We built **VoiceBoard**, a web-app that allows users to voice whiteboarded diagrams onto a canvas. We built it to help those who may be physically impaired convey their ideas better, since we realized we could not be the developers we are without whiteboarding. Feel free to check it out in my [projects section](https://dvidal.dev/projects)."
+                image="/about/progress/firstwin.jpg"
+            />
+        ),
     },
     {
         title: "Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)",
         src: "/about/progress/bigwin.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)"
+                text="One of the many **Knight Hacks** wins at **Bitcamp XI**, my team and I won **1st Place** in both the **Prettiest Hack Challenge** and the **Best Use of Google Gemini** challenge. The most recent of my grand successes, this win was a huge moment for my team and I. We spent **18 hours**, or half the event, just coming up with an idea. And while that was super annoying, this showed me that I am held back not by my abilities, but by an idea. I felt that, given enough time and resources, I was on the path to being able to build **anything**. \\n\\n We built **VisuWorld**, a web-app that uses a RAG-empowered Google Gemini pipeline to generate 3D scenes using GLSL shader code as a parsing layer. This project gained a lot of attention, and has been [featured](https://www.linkedin.com/posts/major-league-hacking_builtwithmlh-hackathonlife-geminiai-ugcPost-7340441876530937856-sYp5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk) by MLH and pitched to the **Google Deepmind** team for their developer showcase series. This was a big inflection point for me and my career as I started gaining **visibility** for myself and my work."
+                image="/about/progress/bigwin.jpg"
+            />
+        ),
     },
 ];
 
