@@ -87,26 +87,26 @@ export function InfoDialog({ title, text, image, className }: InfoDialogProps) {
             <DialogTrigger asChild>
                 <span
                     className={cn(
-                        "inline-flex items-center align-middle rounded-full focus:outline-none bg-bg-purple-900 p-2 border border-primary-500 focus:ring-2 focus:ring-primary-500",
+                        "inline-flex items-center align-middle rounded-full focus:outline-none bg-bg-purple-900 p-1 md:p-2 sm:p-2.5 border border-primary-500 focus:ring-2 focus:ring-primary-500",
                         className
                     )}
                     aria-label="Show info"
                 >
                     <InfoIcon
                         className="text-primary-500 hover:text-primary-400 transition-colors align-middle"
-                        size={22}
+                        size={20}
                     />
                 </span>
             </DialogTrigger>
-            <DialogContent className="max-w-3xl min-w-2xl">
+            <DialogContent className="max-w-[95vw] min-w-0 p-6 sm:max-w-3xl sm:min-w-2xl sm:p-6">
                 <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold text-foreground mb-2">
+                    <DialogTitle className="text-lg sm:text-2xl font-bold text-foreground mb-2">
                         {title}
                     </DialogTitle>
                 </DialogHeader>
 
                 {image && (
-                    <div className="w-full flex justify-center mb-4">
+                    <div className="w-full flex justify-center mb-3 sm:mb-4">
                         <Image
                             src={
                                 typeof image === "string"
@@ -114,13 +114,13 @@ export function InfoDialog({ title, text, image, className }: InfoDialogProps) {
                                     : "/headshot.png"
                             }
                             alt={title}
-                            width={320}
-                            height={180}
-                            className="rounded-xl shadow-md object-contain max-h-48 overflow-hidden"
+                            width={220}
+                            height={120}
+                            className="rounded-xl shadow-md object-contain max-h-32 sm:max-h-48 overflow-hidden"
                         />
                     </div>
                 )}
-                <div className="text-foreground text-base leading-relaxed">
+                <div className="text-foreground text-sm sm:text-base leading-relaxed">
                     {parseHighlight(text)}
                 </div>
             </DialogContent>
