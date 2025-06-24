@@ -5,7 +5,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 
-const heroImages = [
+const aboutImages = [
     {
         title: "My Favorite Headshot (taken by Maria, Knight Hacks Alum)",
         src: "/headshot.png",
@@ -14,6 +14,50 @@ const heroImages = [
                 title="My Favorite Headshot (taken by Maria, Knight Hacks Alum)"
                 text="This headshot was taken by [Maria](https://www.linkedin.com/in/mariachm/), a Knight Hacks Alum, for one of our **Fall 2025 Kickstart** events. Kickstart is our semester-long mentorship program, where we helped over **100** students break into tech with pro-dev events like resume reviews, mock interviews, and exclusive networking opportunities. We took headshots for over **60** members of the Kickstart cohort fully covered by club funds, helping participants transform their digital footprint on professional platforms like **LinkedIn** and **GitHub**."
                 image="/headshot.png"
+            />
+        ),
+    },
+    {
+        title: "The Knight Hacks Pirate Crew (Knight Hacks VII)",
+        src: "/about/thecrew.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="The Knight Hacks Pirate Crew (Knight Hacks VII)"
+                text="This picture was taken at the **Knight Hacks VII** Hackathon, where we decided to make fools of ourselves for the annual midnight scavenger hunt. This year was pirate theme, and featured a rag-tag crew of scallywags, pictured above."
+                image="/about/thecrew.jpg"
+            />
+        ),
+    },
+    {
+        title: "First Week in the Bay Area",
+        src: "/about/firstweek.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="First Week in the Bay Area"
+                text="This picture was taken at the Twin Peaks park in San Francisco, where I was able to lay eyes on the city where I'd be spending my summer while interning at **NVIDIA**. I took the first week to explore the city with my girlfriend **Kylie**, and it was a great time. My excitement for the summer only grew greater as I took in the sights and the city. \\n\\n Don't mind the hair... it was **really** windy up there."
+                image="/about/firstweek.jpg"
+            />
+        ),
+    },
+    {
+        title: "First Knight Hacks (2023)",
+        src: "/about/firstkh.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="First Knight Hacks (2023)"
+                text="This picture was taken at my very first **Knight Hacks** Hackathon, which I attended during my **first semester** of being at UCF. **Knight Hacks VI** was a lot of fun and inspired me to learn more about tech, as well as step up and run the organization myself some day. I partnered up with [Leonard](https://www.linkedin.com/in/leonard-gofman-208578236/) to build a D&D AI Character Generator called Project Wildspace, which was a lot of fun to build and use."
+                image="/about/firstkh.jpg"
+            />
+        ),
+    },
+    {
+        title: "Tabling for K-8 at Engineers-Week",
+        src: "/about/eweek.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Tabling for K-8 at Engineers-Week"
+                text="This picture was taken at the **Engineers-Week** event at UCF, where we were able to table for **K-8** students to help them understand what a career in engineering is like. We were able to talk to over **100** students, and I was able to answer questions about my own experiences in the field. It was a great experience, and I was able to help a lot of students understand what a career in engineering is like. \\n\\n Telling the children I knew people working at places like Roblox and Instagram (technically Meta) definitely got some of them excited to join tech someday. It was a great time to see the excitement in the room."
+                image="/about/eweek.jpg"
             />
         ),
     },
@@ -121,14 +165,14 @@ export function About() {
                             </div>
                             <div className="mt-8 lg:hidden">
                                 <div className="aspect-video w-full overflow-hidden rounded-md">
-                                    <Carousel slides={heroImages} />
+                                    <Carousel slides={aboutImages} />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <div className="h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
-                            <Carousel slides={heroImages} />
+                            <Carousel slides={aboutImages} />
                         </div>
                         <div className="text-foreground text-sm md:text-lg mt-6 md:mt-16 max-w-3xl gap-2 px-2">
                             Thanks for taking the time to check out my
