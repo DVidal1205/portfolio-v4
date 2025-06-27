@@ -100,7 +100,7 @@ export function InfoDialog({ title, text, image, className }: InfoDialogProps) {
             </DialogTrigger>
             <DialogContent className="max-w-[95vw] min-w-0 p-6 sm:max-w-3xl sm:min-w-2xl sm:p-6">
                 <DialogHeader>
-                    <DialogTitle className="text-lg sm:text-2xl font-bold text-foreground mb-2">
+                    <DialogTitle className="sm:text-2xl font-bold text-foreground mb-2">
                         {title}
                     </DialogTitle>
                 </DialogHeader>
@@ -120,7 +120,7 @@ export function InfoDialog({ title, text, image, className }: InfoDialogProps) {
                         />
                     </div>
                 )}
-                <div className="text-foreground text-sm sm:text-base leading-relaxed">
+                <div className="text-foreground text-xs sm:text-base leading-relaxed">
                     {parseHighlight(text)}
                 </div>
             </DialogContent>

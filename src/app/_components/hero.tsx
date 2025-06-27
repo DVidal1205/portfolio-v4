@@ -17,7 +17,6 @@ export default function Hero() {
     const heroRef = useRef<HTMLDivElement>(null);
     const imageRef = useRef<HTMLDivElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
-    const ctaRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -127,26 +126,6 @@ export default function Hero() {
                 );
             }
 
-            // CTA animation
-            if (ctaRef.current) {
-                gsap.fromTo(
-                    ctaRef.current,
-                    {
-                        y: 30,
-                        opacity: 0,
-                        scale: 0.8,
-                    },
-                    {
-                        y: 0,
-                        opacity: 1,
-                        scale: 1,
-                        duration: 0.8,
-                        delay: 2.5,
-                        ease: "back.out(1.7)",
-                    }
-                );
-            }
-
             // Scroll-triggered animations
             gsap.fromTo(
                 heroRef.current,
@@ -228,7 +207,6 @@ export default function Hero() {
             <AnimatePresence>
                 {showCallToAction && (
                     <motion.div
-                        ref={ctaRef}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{
                             opacity: 1,
