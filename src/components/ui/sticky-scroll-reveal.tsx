@@ -162,7 +162,7 @@ export const StickyScroll = ({
                 backgroundColor:
                     backgroundColors[activeCard % backgroundColors.length],
             }}
-            className="relative flex flex-col lg:flex-row lg:space-x-32 justify-center rounded-md px-4 py-8 lg:px-10 lg:py-16"
+            className="relative flex flex-col lg:flex-row lg:space-x-32 justify-center rounded-md px-4 py-8 lg:px-10 lg:py-16 mb-8 lg:mb-40"
             ref={ref}
         >
             <div className="div relative flex items-start px-2 lg:px-4 w-full lg:w-auto">
@@ -313,7 +313,7 @@ export const StickyScroll = ({
                     </div>
 
                     {/* Section 3 - Progress */}
-                    <div className="my-20 lg:mt-80 lg:mb-60">
+                    <div className="my-20 lg:mt-80 lg:mb-18">
                         <motion.h2
                             initial={{ opacity: 0 }}
                             animate={{ opacity: activeCard === 2 ? 1 : 0.3 }}
