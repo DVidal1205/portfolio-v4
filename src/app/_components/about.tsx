@@ -15,11 +15,11 @@ if (typeof window !== "undefined") {
 
 const aboutImages = [
     {
-        title: "My Favorite Headshot (taken by Maria, Knight Hacks Alum)",
+        title: "My Headshot",
         src: "/headshot.png",
         infoDialog: (
             <InfoDialog
-                title="My Favorite Headshot (taken by Maria, Knight Hacks Alum)"
+                title="My Headshot (taken by Maria, Knight Hacks Alum)"
                 text="This headshot was taken by [Maria](https://www.linkedin.com/in/mariachm/), a Knight Hacks Alum, for one of our **Fall 2025 Kickstart** events. Kickstart is our semester-long mentorship program, where we helped over **100** students break into tech with pro-dev events like resume reviews, mock interviews, and exclusive networking opportunities. We took headshots for over **60** members of the Kickstart cohort fully covered by club funds, helping participants transform their digital footprint on professional platforms like **LinkedIn** and **GitHub**."
                 image="/headshot.png"
             />

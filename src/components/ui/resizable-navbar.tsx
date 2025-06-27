@@ -8,6 +8,7 @@ import {
     useScroll,
 } from "framer-motion";
 
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 interface NavbarProps {
@@ -255,15 +256,15 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
     return (
-        <a
-            href="#"
+        <Link
+            href="/"
             className="relative hover:bg-primary-800 rounded-full z-20 mr-4 flex items-center space-x-2 px-4 py-3 text-base font-normal text-foreground transition-all duration-200"
         >
             <IconBrain />
             <span className="font-medium text-foreground text-lg md:text-xl">
                 dvidal.dev
             </span>
-        </a>
+        </Link>
     );
 };
 
