@@ -3,7 +3,15 @@ import Carousel from "@/components/ui/carousel";
 import { InfoDialog } from "@/components/ui/info-dialog";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+
+// Register ScrollTrigger plugin
+if (typeof window !== "undefined") {
+    gsap.registerPlugin(ScrollTrigger);
+}
 
 const aboutImages = [
     {
@@ -64,6 +72,141 @@ const aboutImages = [
 ];
 
 export function About() {
+    const titleRef = useRef<HTMLHeadingElement>(null);
+    const contentRef = useRef<HTMLDivElement>(null);
+    const valuesTitleRef = useRef<HTMLHeadingElement>(null);
+    const footerTextRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            // Title animation with text reveal effect
+            if (titleRef.current) {
+                gsap.fromTo(
+                    titleRef.current,
+                    {
+                        y: 50,
+                        opacity: 0,
+                        scale: 0.95,
+                    },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        scale: 1,
+                        duration: 1,
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: titleRef.current,
+                            start: "top 70%",
+                            end: "top 30%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            }
+
+            // Content text animations with staggered reveal
+            if (contentRef.current) {
+                const textElements = contentRef.current.querySelectorAll("div");
+                gsap.fromTo(
+                    textElements,
+                    {
+                        y: 30,
+                        opacity: 0,
+                        skewY: 1,
+                    },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        skewY: 0,
+                        duration: 0.8,
+                        stagger: 0.15,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: contentRef.current,
+                            start: "top 65%",
+                            end: "top 25%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            }
+
+            // Values title animation
+            if (valuesTitleRef.current) {
+                gsap.fromTo(
+                    valuesTitleRef.current,
+                    {
+                        y: 60,
+                        opacity: 0,
+                        scale: 0.9,
+                    },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        scale: 1,
+                        duration: 1,
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: valuesTitleRef.current,
+                            start: "top 70%",
+                            end: "top 30%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            }
+
+            // Footer text animation
+            if (footerTextRef.current) {
+                gsap.fromTo(
+                    footerTextRef.current,
+                    {
+                        y: 40,
+                        opacity: 0,
+                        scale: 0.95,
+                    },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        scale: 1,
+                        duration: 0.8,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: footerTextRef.current,
+                            start: "top 75%",
+                            end: "top 25%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            }
+
+            // Subtle link hover effects
+            const links = document.querySelectorAll("a");
+            links.forEach((link) => {
+                gsap.set(link, { transformOrigin: "center" });
+
+                link.addEventListener("mouseenter", () => {
+                    gsap.to(link, {
+                        scale: 1.02,
+                        duration: 0.2,
+                        ease: "power2.out",
+                    });
+                });
+
+                link.addEventListener("mouseleave", () => {
+                    gsap.to(link, {
+                        scale: 1,
+                        duration: 0.2,
+                        ease: "power2.out",
+                    });
+                });
+            });
+        });
+
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div className="w-full bg-[#200c3c] relative pt-8 md:pt-24 lg:pt-96">
             <Image
@@ -84,8 +227,11 @@ export function About() {
                 <div className="relative flex flex-col lg:flex-row lg:space-x-32 justify-center rounded-md px-4 lg:px-10">
                     <div className="div relative flex items-start px-2 w-full lg:w-auto">
                         <div className="w-full lg:max-w-4xl">
-                            <div className="lg:max-w-2xl">
-                                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+                            <div ref={contentRef} className="lg:max-w-2xl">
+                                <h1
+                                    ref={titleRef}
+                                    className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground"
+                                >
                                     Welcome to my{" "}
                                     <span className="bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
                                         Portfolio!
@@ -174,7 +320,10 @@ export function About() {
                         <div className="hidden lg:block h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
                             <Carousel slides={aboutImages} />
                         </div>
-                        <div className="text-foreground text-sm md:text-lg mt-6 md:mt-16 max-w-3xl gap-2 px-2">
+                        <div
+                            ref={footerTextRef}
+                            className="text-foreground text-sm md:text-lg mt-6 md:mt-16 max-w-3xl gap-2 px-2"
+                        >
                             Thanks for taking the time to check out my
                             portfolio! While you&apos;re here, be on the lookout
                             for any{" "}
@@ -192,7 +341,10 @@ export function About() {
             </div>
 
             {/* Values Sticky Scroll */}
-            <div className="text-center text-foreground text-3xl md:text-5xl font-bold mb-4 md:mb-10 lg:pt-20">
+            <div
+                ref={valuesTitleRef}
+                className="text-center text-foreground text-3xl md:text-5xl font-bold mb-4 md:mb-10 lg:pt-20"
+            >
                 My Core{" "}
                 <span className="bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
                     Values

@@ -67,31 +67,6 @@ export default function Hero() {
                 delay: 1.2,
             });
 
-            // Magnetic effect for profile image
-            if (imageRef.current) {
-                imageRef.current.addEventListener("mousemove", (e) => {
-                    const rect = imageRef.current!.getBoundingClientRect();
-                    const x = e.clientX - rect.left - rect.width / 2;
-                    const y = e.clientY - rect.top - rect.height / 2;
-
-                    gsap.to(imageRef.current, {
-                        x: x * 0.1,
-                        y: y * 0.1,
-                        duration: 0.3,
-                        ease: "power2.out",
-                    });
-                });
-
-                imageRef.current.addEventListener("mouseleave", () => {
-                    gsap.to(imageRef.current, {
-                        x: 0,
-                        y: 0,
-                        duration: 0.5,
-                        ease: "power2.out",
-                    });
-                });
-            }
-
             // Text animations with staggered reveal
             const h1Element = textRef.current?.querySelector("h1");
             if (h1Element) {
