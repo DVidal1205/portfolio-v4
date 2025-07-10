@@ -7,7 +7,7 @@ export default function SkillsPage() {
     const shuffledSkills = useMemo(() => shuffleArray(allSkills), []);
 
     return (
-        <div className="min-h-screen pb-4 md:pb-10 pt-24 md:pt-30">
+        <div className="min-h-screen pb-4 md:pb-10 pt-24 md:pt-36">
             <div className="text-center mb-8">
                 <h1 className="text-4xl font-bold gradient-text bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent mb-2">
                     My Skills
@@ -42,7 +42,7 @@ export default function SkillsPage() {
                     backgroundColor="transparent"
                     wireframes={false}
                     gravity={0.3}
-                    mobileSize="text-lg"
+                    mobileSize="text-sm"
                     desktopSize="text-2xl"
                     mouseConstraintStiffness={0.3}
                 />
