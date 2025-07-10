@@ -41,9 +41,9 @@ export default function SkillsPage() {
                     trigger="scroll"
                     backgroundColor="transparent"
                     wireframes={false}
-                    gravity={0.3}
+                    gravity={0.2}
                     mobileSize="text-sm"
-                    desktopSize="text-2xl"
+                    desktopSize="text-3xl"
                     mouseConstraintStiffness={0.3}
                 />
             </div>
