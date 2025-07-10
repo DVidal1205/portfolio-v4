@@ -1,3 +1,4 @@
+import TransitionWrapper from "@/components/layout/transition-wrapper";
 import Footer from "@/components/ui/footer";
 import { NavbarHome } from "@/components/ui/navbar";
 import type { Metadata } from "next";
@@ -40,7 +41,9 @@ export default function RootLayout({
                 className={`${sora.variable} ${geistMono.variable} antialiased w-screen max-w-screen text-foreground overflow-x-hidden`}
             >
                 <NavbarHome />
-                {children}
+                <main>
+                    <TransitionWrapper>{children}</TransitionWrapper>
+                </main>
                 <Footer />
             </body>
         </html>
