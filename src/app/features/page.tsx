@@ -9,8 +9,8 @@ export default function FeaturesPage() {
                     As Seen On...
                 </h1>
                 <p className=" px-2 text-foreground text-sm md:text-base max-w-4xl mx-auto animate-fade-up delay-300">
-                    During my time as a software engineer and leader, I've had
-                    the opportunity to be recognized in a variety of awesome
+                    During my time as a software engineer and leader, I&apos;ve
+                    had the opportunity to be recognized in a variety of awesome
                     different ways. Feel free to check out a few of my features
                     and publications!
                 </p>
