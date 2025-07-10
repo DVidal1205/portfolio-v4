@@ -1,13 +1,14 @@
 "use client";
 import Link, { LinkProps } from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 interface TransitionLinkProps extends LinkProps {
     children: React.ReactNode;
     href: string;
     className?: string;
     duration?: number;
+    onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
 const addTransitionStyles = () => {
@@ -41,32 +42,34 @@ export default function TransitionLink({
     href,
     children,
     className,
-    duration = 550,
+    duration = 300,
+    onClick,
     ...props
 }: TransitionLinkProps) {
     const router = useRouter();
     const pathname = usePathname();
+    const hasInitialized = useRef(false);
 
     useEffect(() => {
-        addTransitionStyles();
-
-        document.documentElement.style.setProperty(
-            "--transition-duration",
-            `${duration}ms`
-        );
-
-        const contentContainer = document.querySelector(".content-container");
-        if (contentContainer) {
-            contentContainer.classList.add("fade-in");
-            setTimeout(() => {
-                contentContainer.classList.remove("fade-in");
-            }, duration);
+        // Only run the initialization once
+        if (!hasInitialized.current) {
+            addTransitionStyles();
+            document.documentElement.style.setProperty(
+                "--transition-duration",
+                `${duration}ms`
+            );
+            hasInitialized.current = true;
         }
     }, [duration]);
 
     const handleTransition = async (
         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
     ) => {
+        // Call the additional onClick handler first if provided
+        if (onClick) {
+            onClick(e);
+        }
+
         e.preventDefault();
 
         if (pathname === href) return;
