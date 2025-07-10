@@ -76,7 +76,7 @@ export default function FeatureCard({
                     <CardContent className="p-4 sm:p-6 pt-0 sm:pt-0">
                         <Separator className="my-4 bg-gradient-to-r from-transparent via-primary-200 to-transparent dark:via-primary-800" />
                         <div className="flex flex-wrap gap-2 sm:gap-3">
-                            {item.links.map((link, linkIndex) => (
+                            {item.links.map((link) => (
                                 <Link
                                     key={link.label}
                                     href={link.url}
