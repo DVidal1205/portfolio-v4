@@ -23,6 +23,23 @@ what is knight hacks
 
 export const featuredItems: FeatureItem[] = [
     {
+        name: "HackCon 2025 Speaker Series",
+        description:
+            "Every August, Major League Hacking hosts HackCon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.",
+        date: "August 2025",
+        image: "/features/hackcon.png",
+        links: [
+            {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/posts/dylanvidal1204_super-excited-to-share-that-i-will-be-speaking-activity-7349206575451942912-Br3B?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
+            },
+            {
+                label: "Slides (WIP)",
+                url: "/features/hackcon.pdf",
+            },
+        ],
+    },
+    {
         name: "MLH Developer Showcase - VisuWorld",
         description:
             "A showcase of our project, VisuWorld, by the Major League Hacking Developer Showcase Series. First place winner of the Google Gemini Challenge.",
