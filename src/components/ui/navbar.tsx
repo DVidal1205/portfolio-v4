@@ -32,6 +32,10 @@ export function NavbarHome() {
             name: "Skills",
             link: "/skills",
         },
+        {
+            name: "Features",
+            link: "/features",
+        },
     ];
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
