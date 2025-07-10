@@ -1,4 +1,5 @@
 "use client";
+import TransitionLink from "@/components/ui/transition-link";
 import { cn } from "@/lib/utils";
 import { IconBrain, IconMenu2, IconX } from "@tabler/icons-react";
 import {
@@ -8,7 +9,6 @@ import {
     useScroll,
 } from "framer-motion";
 
-import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 interface NavbarProps {
@@ -150,12 +150,12 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
             )}
         >
             {items.map((item, idx) => (
-                <a
-                    onMouseEnter={() => setHovered(idx)}
-                    onClick={onItemClick}
-                    className="relative px-6 py-3 text-neutral-300 transition-colors duration-200"
-                    key={`link-${idx}`}
+                <TransitionLink
                     href={item.link}
+                    key={`link-${idx}`}
+                    className="relative px-6 py-3 text-neutral-300 transition-colors duration-200"
+                    onClick={onItemClick}
+                    onMouseEnter={() => setHovered(idx)}
                 >
                     {hovered === idx && (
                         <motion.div
@@ -164,7 +164,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
                         />
                     )}
                     <span className="relative z-20">{item.name}</span>
-                </a>
+                </TransitionLink>
             ))}
         </motion.div>
     );
@@ -256,7 +256,7 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = () => {
     return (
-        <Link
+        <TransitionLink
             href="/"
             className="relative hover:bg-primary-800 rounded-full z-20 mr-4 flex items-center space-x-2 px-4 py-3 text-base font-normal text-foreground transition-all duration-200"
         >
@@ -264,7 +264,7 @@ export const NavbarLogo = () => {
             <span className="font-medium text-foreground text-lg md:text-xl">
                 dvidal.dev
             </span>
-        </Link>
+        </TransitionLink>
     );
 };
 

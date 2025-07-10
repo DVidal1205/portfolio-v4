@@ -10,12 +10,12 @@ import {
     NavBody,
     NavItems,
 } from "@/components/ui/resizable-navbar";
+import TransitionLink from "@/components/ui/transition-link";
 import {
     IconBrandGithub,
     IconBrandLinkedin,
     IconFileText,
 } from "@tabler/icons-react";
-import Link from "next/link";
 import { useState } from "react";
 
 export function NavbarHome() {
@@ -43,7 +43,7 @@ export function NavbarHome() {
                     <NavbarLogo />
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-2">
-                        <Link href="https://github.com/DVidal1205">
+                        <TransitionLink href="https://github.com/DVidal1205">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -51,8 +51,8 @@ export function NavbarHome() {
                             >
                                 <IconBrandGithub size={30} />
                             </NavbarButton>
-                        </Link>
-                        <Link href="https://www.linkedin.com/in/dylanvidal1204/">
+                        </TransitionLink>
+                        <TransitionLink href="https://www.linkedin.com/in/dylanvidal1204/">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -60,8 +60,8 @@ export function NavbarHome() {
                             >
                                 <IconBrandLinkedin size={30} />
                             </NavbarButton>
-                        </Link>
-                        <Link href="https://www.dvidal.dev/resume.pdf">
+                        </TransitionLink>
+                        <TransitionLink href="https://www.dvidal.dev/resume.pdf">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -69,7 +69,7 @@ export function NavbarHome() {
                             >
                                 <IconFileText size={30} />
                             </NavbarButton>
-                        </Link>
+                        </TransitionLink>
                     </div>
                 </NavBody>
 
@@ -89,17 +89,17 @@ export function NavbarHome() {
                         onClose={() => setIsMobileMenuOpen(false)}
                     >
                         {navItems.map((item, idx) => (
-                            <a
+                            <TransitionLink
                                 key={`mobile-link-${idx}`}
                                 href={item.link}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="relative text-neutral-600 dark:text-neutral-300"
                             >
                                 <span className="block">{item.name}</span>
-                            </a>
+                            </TransitionLink>
                         ))}
                         <div className="flex w-full gap-4">
-                            <Link href="https://github.com/DVidal1205">
+                            <TransitionLink href="https://github.com/DVidal1205">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -107,8 +107,8 @@ export function NavbarHome() {
                                 >
                                     <IconBrandGithub size={30} />
                                 </NavbarButton>
-                            </Link>
-                            <Link href="https://www.linkedin.com/in/dylanvidal1204/">
+                            </TransitionLink>
+                            <TransitionLink href="https://www.linkedin.com/in/dylanvidal1204/">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -116,8 +116,8 @@ export function NavbarHome() {
                                 >
                                     <IconBrandLinkedin size={30} />
                                 </NavbarButton>
-                            </Link>
-                            <Link href="https://www.dvidal.dev/resume.pdf">
+                            </TransitionLink>
+                            <TransitionLink href="https://www.dvidal.dev/resume.pdf">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -125,7 +125,7 @@ export function NavbarHome() {
                                 >
                                     <IconFileText size={30} />
                                 </NavbarButton>
-                            </Link>
+                            </TransitionLink>
                         </div>
                     </MobileNavMenu>
                 </MobileNav>

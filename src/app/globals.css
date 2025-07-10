@@ -176,3 +176,23 @@
     transform: translateY(-50%);
   }
 }
+
+/* Page Transition Styles */
+.content-container {
+  opacity: 1;
+  transition: opacity var(--transition-duration, 800ms) ease;
+  min-height: calc(100vh - 80px); /* Account for navbar */
+}
+
+.content-container.fade-out {
+  opacity: 0;
+}
+
+.content-container.fade-in {
+  animation: fadeIn var(--transition-duration, 800ms) ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
