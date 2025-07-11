@@ -1,3 +1,5 @@
+import { InfoDialog } from "@/components/ui/info-dialog";
+
 export interface WorkshopItem {
     name: string;
     description: string;
@@ -5,6 +7,7 @@ export interface WorkshopItem {
     image: string;
     conceptsCovered: string[];
     youtubeLink: string;
+    infoDialog?: React.ReactNode;
 }
 
 export const workshopItems: WorkshopItem[] = [
@@ -28,6 +31,14 @@ export const workshopItems: WorkshopItem[] = [
             "SEO",
         ],
         youtubeLink: "https://www.youtube.com/watch?v=0YUDCU3tOuc&t=2308s",
+        infoDialog: (
+            <InfoDialog
+                title="Full Stack 101"
+                text="Just like **Web Development 101**, this workshop also started as a private workshop for my mentees. The only difference is this workshop went over a **TON** of refinements and optimizations before ever making it to Knight Hacks, but I am happy with where it ended up."
+                image="/workshops/fullstack.png"
+                className="bg-none border-none bg-transparent p-0"
+            />
+        ),
     },
     {
         name: "Web Development 101",
@@ -51,6 +62,14 @@ export const workshopItems: WorkshopItem[] = [
             "Hosting",
         ],
         youtubeLink: "https://www.youtube.com/watch?v=E-V035JrLmk&t=3198s",
+        infoDialog: (
+            <InfoDialog
+                title="Web Development 101"
+                text="I actually started this workshop as a private workshop for my mentees from Knight Hacks. Before proceeding to part 2 (**Full Stack 101**), I actually required them to make a static portfolio as an entry ticket. I was **SUPER** impressed with what they came up with! \\n\\n Feel free to check some of them out here: [Carlos Catala](https://www.catala.dev/), [Daniel Efres](https://www.danielefres.dev/), [Carlos Lopez](https://www.carloselopez.dev/), [Samuel Borges](https://www.samborg.dev/), and [Kevin Pereda](https://www.kpereda.dev/)."
+                image="/workshops/webdevelopment.png"
+                className="bg-none border-none bg-transparent p-0"
+            />
+        ),
     },
     {
         name: "Self-Hosting Crash Course",
@@ -70,6 +89,14 @@ export const workshopItems: WorkshopItem[] = [
             "Cloud Providers",
         ],
         youtubeLink: "https://www.youtube.com/watch?v=Sx8DdFWoP3g",
+        infoDialog: (
+            <InfoDialog
+                title="Self-Hosting Crash Course"
+                text="I actually demo'd using **Coolify** live by deploying a full-stack web app to a OVH VPS - database, frontend, and backend included. This workshop was with a bit of a smaller crowd due to weather, but was a lot of fun and super chill."
+                image="/workshops/selfhosting.png"
+                className="bg-none border-none bg-transparent p-0"
+            />
+        ),
     },
     {
         name: "UCF Spring 2025 Foundation Exam Review (Part 3)",
@@ -168,5 +195,13 @@ export const workshopItems: WorkshopItem[] = [
             "Recursion",
         ],
         youtubeLink: "https://www.youtube.com/watch?v=7rgkwXZrW9o",
+        infoDialog: (
+            <InfoDialog
+                title="UCF Summer 2024 Foundation Exam Review (Part 1)"
+                text="I was actually taking the Foundation Exam myself when teaching this workshop! Luckily I got an **89%** (passing score), otherwise I probably would have been giving some pretty bad advice."
+                image="/workshops/fesummer24.png"
+                className="bg-none border-none bg-transparent p-0"
+            />
+        ),
     },
 ];
