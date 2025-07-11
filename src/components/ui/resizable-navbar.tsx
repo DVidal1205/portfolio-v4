@@ -145,7 +145,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <motion.div
             onMouseLeave={() => setHovered(null)}
             className={cn(
-                "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-4 text-lg font-medium text-foreground transition-colors duration-200 hover:text-primary-800 lg:flex lg:space-x-4",
+                "absolute inset-0 hidden flex-1 flex-row items-center justify-center text-lg font-medium text-foreground transition-colors duration-200 hover:text-primary-800 lg:flex",
+                "space-x-2 xl:space-x-4",
                 className
             )}
         >
@@ -153,7 +154,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
                 <TransitionLink
                     href={item.link}
                     key={`link-${idx}`}
-                    className="relative px-6 py-3 text-neutral-300 transition-colors duration-200"
+                    className="relative px-3 py-2 xl:px-6 xl:py-3 text-neutral-300 transition-colors duration-200 text-sm xl:text-base"
                     onClick={onItemClick}
                     onMouseEnter={() => setHovered(idx)}
                 >
@@ -258,10 +259,10 @@ export const NavbarLogo = () => {
     return (
         <TransitionLink
             href="/"
-            className="relative hover:bg-primary-800 rounded-full z-20 mr-4 flex items-center space-x-2 px-4 py-3 text-base font-normal text-foreground transition-all duration-200"
+            className="relative hover:bg-primary-800 rounded-full z-20 flex items-center space-x-2 px-3 py-2 lg:px-4 lg:py-3 text-base font-normal text-foreground transition-all duration-200 mr-2 lg:mr-4"
         >
-            <IconBrain />
-            <span className="font-medium text-foreground text-lg md:text-xl">
+            <IconBrain className="w-5 h-5 lg:w-6 lg:h-6" />
+            <span className="font-medium text-foreground text-base lg:text-lg xl:text-xl">
                 dvidal.dev
             </span>
         </TransitionLink>

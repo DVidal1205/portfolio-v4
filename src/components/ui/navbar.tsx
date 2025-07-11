@@ -47,32 +47,41 @@ export function NavbarHome() {
                 <NavBody>
                     <NavbarLogo />
                     <NavItems items={navItems} />
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 lg:gap-2 xl:gap-4">
                         <Link href="https://github.com/DVidal1205">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
-                                className="flex items-center"
+                                className="flex items-center px-2 py-2 lg:px-3 lg:py-3"
                             >
-                                <IconBrandGithub size={30} />
+                                <IconBrandGithub
+                                    size={24}
+                                    className="lg:w-[30px] lg:h-[30px]"
+                                />
                             </NavbarButton>
                         </Link>
                         <Link href="https://www.linkedin.com/in/dylanvidal1204/">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
-                                className="flex items-center"
+                                className="flex items-center px-2 py-2 lg:px-3 lg:py-3"
                             >
-                                <IconBrandLinkedin size={30} />
+                                <IconBrandLinkedin
+                                    size={24}
+                                    className="lg:w-[30px] lg:h-[30px]"
+                                />
                             </NavbarButton>
                         </Link>
                         <Link href="/resume.pdf">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
-                                className="flex items-center"
+                                className="flex items-center px-2 py-2 lg:px-3 lg:py-3"
                             >
-                                <IconFileText size={30} />
+                                <IconFileText
+                                    size={24}
+                                    className="lg:w-[30px] lg:h-[30px]"
+                                />
                             </NavbarButton>
                         </Link>
                     </div>
