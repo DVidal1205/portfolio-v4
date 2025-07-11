@@ -16,6 +16,7 @@ import {
     IconBrandLinkedin,
     IconFileText,
 } from "@tabler/icons-react";
+import Link from "next/link";
 import { useState } from "react";
 
 export function NavbarHome() {
@@ -47,7 +48,7 @@ export function NavbarHome() {
                     <NavbarLogo />
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-2">
-                        <TransitionLink href="https://github.com/DVidal1205">
+                        <Link href="https://github.com/DVidal1205">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -55,8 +56,8 @@ export function NavbarHome() {
                             >
                                 <IconBrandGithub size={30} />
                             </NavbarButton>
-                        </TransitionLink>
-                        <TransitionLink href="https://www.linkedin.com/in/dylanvidal1204/">
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/dylanvidal1204/">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -64,8 +65,8 @@ export function NavbarHome() {
                             >
                                 <IconBrandLinkedin size={30} />
                             </NavbarButton>
-                        </TransitionLink>
-                        <TransitionLink href="/resume.pdf">
+                        </Link>
+                        <Link href="/resume.pdf">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -73,7 +74,7 @@ export function NavbarHome() {
                             >
                                 <IconFileText size={30} />
                             </NavbarButton>
-                        </TransitionLink>
+                        </Link>
                     </div>
                 </NavBody>
 
@@ -103,7 +104,7 @@ export function NavbarHome() {
                             </TransitionLink>
                         ))}
                         <div className="flex w-full gap-4">
-                            <TransitionLink href="https://github.com/DVidal1205">
+                            <Link href="https://github.com/DVidal1205">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -111,8 +112,8 @@ export function NavbarHome() {
                                 >
                                     <IconBrandGithub size={30} />
                                 </NavbarButton>
-                            </TransitionLink>
-                            <TransitionLink href="https://www.linkedin.com/in/dylanvidal1204/">
+                            </Link>
+                            <Link href="https://www.linkedin.com/in/dylanvidal1204/">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -120,8 +121,8 @@ export function NavbarHome() {
                                 >
                                     <IconBrandLinkedin size={30} />
                                 </NavbarButton>
-                            </TransitionLink>
-                            <TransitionLink href="/resume.pdf">
+                            </Link>
+                            <Link href="/resume.pdf">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -129,7 +130,7 @@ export function NavbarHome() {
                                 >
                                     <IconFileText size={30} />
                                 </NavbarButton>
-                            </TransitionLink>
+                            </Link>
                         </div>
                     </MobileNavMenu>
                 </MobileNav>
