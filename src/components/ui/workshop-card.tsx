@@ -24,15 +24,24 @@ export default function WorkshopCard({
         <Card
             className={cn(
                 "w-full max-w-5xl mx-auto overflow-hidden transition-all duration-500 border border-primary-200 bg-bg-purple-50 dark:bg-bg-purple-900",
-                "hover:shadow-[0_10px_30px_rgba(122,92,255,0.25)] hover:border-primary-300",
+                "hover:shadow-[0_10px_30px_rgba(122,92,255,0.25)] hover:border-primary-300 hover:cursor-pointer",
                 "animate-fade-up animate-duration-[800ms] animate-delay-[100ms]",
-                "group"
+                "group relative"
             )}
             style={{
                 animationDelay: `${200 * index + 400}ms`,
                 transformOrigin: "center",
             }}
         >
+            {/* Invisible overlay link for entire card clickability */}
+            <Link
+                href={item.youtubeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+                aria-label={`Watch ${item.name} on YouTube`}
+            />
+
             <div className="flex flex-col lg:flex-row">
                 <div className="relative w-full lg:w-2/5 p-4 lg:p-6">
                     <div className="relative h-[225px] sm:h-[275px] lg:h-[300px] overflow-hidden rounded-xl shadow-lg">
@@ -58,9 +67,14 @@ export default function WorkshopCard({
 
                 <div className="flex-1 p-2">
                     <CardHeader className="p-4 sm:p-6">
-                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                             <CardTitle className="text-left text-xl sm:text-2xl font-bold bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent transition-all duration-500 group-hover:from-primary-500 group-hover:to-secondary-500">
                                 {item.name}
+                                {item.infoDialog && (
+                                    <span className="inline-block ml-2 align-middle relative z-20">
+                                        {item.infoDialog}
+                                    </span>
+                                )}
                             </CardTitle>
                             <Badge
                                 variant="outline"
@@ -117,7 +131,7 @@ export default function WorkshopCard({
                                 href={item.youtubeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-red-100 text-red-700 dark:bg-red-900/60 dark:text-red-300 transition-all duration-300 hover:bg-red-200 dark:hover:bg-red-800 hover:shadow-[0_2px_8px_rgba(239,68,68,0.25)] hover:-translate-y-0.5"
+                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-red-100 text-red-700 dark:bg-red-900/60 dark:text-red-300 transition-all duration-300 hover:bg-red-200 dark:hover:bg-red-800 hover:shadow-[0_2px_8px_rgba(239,68,68,0.25)] hover:-translate-y-0.5 relative z-20"
                             >
                                 <Play className="w-4 h-4" />
                                 Watch on YouTube
