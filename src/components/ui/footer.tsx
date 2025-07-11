@@ -52,7 +52,7 @@ export default function Footer() {
                                 <IconBrandLinkedin size={30} />
                             </div>
                         </Link>
-                        <Link href="https://www.dvidal.dev/resume.pdf">
+                        <Link href="/resume.pdf">
                             <div className="flex items-center p-2 rounded-md hover:bg-primary-800 transition-colors">
                                 <IconFileText size={30} />
                             </div>

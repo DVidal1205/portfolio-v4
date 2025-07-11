@@ -65,7 +65,7 @@ export function NavbarHome() {
                                 <IconBrandLinkedin size={30} />
                             </NavbarButton>
                         </TransitionLink>
-                        <TransitionLink href="https://www.dvidal.dev/resume.pdf">
+                        <TransitionLink href="/resume.pdf">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -121,7 +121,7 @@ export function NavbarHome() {
                                     <IconBrandLinkedin size={30} />
                                 </NavbarButton>
                             </TransitionLink>
-                            <TransitionLink href="https://www.dvidal.dev/resume.pdf">
+                            <TransitionLink href="/resume.pdf">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
