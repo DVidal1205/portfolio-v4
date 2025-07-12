@@ -43,6 +43,19 @@ export const featuredItems: FeatureItem[] = [
         ],
     },
     {
+        name: "GitHub Campus Expert",
+        description:
+            "I am a member of the GitHub Campus Experts program, which helps me empower my local community at UCF to break into the tech industry with the support of GitHub.",
+        date: "June 2025",
+        image: "/features/ghce.png",
+        links: [
+            {
+                label: "GitHub Campus Experts Profile",
+                url: "https://githubcampus.expert/DVidal1205/",
+            },
+        ],
+    },
+    {
         name: "MLH Developer Showcase - VisuWorld",
         description:
             "A showcase of our project, VisuWorld, by the Major League Hacking Developer Showcase Series. First place winner of the Google Gemini Challenge.",
