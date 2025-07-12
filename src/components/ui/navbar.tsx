@@ -1,4 +1,5 @@
 "use client";
+import FriendContent from "@/components/ui/friend-content";
 import {
     MobileNav,
     MobileNavHeader,
@@ -12,7 +13,9 @@ import {
 } from "@/components/ui/resizable-navbar";
 import TransitionLink from "@/components/ui/transition-link";
 import {
+    IconBrandDiscord,
     IconBrandGithub,
+    IconBrandInstagram,
     IconBrandLinkedin,
     IconFileText,
 } from "@tabler/icons-react";
@@ -47,7 +50,35 @@ export function NavbarHome() {
                 <NavBody>
                     <NavbarLogo />
                     <NavItems items={navItems} />
-                    <div className="flex items-center gap-2 lg:gap-2 xl:gap-4">
+                    <div className="flex items-center gap-2">
+                        <FriendContent>
+                            <Link href="https://www.instagram.com/dylanvidal1205/">
+                                <NavbarButton
+                                    as="button"
+                                    variant="secondary"
+                                    className="flex items-center px-2 py-2 lg:px-3 lg:py-3"
+                                >
+                                    <IconBrandInstagram
+                                        size={24}
+                                        className="lg:w-[30px] lg:h-[30px]"
+                                    />
+                                </NavbarButton>
+                            </Link>
+                        </FriendContent>
+                        <FriendContent>
+                            <Link href="http://discordapp.com/users/238081392481665025">
+                                <NavbarButton
+                                    as="button"
+                                    variant="secondary"
+                                    className="flex items-center px-2 py-2 lg:px-3 lg:py-3"
+                                >
+                                    <IconBrandDiscord
+                                        size={24}
+                                        className="lg:w-[30px] lg:h-[30px]"
+                                    />
+                                </NavbarButton>
+                            </Link>
+                        </FriendContent>
                         <Link href="https://github.com/DVidal1205">
                             <NavbarButton
                                 as="button"
@@ -72,6 +103,7 @@ export function NavbarHome() {
                                 />
                             </NavbarButton>
                         </Link>
+
                         <Link href="/resume.pdf">
                             <NavbarButton
                                 as="button"
@@ -112,7 +144,29 @@ export function NavbarHome() {
                                 <span className="block">{item.name}</span>
                             </TransitionLink>
                         ))}
-                        <div className="flex w-full gap-4">
+                        <div className="flex w-full gap-3 flex-wrap justify-center">
+                            <FriendContent>
+                                <Link href="https://www.instagram.com/dylanvidal1205/">
+                                    <NavbarButton
+                                        as="button"
+                                        variant="secondary"
+                                        className="flex items-center"
+                                    >
+                                        <IconBrandInstagram size={30} />
+                                    </NavbarButton>
+                                </Link>
+                            </FriendContent>
+                            <FriendContent>
+                                <Link href="http://discordapp.com/users/238081392481665025">
+                                    <NavbarButton
+                                        as="button"
+                                        variant="secondary"
+                                        className="flex items-center"
+                                    >
+                                        <IconBrandDiscord size={30} />
+                                    </NavbarButton>
+                                </Link>
+                            </FriendContent>
                             <Link href="https://github.com/DVidal1205">
                                 <NavbarButton
                                     as="button"
@@ -131,6 +185,7 @@ export function NavbarHome() {
                                     <IconBrandLinkedin size={30} />
                                 </NavbarButton>
                             </Link>
+
                             <Link href="/resume.pdf">
                                 <NavbarButton
                                     as="button"
