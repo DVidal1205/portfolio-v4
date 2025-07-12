@@ -52,7 +52,10 @@ export function NavbarHome() {
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-2">
                         <FriendContent>
-                            <Link href="https://www.instagram.com/dylanvidal1205/">
+                            <Link
+                                href="https://www.instagram.com/dylanvidal1205/"
+                                target="_blank"
+                            >
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -66,7 +69,10 @@ export function NavbarHome() {
                             </Link>
                         </FriendContent>
                         <FriendContent>
-                            <Link href="http://discordapp.com/users/238081392481665025">
+                            <Link
+                                href="http://discordapp.com/users/238081392481665025"
+                                target="_blank"
+                            >
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -79,7 +85,10 @@ export function NavbarHome() {
                                 </NavbarButton>
                             </Link>
                         </FriendContent>
-                        <Link href="https://github.com/DVidal1205">
+                        <Link
+                            href="https://github.com/DVidal1205"
+                            target="_blank"
+                        >
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -91,7 +100,10 @@ export function NavbarHome() {
                                 />
                             </NavbarButton>
                         </Link>
-                        <Link href="https://www.linkedin.com/in/dylanvidal1204/">
+                        <Link
+                            href="https://www.linkedin.com/in/dylanvidal1204/"
+                            target="_blank"
+                        >
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -104,7 +116,7 @@ export function NavbarHome() {
                             </NavbarButton>
                         </Link>
 
-                        <Link href="/resume.pdf">
+                        <Link href="/resume.pdf" target="_blank">
                             <NavbarButton
                                 as="button"
                                 variant="secondary"
@@ -146,7 +158,10 @@ export function NavbarHome() {
                         ))}
                         <div className="flex w-full gap-3 flex-wrap justify-center">
                             <FriendContent>
-                                <Link href="https://www.instagram.com/dylanvidal1205/">
+                                <Link
+                                    href="https://www.instagram.com/dylanvidal1205/"
+                                    target="_blank"
+                                >
                                     <NavbarButton
                                         as="button"
                                         variant="secondary"
@@ -157,7 +172,10 @@ export function NavbarHome() {
                                 </Link>
                             </FriendContent>
                             <FriendContent>
-                                <Link href="http://discordapp.com/users/238081392481665025">
+                                <Link
+                                    href="http://discordapp.com/users/238081392481665025"
+                                    target="_blank"
+                                >
                                     <NavbarButton
                                         as="button"
                                         variant="secondary"
@@ -167,7 +185,10 @@ export function NavbarHome() {
                                     </NavbarButton>
                                 </Link>
                             </FriendContent>
-                            <Link href="https://github.com/DVidal1205">
+                            <Link
+                                href="https://github.com/DVidal1205"
+                                target="_blank"
+                            >
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -176,7 +197,10 @@ export function NavbarHome() {
                                     <IconBrandGithub size={30} />
                                 </NavbarButton>
                             </Link>
-                            <Link href="https://www.linkedin.com/in/dylanvidal1204/">
+                            <Link
+                                href="https://www.linkedin.com/in/dylanvidal1204/"
+                                target="_blank"
+                            >
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
@@ -186,7 +210,7 @@ export function NavbarHome() {
                                 </NavbarButton>
                             </Link>
 
-                            <Link href="/resume.pdf">
+                            <Link href="/resume.pdf" target="_blank">
                                 <NavbarButton
                                     as="button"
                                     variant="secondary"
