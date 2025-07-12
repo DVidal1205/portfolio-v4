@@ -1,8 +1,10 @@
+import FriendDetector from "@/components/layout/friend-detector";
 import TransitionWrapper from "@/components/layout/transition-wrapper";
 import Footer from "@/components/ui/footer";
 import { NavbarHome } from "@/components/ui/navbar";
 import type { Metadata } from "next";
 import { Geist_Mono, Sora } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 
 const sora = Sora({
@@ -40,6 +42,9 @@ export default function RootLayout({
             <body
                 className={`${sora.variable} ${geistMono.variable} antialiased w-screen max-w-screen text-foreground overflow-x-hidden`}
             >
+                <Suspense fallback={null}>
+                    <FriendDetector />
+                </Suspense>
                 <NavbarHome />
                 <main>
                     <TransitionWrapper>{children}</TransitionWrapper>
