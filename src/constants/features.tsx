@@ -34,7 +34,7 @@ export const featuredItems: FeatureItem[] = [
         links: [
             {
                 label: "LinkedIn",
-                url: "https://www.linkedin.com/posts/dylanvidal1204_super-excited-to-share-that-i-will-be-speaking-activity-7349206575451942912-Br3B?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
+                url: "https://www.linkedin.com/posts/dylanvidal1205_super-excited-to-share-that-i-will-be-speaking-activity-7349206575451942912-vT6A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
             },
             {
                 label: "Slides (WIP)",

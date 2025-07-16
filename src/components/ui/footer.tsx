@@ -47,7 +47,7 @@ export default function Footer() {
                                 <IconBrandGithub size={30} />
                             </div>
                         </Link>
-                        <Link href="https://www.linkedin.com/in/dylanvidal1204/">
+                        <Link href="https://www.linkedin.com/in/dylanvidal1205/">
                             <div className="flex items-center p-2 rounded-md hover:bg-primary-800 transition-colors">
                                 <IconBrandLinkedin size={30} />
                             </div>
