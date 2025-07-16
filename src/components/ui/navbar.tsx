@@ -101,7 +101,7 @@ export function NavbarHome() {
                             </NavbarButton>
                         </Link>
                         <Link
-                            href="https://www.linkedin.com/in/dylanvidal1204/"
+                            href="https://www.linkedin.com/in/dylanvidal1205/"
                             target="_blank"
                         >
                             <NavbarButton
@@ -198,7 +198,7 @@ export function NavbarHome() {
                                 </NavbarButton>
                             </Link>
                             <Link
-                                href="https://www.linkedin.com/in/dylanvidal1204/"
+                                href="https://www.linkedin.com/in/dylanvidal1205/"
                                 target="_blank"
                             >
                                 <NavbarButton
