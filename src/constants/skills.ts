@@ -1,12 +1,18 @@
-export type SkillType = "programming" | "tools" | "webdev" | "aiml" | "appdev";
+export type SkillType =
+    | "programming"
+    | "tools"
+    | "appdev"
+    | "aiml"
+    | "leadership";
 
 export const skillColors: Record<SkillType, string> = {
     programming:
         "bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent",
     tools: "bg-gradient-to-r from-green-400 via-green-500 to-green-600 bg-clip-text text-transparent",
-    webdev: "bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent",
-    aiml: "bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent",
     appdev: "bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 bg-clip-text text-transparent",
+    aiml: "bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent",
+    leadership:
+        "bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent",
 };
 
 export interface Skill {
@@ -51,7 +57,7 @@ export const toolsSkills: string[] = [
     "Monorepo",
 ];
 
-export const webdevSkills: string[] = [
+export const appdevSkills: string[] = [
     "React",
     "Next.js",
     "HTML",
@@ -70,6 +76,12 @@ export const webdevSkills: string[] = [
     "CI/CD",
     "Express.js",
     "WebSockets",
+    "Qt",
+    "PySide6",
+    "Nextcord",
+    "Tkinter",
+    "Pygame",
+    "PyQt5",
 ];
 
 export const aimlSkills: string[] = [
@@ -90,13 +102,19 @@ export const aimlSkills: string[] = [
     "Agentic AI",
 ];
 
-export const appdevSkills: string[] = [
-    "Qt",
-    "PySide6",
-    "Nextcord",
-    "Tkinter",
-    "Pygame",
-    "PyQt5",
+export const leadershipSkills: string[] = [
+    "Team Management",
+    "Project Management",
+    "Product",
+    "Organizational Leadership",
+    "Fundraising",
+    "Marketing",
+    "Strategy",
+    "Non-Profit",
+    "Community Engagement",
+    "Branding",
+    "Public Speaking",
+    "Event Planning",
 ];
 
 export const allSkills: Skill[] = [
@@ -105,15 +123,18 @@ export const allSkills: Skill[] = [
         type: "programming" as const,
     })),
     ...toolsSkills.map((skill) => ({ text: skill, type: "tools" as const })),
-    ...webdevSkills.map((skill) => ({ text: skill, type: "webdev" as const })),
-    ...aimlSkills.map((skill) => ({ text: skill, type: "aiml" as const })),
     ...appdevSkills.map((skill) => ({ text: skill, type: "appdev" as const })),
+    ...aimlSkills.map((skill) => ({ text: skill, type: "aiml" as const })),
+    ...leadershipSkills.map((skill) => ({
+        text: skill,
+        type: "leadership" as const,
+    })),
 ];
 
 export const skillCategories = {
     programming: programmingSkills,
     tools: toolsSkills,
-    webdev: webdevSkills,
-    aiml: aimlSkills,
     appdev: appdevSkills,
+    aiml: aimlSkills,
+    leadership: leadershipSkills,
 } as const;
