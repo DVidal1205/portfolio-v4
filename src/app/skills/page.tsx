@@ -28,9 +28,9 @@ export default function SkillsPage() {
                         ● Tools & Technologies
                     </span>
                     <span
-                        className={`${skillColors.webdev} animate-fade-up delay-[1100ms]`}
+                        className={`${skillColors.appdev} animate-fade-up delay-[1100ms]`}
                     >
-                        ● Web Development
+                        ● App Development
                     </span>
                     <span
                         className={`${skillColors.aiml} animate-fade-up delay-[1300ms]`}
@@ -38,9 +38,9 @@ export default function SkillsPage() {
                         ● AI/ML & Data Science
                     </span>
                     <span
-                        className={`${skillColors.appdev} animate-fade-up delay-[1500ms]`}
+                        className={`${skillColors.leadership} animate-fade-up delay-[1500ms]`}
                     >
-                        ● App Development
+                        ● Leadership
                     </span>
                 </div>
             </div>

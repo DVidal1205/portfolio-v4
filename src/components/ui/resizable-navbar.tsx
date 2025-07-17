@@ -9,8 +9,12 @@ import {
     useMotionValueEvent,
     useScroll,
 } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 import React, { useRef, useState } from "react";
+
+// Import the project panel state
+import { useProjectPanelState } from "@/app/projects/page";
 
 interface NavbarProps {
     children: React.ReactNode;
@@ -61,11 +65,27 @@ export const Navbar = ({ children, className }: NavbarProps) => {
     const lastScrollY = useRef<number>(0);
     const [viewportHeight, setViewportHeight] = useState<number>(0);
 
+    const currentPath = usePathname();
+
+    // Get project panel state to force navbar up when panel is open
+    const isProjectPanelOpen = useProjectPanelState();
+
     React.useEffect(() => {
         if (typeof window !== "undefined") {
             setViewportHeight(window.innerHeight);
         }
     }, []);
+
+    // Force navbar up when project panel opens/closes
+    React.useEffect(() => {
+        if (isProjectPanelOpen) {
+            // Small delay to coordinate with panel animation
+            const timer = setTimeout(() => {
+                setShowNavbar(false);
+            }, 50);
+            return () => clearTimeout(timer);
+        }
+    }, [isProjectPanelOpen]);
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         if (latest > 100) {
@@ -73,15 +93,30 @@ export const Navbar = ({ children, className }: NavbarProps) => {
         } else {
             setVisible(false);
         }
-        // Only activate tween logic after 100vh (client only)
-        if (viewportHeight && latest > viewportHeight) {
+
+        // Force navbar up when project panel is open
+        if (isProjectPanelOpen) {
+            setShowNavbar(false);
+            return;
+        }
+
+        // Only activate tween logic after 100vh if on home page ("/"), otherwise always activate
+        if (currentPath === "/") {
+            if (viewportHeight && latest > viewportHeight) {
+                if (latest < lastScrollY.current) {
+                    setShowNavbar(true);
+                } else if (latest > lastScrollY.current) {
+                    setShowNavbar(false);
+                }
+            } else {
+                setShowNavbar(true);
+            }
+        } else {
             if (latest < lastScrollY.current) {
                 setShowNavbar(true);
             } else if (latest > lastScrollY.current) {
                 setShowNavbar(false);
             }
-        } else {
-            setShowNavbar(true);
         }
         lastScrollY.current = latest;
     });
@@ -94,7 +129,12 @@ export const Navbar = ({ children, className }: NavbarProps) => {
             animate={{
                 y: showNavbar ? 0 : -100,
                 opacity: showNavbar ? 1 : 0,
-                transition: { type: "tween", duration: 0.3 },
+                transition: {
+                    type: "spring",
+                    damping: 25,
+                    stiffness: 200,
+                    duration: isProjectPanelOpen ? 0.2 : 0.3,
+                },
             }}
         >
             {React.Children.map(children, (child) =>
