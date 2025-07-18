@@ -2,6 +2,7 @@ import FriendDetector from "@/components/layout/friend-detector";
 import TransitionWrapper from "@/components/layout/transition-wrapper";
 import Footer from "@/components/ui/footer";
 import { NavbarHome } from "@/components/ui/navbar";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist_Mono, Sora } from "next/font/google";
 import { Suspense } from "react";
@@ -50,6 +51,7 @@ export default function RootLayout({
                     <TransitionWrapper>{children}</TransitionWrapper>
                 </main>
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );
