@@ -5,38 +5,13 @@ import { Button } from "@/components/ui/button";
 import Carousel from "@/components/ui/carousel";
 import ProjectCard, { ProjectData } from "@/components/ui/project-card";
 import { projects } from "@/constants/projects";
+import { setProjectPanelOpen } from "@/hooks/usePanelOpen";
 import { AnimatePresence, motion } from "framer-motion";
 import { Briefcase, Calendar, ExternalLink, Github, X } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-// Global state for project panel
-let isProjectPanelOpen = false;
-const listeners: ((isOpen: boolean) => void)[] = [];
-
-export const setProjectPanelOpen = (isOpen: boolean) => {
-    isProjectPanelOpen = isOpen;
-    listeners.forEach((listener) => listener(isOpen));
-};
-
-export const useProjectPanelState = () => {
-    const [isOpen, setIsOpen] = useState(isProjectPanelOpen);
-
-    useEffect(() => {
-        const listener = (isOpen: boolean) => setIsOpen(isOpen);
-        listeners.push(listener);
-        return () => {
-            const index = listeners.indexOf(listener);
-            if (index > -1) {
-                listeners.splice(index, 1);
-            }
-        };
-    }, []);
-
-    return isOpen;
-};
-
-function ProjectsPageContent() {
+export default function ProjectsPage() {
     const [selectedProject, setSelectedProject] = useState<ProjectData | null>(
         null
     );
@@ -385,8 +360,4 @@ function ProjectsPageContent() {
             </AnimatePresence>
         </main>
     );
-}
-
-export default function ProjectsPage() {
-    return <ProjectsPageContent />;
 }
