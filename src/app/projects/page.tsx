@@ -40,7 +40,6 @@ function ProjectsPageContent() {
     const [selectedProject, setSelectedProject] = useState<ProjectData | null>(
         null
     );
-    const isPanelOpen = useProjectPanelState();
 
     const renderIcon = (iconType: "github" | "external") => {
         return iconType === "github" ? (
@@ -55,6 +54,20 @@ function ProjectsPageContent() {
     // Update panel state when selectedProject changes
     useEffect(() => {
         setProjectPanelOpen(selectedProject !== null);
+    }, [selectedProject]);
+
+    // Handle escape key to close panel
+    useEffect(() => {
+        const handleEscape = (e: KeyboardEvent) => {
+            if (e.key === "Escape" && selectedProject) {
+                closePanel();
+            }
+        };
+
+        if (selectedProject) {
+            document.addEventListener("keydown", handleEscape);
+            return () => document.removeEventListener("keydown", handleEscape);
+        }
     }, [selectedProject]);
 
     function parseHighlight(text: string, accentColor: string) {
@@ -126,8 +139,8 @@ function ProjectsPageContent() {
     }
 
     return (
-        <main className="min-h-screen bg-background pt-24 md:pt-36">
-            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+        <main className="min-h-screen bg-background pt-20 md:pt-24 pb-4 md:pb-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <div className="text-center mb-8">
                     <h1 className="text-2xl md:text-4xl font-bold gradient-text bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent mb-2 animate-fade-up delay-100">
                         Projects
@@ -141,12 +154,20 @@ function ProjectsPageContent() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
-                    {projects.map((project: ProjectData) => (
-                        <ProjectCard
+                    {projects.map((project: ProjectData, index: number) => (
+                        <div
                             key={project.id}
-                            project={project}
-                            onSelect={setSelectedProject}
-                        />
+                            className="w-full animate-fade-up animate-duration-[800ms] animate-delay-[100ms]"
+                            style={{
+                                animationDelay: `${150 * index + 400}ms`,
+                                transformOrigin: "center",
+                            }}
+                        >
+                            <ProjectCard
+                                project={project}
+                                onSelect={setSelectedProject}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
@@ -162,7 +183,7 @@ function ProjectsPageContent() {
                                 duration: 0.3,
                                 ease: "easeOut",
                             }}
-                            className="fixed inset-0 bg-black/50 z-[60] backdrop-blur-sm"
+                            className="fixed inset-0 bg-black/50 z-[350] backdrop-blur-sm"
                             onClick={closePanel}
                         />
 
@@ -176,7 +197,7 @@ function ProjectsPageContent() {
                                 stiffness: 200,
                                 mass: 0.8,
                             }}
-                            className="fixed top-0 right-0 h-full w-full max-w-full md:w-2/3 lg:w-1/2 xl:w-2/5 z-[70] overflow-y-auto"
+                            className="fixed top-0 right-0 h-full w-full max-w-full md:w-2/3 lg:w-1/2 xl:w-2/5 z-[400] overflow-y-auto"
                             style={{
                                 backgroundColor:
                                     selectedProject.colors.panelBackground,
@@ -184,11 +205,12 @@ function ProjectsPageContent() {
                             }}
                         >
                             <div
-                                className="sticky top-0 z-10 backdrop-blur-md border-b p-4 flex justify-between items-center"
+                                className="sticky top-0 z-50 backdrop-blur-md border-b p-4 flex justify-between items-center"
                                 style={{
                                     backgroundColor: `${selectedProject.colors.panelBackground}E6`, // 90% opacity
                                     borderBottomColor: `${selectedProject.colors.accent}33`,
                                 }}
+                                onClick={(e) => e.stopPropagation()}
                             >
                                 <div className="flex items-center gap-2 min-w-0 flex-1">
                                     <div
@@ -213,7 +235,15 @@ function ProjectsPageContent() {
                                 <Button
                                     variant="ghost"
                                     size="icon"
-                                    onClick={closePanel}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        closePanel();
+                                    }}
+                                    className="relative z-20 hover:bg-black/10 active:bg-black/20 transition-colors"
+                                    style={{
+                                        color: selectedProject.colors.panelText,
+                                    }}
                                 >
                                     <X
                                         className="h-5 w-5"
