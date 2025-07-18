@@ -50,13 +50,18 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
                 onClick={() => onSelect(project)}
                 className={cn(
                     "cursor-pointer rounded-xl overflow-hidden h-full flex flex-col transition-all duration-500 group relative",
-                    "border-2 hover:shadow-[0_10px_30px_rgba(122,92,255,0.25)] hover:border-primary-300 hover:-translate-y-1",
-                    hoveredId === project.id
-                        ? "border-primary/50"
-                        : "border-border"
+                    "border-2 hover:-translate-y-1"
                 )}
                 style={{
                     background: `linear-gradient(45deg, ${project.colors.cardBackground}22, transparent)`,
+                    boxShadow:
+                        hoveredId === project.id
+                            ? `0 10px 30px ${project.colors.accent}40`
+                            : undefined,
+                    borderColor:
+                        hoveredId === project.id
+                            ? `${project.colors.accent}80`
+                            : project.colors.accent + "22",
                 }}
             >
                 <div className="relative aspect-[16/9] overflow-hidden">
