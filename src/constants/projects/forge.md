@@ -19,10 +19,4 @@ Highlights:
 • **Self-rolled Authentication** with NextAuth.js
 • **Self-rolled S3 Storage** with Minio
 
-Technical stack:
-• **Drizzle ORM** for type-safe database operations
-• **PostgreSQL** for robust data storage
-• **Next.js** for full-stack application development
-• **Coolify** for containerized deployment and management
-
 Contributors: [Forge Repository](https://github.com/KnightHacks/forge/graphs/contributors)

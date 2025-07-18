@@ -1,3 +1,4 @@
+import { InfoDialog } from "@/components/ui/info-dialog";
 import { ProjectData } from "@/components/ui/project-card";
 import { readProjectMarkdown } from "@/lib/markdown";
 
@@ -13,6 +14,13 @@ export const projects: ProjectData[] = [
             {
                 src: "/projects/visuworld-ocean.png",
                 title: "VisuWorld Ocean Scene",
+                infoDialog: (
+                    <InfoDialog
+                        title="VisuWorld - Ocean Scene"
+                        text="This ocean scene was generated at about **4,000 GLSL Sample Embeddings** deep, and was our first Eureka moment. We honestly weren't quite sure if this would even work, but at this point, it was clear we had something real."
+                        image="/projects/visuworld-ocean.png"
+                    />
+                ),
             },
             {
                 src: "/projects/visuworld-scene.png",
@@ -345,6 +353,13 @@ export const projects: ProjectData[] = [
             {
                 src: "/projects/lootcode-dashboard.png",
                 title: "Lootcode World Map",
+                infoDialog: (
+                    <InfoDialog
+                        title="Lootcode - World Map"
+                        text="We aren't the best at drawing... but thankfully our friend Michael is! While not a direct participant, he helped us worldbuild and craft the mysterious world of Alogrion. Here is a link to his [digital portfolio](https://www.instagram.com/sirmikelart/)."
+                        image="/projects/lootcode-dashboard.png"
+                    />
+                ),
             },
             {
                 src: "/projects/lootcode-game.png",
@@ -353,6 +368,13 @@ export const projects: ProjectData[] = [
             {
                 src: "/projects/lootcode-map.png",
                 title: "Lootcode Chapter Map",
+                infoDialog: (
+                    <InfoDialog
+                        title="Lootcode - Chapter Map"
+                        text="Each node in the level maps are methodically placed to be silly DSA puns. If you want to see a good one, log in and look at the Forest (it definitely won't look like a Binary Tree...)"
+                        image="/projects/lootcode-map.png"
+                    />
+                ),
             },
             {
                 src: "/projects/lootcode-items.png",
@@ -365,6 +387,13 @@ export const projects: ProjectData[] = [
             {
                 src: "/projects/lootcode-leaderboard.png",
                 title: "Lootcode Leaderboard",
+                infoDialog: (
+                    <InfoDialog
+                        title="Lootcode - Leaderboard"
+                        text="Our first place winner is a member of the UCF Competitive Programming Team, and decided to speedrun Lootcode in under 11 hours. While we were worried we made it too easy, no one has come close to [Brian](https://www.linkedin.com/in/brian-barak/)'s crazy record time!"
+                        image="/projects/lootcode-leaderboard.png"
+                    />
+                ),
             },
             {
                 src: "/projects/lootcode-article.png",
@@ -581,7 +610,6 @@ export const projects: ProjectData[] = [
         },
         skills: ["Python", "Selenium", "Nextcord", "Raspbian"],
     },
-
     {
         id: "dndttk",
         title: "DNDTTK",

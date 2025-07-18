@@ -233,16 +233,18 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
                                         (img: {
                                             src: string;
                                             title: string;
+                                            infoDialog?: React.ReactNode;
                                         }) => ({
                                             src: img.src,
                                             title: img.title,
+                                            infoDialog: img.infoDialog,
                                         })
                                     )}
                                     accentColor={selectedProject.colors.accent}
                                 />
                             </div>
 
-                            <div className="flex flex-wrap gap-3 mb-6">
+                            <div className="flex flex-wrap gap-3 mb-6 text-sm md:text-base">
                                 <div
                                     className="flex items-center gap-1"
                                     style={{
@@ -254,7 +256,7 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
                                 </div>
                             </div>
 
-                            <div className="prose prose-sm max-w-none mb-8">
+                            <div className="prose prose-sm max-w-none text-sm md:text-base mb-8">
                                 <div
                                     style={{
                                         color: selectedProject.colors.panelText,
@@ -269,14 +271,14 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
 
                             <div className="mb-8">
                                 <h4
-                                    className="text-lg font-semibold mb-3"
+                                    className=" font-semibold mb-3  md:text-lg"
                                     style={{
                                         color: selectedProject.colors.panelText,
                                     }}
                                 >
                                     Skills & Technologies
                                 </h4>
-                                <div className="flex flex-wrap gap-2">
+                                <div className="flex flex-wrap gap-2 text-sm md:text-base">
                                     {selectedProject.skills.map(
                                         (skill: string) => (
                                             <Badge
@@ -299,7 +301,7 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
                             <div>
                                 {selectedProject.links && (
                                     <h4
-                                        className="text-lg font-semibold mb-3"
+                                        className="font-semibold mb-3 md:text-lg"
                                         style={{
                                             color: selectedProject.colors
                                                 .panelText,

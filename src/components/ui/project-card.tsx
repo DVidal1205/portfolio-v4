@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Calendar, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 
 export interface ProjectData {
     id: string;
@@ -16,6 +16,7 @@ export interface ProjectData {
     images: {
         src: string;
         title: string;
+        infoDialog?: ReactElement;
     }[];
     colors: {
         cardBackground: string; // Background color of the card bottom section
@@ -41,7 +42,6 @@ export default function ProjectCard({ project, projectId }: ProjectCardProps) {
     const [hoveredId, setHoveredId] = useState<string | null>(null);
 
     const handleCardClick = () => {
-        // Dispatch custom event for the panel to listen to
         const event = new CustomEvent("projectSelected", {
             detail: { projectId },
         });

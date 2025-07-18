@@ -98,7 +98,7 @@ export function InfoDialog({ title, text, image, className }: InfoDialogProps) {
                     />
                 </span>
             </DialogTrigger>
-            <DialogContent className="max-w-[95vw] min-w-0 p-6 sm:max-w-3xl sm:min-w-2xl sm:p-6">
+            <DialogContent className="max-w-[95vw] min-w-0 p-6 sm:max-w-3xl sm:min-w-2xl sm:p-6 z-[500]">
                 <DialogHeader>
                     <DialogTitle className="sm:text-2xl font-bold text-foreground mb-2">
                         {title}
