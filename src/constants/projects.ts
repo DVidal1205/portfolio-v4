@@ -400,24 +400,16 @@ export const projects: ProjectData[] = [
             "APA-Scan and AS-Quant are **critical bioinformatics pipelines** for RNA-Seq analysis in my research lab. These tools use **parallelized Python processing** to handle large-scale genetic datasets efficiently.\n\nResearch impact:\n• **Essential tools** for RNA-Seq analysis workflows\n• **Parallelized processing** for handling large genetic datasets\n• **Optimized performance** using Cython for computational bottlenecks\n• **Integration** with standard bioinformatics tools like Samtools\n\nTechnical achievements:\n• **Multiprocessing implementation** for parallel data analysis\n• **Pandas and NumPy** for efficient data manipulation\n• **Cython optimization** for performance-critical sections\n• **Samtools integration** for BAM file processing",
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "APA-Scan Pipeline Architecture",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "RNA-Seq Analysis Workflow",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Parallel Processing Dashboard",
+                src: "/projects/as-quant.png",
+                title: "Alternative Splicing",
             },
         ],
         colors: {
-            cardBackground: "#1A1A1A",
+            cardBackground: "#231d1f",
             cardText: "#FFFFFF",
-            panelBackground: "#000000",
+            panelBackground: "#231d1f",
             panelText: "#FFFFFF",
-            accent: "#CC0000",
+            accent: "#eabe17",
         },
         links: [
             {
@@ -429,8 +421,8 @@ export const projects: ProjectData[] = [
         skills: [
             "Python",
             "Multiprocessing",
-            "Pandas",
             "NumPy",
+            "Pandas",
             "Samtools",
             "Cython",
         ],
@@ -445,36 +437,53 @@ export const projects: ProjectData[] = [
             "Wildspace Web is an **AI-powered worldbuilding SaaS** designed specifically for dungeon masters and tabletop RPG enthusiasts. The platform creates **immersive and engaging worlds** using advanced AI technology.\n\nSaaS features:\n• **AI-powered world generation** with customizable parameters\n• **Comprehensive worldbuilding tools** for DMs\n• **Database-driven content** with Prisma ORM\n• **MySQL backend** for reliable data storage\n\nTechnical implementation:\n• **Type-safe APIs** with tRPC for reliable data communication\n• **Prisma ORM** for efficient database operations\n• **Next.js full-stack** for seamless development experience\n• **Tailwind CSS** for modern, responsive design",
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Wildspace Web Worldbuilding Interface",
+                src: "/projects/wildspace-web-landing.png",
+                title: "Wildspace Web Landing Page",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "AI World Generation",
+                src: "/projects/wildspace-web-character.png",
+                title: "Character Page",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Dungeon Master Dashboard",
+                src: "/projects/wildspace-web-creation.png",
+                title: "Creation Page",
+            },
+            {
+                src: "/projects/wildspace-web-pricing.png",
+                title: "Pricing Page",
             },
         ],
         colors: {
-            cardBackground: "#E8F5E9",
-            cardText: "#1B5E20",
-            panelBackground: "#F1F8E9",
-            panelText: "#1B5E20",
-            accent: "#4ECDC4",
+            cardBackground: "#111111",
+            cardText: "#FFFFFF",
+            panelBackground: "#111111",
+            panelText: "#FFFFFF",
+            accent: "#1bc07a",
         },
         links: [
             {
-                label: "Live Demo",
+                label: "Wildspace Web Repository",
+                url: "https://github.com/DVidal1205/wildspace-web",
+                icon: "github",
+            },
+            {
+                label: "Wildspace Web",
                 url: "https://www.projectwild.space",
+                icon: "external",
+            },
+            {
+                label: "YouTube Demo",
+                url: "https://www.youtube.com/watch?v=EGwAVXVsP9M",
                 icon: "external",
             },
         ],
         skills: [
+            "OpenAI",
+            "Stripe",
+            "Next.js",
             "TypeScript",
             "React",
-            "Next.js",
+            "Kinde Auth",
             "Tailwind",
             "tRPC",
             "Prisma",
@@ -491,33 +500,37 @@ export const projects: ProjectData[] = [
             "Project Wildspace was my **proof of concept** for AI-powered worldbuilding at Knight Hacks 2023. This desktop application demonstrated the potential of using **AI to generate immersive worlds** for tabletop roleplaying games.\n\nInnovation highlights:\n• **AI-powered world generation** using LangChain\n• **Desktop application** built with PySide and Qt\n• **Proof of concept** for AI in tabletop gaming\n• **Professional packaging** with Inno Installer\n\nTechnical achievements:\n• **LangChain integration** for AI-powered content generation\n• **Qt-based GUI** for cross-platform desktop application\n• **Professional installer** with Inno Setup for Windows deployment\n• **Modular architecture** for extensible world generation",
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
+                src: "/projects/wildspace-desktop-app.png",
                 title: "Project Wildspace Desktop Interface",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "AI World Generation",
+                src: "/projects/wildspace-desktop-landing.png",
+                title: "Download Landing Page",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Proof of Concept Features",
+                src: "/projects/wildspace-desktop-team.png",
+                title: "Project Wildspace Team",
+            },
+            {
+                src: "/projects/wildspace-desktop-pitch.png",
+                title: "Project Wildspace Pitch",
             },
         ],
         colors: {
-            cardBackground: "#1A1A1A",
-            cardText: "#FFFFFF",
-            panelBackground: "#0A0A0A",
-            panelText: "#FFFFFF",
-            accent: "#76B900",
+            cardBackground: "#282a36",
+            cardText: "#86e591",
+            panelBackground: "#282a36",
+            panelText: "#86e591",
+            accent: "#b89ce4",
         },
         links: [
             {
-                label: "GitHub",
+                label: "Project Wildspace Repository",
                 url: "https://github.com/DVidal1205/wildspace-desktop",
                 icon: "github",
             },
         ],
-        skills: ["Python", "PySide", "Qt", "LangChain", "Inno Installer"],
+        skills: ["PySide", "Qt", "LangChain", "Python", "Inno Installer"],
     },
     {
         id: "ucf-activities-bot",
