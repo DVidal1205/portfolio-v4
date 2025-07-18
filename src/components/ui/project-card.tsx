@@ -34,11 +34,26 @@ export interface ProjectData {
 
 interface ProjectCardProps {
     project: ProjectData;
-    onSelect: (project: ProjectData) => void;
+    projectId: string;
 }
 
-export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
+export default function ProjectCard({ project, projectId }: ProjectCardProps) {
     const [hoveredId, setHoveredId] = useState<string | null>(null);
+
+    const handleCardClick = () => {
+        // Dispatch custom event for the panel to listen to
+        const event = new CustomEvent("projectSelected", {
+            detail: { projectId },
+        });
+        window.dispatchEvent(event);
+    };
+
+    const handleKeyDown = (event: React.KeyboardEvent) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            handleCardClick();
+        }
+    };
 
     return (
         <div
@@ -47,10 +62,15 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
             onMouseLeave={() => setHoveredId(null)}
         >
             <div
-                onClick={() => onSelect(project)}
+                onClick={handleCardClick}
+                onKeyDown={handleKeyDown}
+                tabIndex={0}
+                role="button"
+                aria-label={`View details for ${project.title} project`}
                 className={cn(
                     "cursor-pointer rounded-xl overflow-hidden h-full flex flex-col transition-all duration-500 group relative",
-                    "border-2 hover:-translate-y-1"
+                    "border-2 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2",
+                    "focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
                 )}
                 style={{
                     background: `linear-gradient(45deg, ${project.colors.cardBackground}22, transparent)`,
@@ -101,6 +121,32 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
                         {project.description}
                     </p>
 
+                    {/* SEO: Hidden rich content for search engines */}
+                    <div className="sr-only">
+                        <h2>{project.title} - Detailed Information</h2>
+                        <p>{project.longDescription}</p>
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            {project.skills.map((skill) => (
+                                <li key={skill}>{skill}</li>
+                            ))}
+                        </ul>
+                        <h3>Project Links</h3>
+                        <ul>
+                            {project.links.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {link.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
                     <div className="mt-auto">
                         <div className="flex flex-wrap gap-1 mb-3">
                             {project.skills.slice(0, 3).map((skill) => (
@@ -135,11 +181,21 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
                         <Button
                             variant="ghost"
                             size="sm"
-                            className="w-full justify-between group bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent transition-all duration-300 hover:-translate-y-0.5"
+                            className="w-full justify-between group bg-transparent hover:bg-transparent focus:bg-transparent active:bg-transparent transition-all duration-300 hover:-translate-y-0.5 focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
                             style={{
                                 color: project.colors.accent,
                                 borderColor: `${project.colors.accent}33`,
                                 backgroundColor: "transparent",
+                            }}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                handleCardClick();
+                            }}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.stopPropagation();
+                                    handleCardClick();
+                                }
                             }}
                         >
                             <span>View Details</span>
