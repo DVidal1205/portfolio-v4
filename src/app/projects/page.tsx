@@ -81,9 +81,9 @@ export default function ProjectsPage() {
                             </ul>
                         </div>
                         <div>
-                            <h4>Project Links</h4>
+                            {project.links && <h4>Project Links</h4>}
                             <ul>
-                                {project.links.map(
+                                {project.links?.map(
                                     (
                                         link: {
                                             label: string;

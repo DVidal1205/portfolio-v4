@@ -80,7 +80,7 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
             // Split paragraph into lines on single newline
             const lines = para.split(/\n/);
             return (
-                <p key={pi} className={pi > 0 ? "mt-2" : undefined}>
+                <p key={pi} className={pi > 0 ? "mt-6" : undefined}>
                     {lines.map((line, li) => {
                         // Regex to match **highlight**, [text](url), or plain text
                         const regex = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^\)]+\))/g;
@@ -297,16 +297,20 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
                             </div>
 
                             <div>
-                                <h4
-                                    className="text-lg font-semibold mb-3"
-                                    style={{
-                                        color: selectedProject.colors.panelText,
-                                    }}
-                                >
-                                    Links
-                                </h4>
+                                {selectedProject.links && (
+                                    <h4
+                                        className="text-lg font-semibold mb-3"
+                                        style={{
+                                            color: selectedProject.colors
+                                                .panelText,
+                                        }}
+                                    >
+                                        Links
+                                    </h4>
+                                )}
+
                                 <div className="flex flex-wrap gap-2">
-                                    {selectedProject.links.map(
+                                    {selectedProject.links?.map(
                                         (
                                             link: {
                                                 label: string;

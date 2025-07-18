@@ -5,7 +5,7 @@ export const projects: ProjectData[] = [
     {
         id: "visuworld",
         title: "VisuWorld",
-        period: "Bitcamp 2025 Hackathon",
+        period: "Bitcamp XI Hackathon",
         description:
             "Winner of Best use of Google Gemini, VisuWorld is a unique approach to generative 3D scene creation using LLMs and Google Gemini.",
         longDescription: readProjectMarkdown("visuworld"),
@@ -93,7 +93,7 @@ export const projects: ProjectData[] = [
         title: "CodeJoust",
         period: "February 2025 - Present",
         description:
-            "CodeJoust is a platform made to help developers learn DSA by enabling them to practice with their friends in an engaging gamified way.",
+            "CodeJoust is a platform made to help developers learn DSA by enabling them to practice with their friends in an real-time combat game.",
         longDescription: readProjectMarkdown("codejoust"),
         images: [
             {
@@ -148,7 +148,7 @@ export const projects: ProjectData[] = [
         title: "AirJam",
         period: "HackUSF 2025 Hackathon",
         description:
-            "AirJam is an AI-powered music exploration tool that helps users make music, anytime, anywhere. Using Computer Vision, play up to 30 instruments with just your webcam.",
+            "AirJam is an AI-powered music exploration tool that helps users make music, anytime, anywhere. Play up to 30 instruments with just your webcam.",
         longDescription: readProjectMarkdown("airjam"),
         images: [
             {
@@ -205,7 +205,7 @@ export const projects: ProjectData[] = [
         title: "VoiceBoard",
         period: "Shell Hacks 2024 Hackathon",
         description:
-            "Winner of Google's Hack for Social Good Challenge at Shell Hacks 2024, Voiceboard AI makes whiteboarding accessible to all by using speech-to-diagram technology.",
+            "Winner of Google's Social Good Challenge, Voiceboard AI makes whiteboarding accessible to all by using speech-to-diagram technology.",
         longDescription: readProjectMarkdown("voiceboard"),
         images: [
             {
@@ -261,7 +261,7 @@ export const projects: ProjectData[] = [
         title: "Forge",
         period: "July 2024 - Present",
         description:
-            "Forge is the Knight Hacks monorepo, and contains all of our organizations core infrastructure. Built and maintained by myself and the Knight Hacks team.",
+            "Forge is the Knight Hacks monorepo, and contains all of our organizations core infrastructure. Built and maintained by the Knight Hacks team.",
         longDescription: readProjectMarkdown("forge"),
         images: [
             {
@@ -314,6 +314,11 @@ export const projects: ProjectData[] = [
                 url: "https://club.knighthacks.org",
                 icon: "external",
             },
+            {
+                label: "Discord",
+                url: "https://discord.knighthacks.org",
+                icon: "external",
+            },
         ],
         skills: [
             "Monorepo",
@@ -334,7 +339,7 @@ export const projects: ProjectData[] = [
         title: "Lootcode",
         period: "February 2024 - May 2024",
         description:
-            "My team's first place winning project of the Knight Hacks Projects Program, Lootcode aims to make learning Data Structures and Algorithms fun and engaging.",
+            "Winner of the Knight Hacks Projects Program, Lootcode aims to make learning DSA fun and engaging with a fantasy D&D-esque campaign.",
         longDescription: readProjectMarkdown("lootcode"),
         images: [
             {
@@ -415,7 +420,7 @@ export const projects: ProjectData[] = [
         title: "APA-Scan + AS-Quant",
         period: "March 2024 - August 2024",
         description:
-            "The APA-Scan and AS-Quant pipelines are critical for RNA-Seq analysis in my lab, and use parallelized Python to assist in the analysis of large genetic datasets.",
+            "Built for my research position, the APA-Scan and AS-Quant pipelines use parallelized Python to assist in the analysis of large genetic datasets.",
         longDescription: readProjectMarkdown("apa-scan"),
         images: [
             {
@@ -513,7 +518,7 @@ export const projects: ProjectData[] = [
         title: "Project Wildspace",
         period: "Knight Hacks VI Hackathon",
         description:
-            "My project for Knight Hacks 2023, Project Wildspace was a proof of concept for using AI to generate immersive and engaging worlds for tabletop roleplaying games.",
+            "Predecessor to Wildspace Web, built as a desktop app using PySide and Qt for the Knight Hacks VI Hackathon.",
         longDescription: readProjectMarkdown("project-wildspace"),
         images: [
             {
@@ -546,6 +551,11 @@ export const projects: ProjectData[] = [
                 url: "https://github.com/DVidal1205/wildspace-desktop",
                 icon: "github",
             },
+            {
+                label: "Project Wildspace DevPost",
+                url: "https://devpost.com/software/project-wildspace",
+                icon: "external",
+            },
         ],
         skills: ["PySide", "Qt", "LangChain", "Python", "Inno Installer"],
     },
@@ -554,7 +564,7 @@ export const projects: ProjectData[] = [
         title: "UCF Activities Bot",
         period: "November 2023 - December 2023",
         description:
-            "A Discord bot that scrapes the UCF Events Calendar and posts events every morning. Accessible to over 1000 UCF students across various servers.",
+            "A Discord bot that scrapes the UCF Events Calendar and posts events every morning. Viewed daily by over 3000 UCF students.",
         longDescription: readProjectMarkdown("ucf-activities-bot"),
         images: [
             {
@@ -569,50 +579,15 @@ export const projects: ProjectData[] = [
             panelText: "#FFFFFF",
             accent: "#5663f0",
         },
-        links: [
-            {
-                label: "Knight Hacks",
-                url: "https://2024.knighthacks.org",
-                icon: "external",
-            },
-        ],
         skills: ["Python", "Selenium", "Nextcord", "Raspbian"],
     },
-    {
-        id: "wordle-desktop",
-        title: "Wordle Desktop",
-        period: "September 2023 - September 2023",
-        description:
-            "A clone of the popular game Wordle, and my first desktop application built with Qt in C++. Built after being dissatisfied with being confined to the CLI.",
-        longDescription: readProjectMarkdown("wordle-desktop"),
-        images: [
-            {
-                src: "/projects/wordle.png",
-                title: "Wordle Desktop Game Interface",
-            },
-        ],
-        colors: {
-            cardBackground: "#fbfffe",
-            cardText: "#7a7b7f",
-            panelBackground: "#fbfffe",
-            panelText: "#7a7b7f",
-            accent: "#6aab65",
-        },
-        links: [
-            {
-                label: "Wordle Desktop Repository",
-                url: "https://github.com/DVidal1205/misc/tree/main/WordleQt",
-                icon: "github",
-            },
-        ],
-        skills: ["C++", "Qt", "Qt Creator"],
-    },
+
     {
         id: "dndttk",
         title: "DNDTTK",
-        period: "September 2023 - September 2023",
+        period: "Shell Hacks 2023 Hackathon",
         description:
-            "One of my very first GUI-based projects, DNDTTK is a Dungeons and Dragons themed character generator built with Tkinter, built for ShellHacks 2023.",
+            "My first Hackathon project, DNDTTK is a Dungeons and Dragons themed character generator built with Tkinter.",
         longDescription: readProjectMarkdown("dndttk"),
         images: [
             {
@@ -635,10 +610,39 @@ export const projects: ProjectData[] = [
             },
             {
                 label: "DNDTTK DevPost",
-                url: "https://devpost.com/software/dungeons-and-dragons-npc-generator?_gl=1*1dje4jn*_gcl_au*MTIwNTY3OTk3OS4xNzUxOTk3MjQ4*_ga*Mjk3MDEyMTUzLjE3NTE5OTcyNDg.*_ga_0YHJK3Y10M*czE3NTI4NjUxODYkbzUkZzEkdDE3NTI4NjU0MTAkajM4JGwwJGgw",
+                url: "https://devpost.com/software/dungeons-and-dragons-npc-generator",
                 icon: "external",
             },
         ],
         skills: ["Python", "Tkinter"],
+    },
+    {
+        id: "wordle-desktop",
+        title: "Wordle Desktop",
+        period: "August 2023 - September 2023",
+        description:
+            "A clone of the popular game Wordle, and my first desktop application built with Qt in C++. Built for my first GUI-based project.",
+        longDescription: readProjectMarkdown("wordle-desktop"),
+        images: [
+            {
+                src: "/projects/wordle.png",
+                title: "Wordle Desktop Game Interface",
+            },
+        ],
+        colors: {
+            cardBackground: "#fbfffe",
+            cardText: "#7a7b7f",
+            panelBackground: "#fbfffe",
+            panelText: "#7a7b7f",
+            accent: "#6aab65",
+        },
+        links: [
+            {
+                label: "Wordle Desktop Repository",
+                url: "https://github.com/DVidal1205/misc/tree/main/WordleQt",
+                icon: "github",
+            },
+        ],
+        skills: ["C++", "Qt", "Qt Creator"],
     },
 ];

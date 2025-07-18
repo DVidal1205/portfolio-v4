@@ -1,13 +1,7 @@
-Wordle Desktop was my **first desktop application** built with Qt in C++. Created after being dissatisfied with CLI-only development, this project marked my transition to **GUI-based application development**.
+Wordle Desktop was my **very first desktop application** built with **Qt** in **C++**. About a year into software development, I was getting annoyed with being confined to the CLI - it felt mundane, and unimpressive. Since I took a few C++ classes, I reached for a C++ native GUI framework, and Qt was the first one I found.
 
-Development journey:
+Highlights:
 • **First GUI application** using Qt and C++
 • **Wordle game clone** with complete game mechanics
 • **Qt Creator IDE** for modern C++ development
 • **Cross-platform compatibility** through Qt framework
-
-Technical learning:
-• **Qt framework** for cross-platform GUI development
-• **C++ programming** for desktop application development
-• **Qt Creator IDE** for efficient development workflow
-• **Event-driven programming** for interactive user interfaces

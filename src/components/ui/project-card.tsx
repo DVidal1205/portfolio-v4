@@ -24,7 +24,7 @@ export interface ProjectData {
         panelText: string; // Text color within the sliding panel
         accent: string; // Accent color for buttons, badges, icons
     };
-    links: {
+    links?: {
         label: string;
         url: string;
         icon: "github" | "external";
@@ -133,7 +133,7 @@ export default function ProjectCard({ project, projectId }: ProjectCardProps) {
                         </ul>
                         <h3>Project Links</h3>
                         <ul>
-                            {project.links.map((link, index) => (
+                            {project.links?.map((link, index) => (
                                 <li key={index}>
                                     <a
                                         href={link.url}

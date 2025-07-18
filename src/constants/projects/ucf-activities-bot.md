@@ -1,13 +1,7 @@
-The UCF Activities Bot is a **Discord automation tool** that keeps the UCF community informed about campus events. The bot scrapes the UCF Events Calendar daily and posts upcoming events to multiple Discord servers.
+The UCF Activities Bot was a **Discord automation tool** I built my freshman year at UCF after being frustrated with the lack of a centralized way to find events on campus. I wanted to make a bot that would scrape the UCF Events Calendar daily and post upcoming events to multiple Discord servers. Over a month, I learned **web-scraping with Selenium**, how to develop a **Discord bot** with **Nextcord**, and how to deploy a **Raspberry Pi** to keep the bot running 24/7. Scattered among a handful of different servers, these alerts are now a staple for many students to find events on campus.
 
-Community impact:
-• **1000+ UCF students** served across various Discord servers
+Highlights:
+• **3000+ UCF students** served across various Discord servers
 • **Daily event updates** automatically posted every morning
 • **Web scraping automation** using Selenium for reliable data collection
 • **Raspberry Pi deployment** for 24/7 operation
-
-Technical implementation:
-• **Selenium web scraping** for reliable event data collection
-• **Nextcord integration** for Discord bot functionality
-• **Raspbian deployment** on Raspberry Pi for continuous operation
-• **Automated scheduling** for daily event posts
