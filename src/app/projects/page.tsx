@@ -7,7 +7,7 @@ import ProjectCard, { ProjectData } from "@/components/ui/project-card";
 import { projects } from "@/constants/projects";
 import { setProjectPanelOpen } from "@/hooks/usePanelOpen";
 import { AnimatePresence, motion } from "framer-motion";
-import { Briefcase, Calendar, ExternalLink, Github, X } from "lucide-react";
+import { Calendar, Code, ExternalLink, Github, X } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -195,7 +195,7 @@ export default function ProjectsPage() {
                                                 selectedProject.colors.accent,
                                         }}
                                     >
-                                        <Briefcase className="h-4 w-4 text-white" />
+                                        <Code className="h-4 w-4 text-white" />
                                     </div>
                                     <h3
                                         className="text-xl font-bold truncate"
@@ -249,6 +249,9 @@ export default function ProjectsPage() {
                                                 title: img.title,
                                             })
                                         )}
+                                        accentColor={
+                                            selectedProject.colors.accent
+                                        }
                                     />
                                 </div>
 
