@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 
 // Global state for project panel
 let isProjectPanelOpen = false;
@@ -10,9 +10,9 @@ export const setProjectPanelOpen = (isOpen: boolean) => {
 };
 
 export const useProjectPanelState = () => {
-    const [isOpen, setIsOpen] = useState(isProjectPanelOpen);
+    const [isOpen, setIsOpen] = React.useState(isProjectPanelOpen);
 
-    useEffect(() => {
+    React.useEffect(() => {
         const listener = (isOpen: boolean) => setIsOpen(isOpen);
         listeners.push(listener);
         return () => {

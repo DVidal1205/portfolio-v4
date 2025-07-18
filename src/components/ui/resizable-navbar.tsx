@@ -14,8 +14,6 @@ import { usePathname } from "next/navigation";
 
 import React, { useRef, useState } from "react";
 
-// Import the project panel state
-
 interface NavbarProps {
     children: React.ReactNode;
     className?: string;
