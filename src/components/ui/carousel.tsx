@@ -208,10 +208,10 @@ export default function Carousel({
             }}
         >
             <div
-                className="relative w-full h-full flex flex-col items-center justify-center"
+                className="relative w-full h-full flex flex-col items-center justify-center gap-4"
                 aria-labelledby={`carousel-heading-${id}`}
             >
-                <div className="relative w-full aspect-video mb-4 overflow-hidden">
+                <div className="relative w-full aspect-video overflow-hidden">
                     <ul
                         className="absolute flex transition-transform duration-1000 ease-in-out h-full"
                         style={{
@@ -236,25 +236,29 @@ export default function Carousel({
                     </ul>
                 </div>
 
-                <div className="flex justify-center items-center">
-                    <CarouselControl
-                        type="previous"
-                        title="Go to previous slide"
-                        handleClick={handlePreviousClick}
-                        accentColor={accentColor}
-                    />
-                    <span
-                        className="mx-2 text-sm select-none"
-                        style={{ color: accentColor || "white" }}
-                    >
-                        {current + 1} / {slides.length}
-                    </span>
-                    <CarouselControl
-                        type="next"
-                        title="Go to next slide"
-                        handleClick={handleNextClick}
-                        accentColor={accentColor}
-                    />
+                <div className="flex justify-center items-center h-8">
+                    {slides.length > 1 && (
+                        <>
+                            <CarouselControl
+                                type="previous"
+                                title="Go to previous slide"
+                                handleClick={handlePreviousClick}
+                                accentColor={accentColor}
+                            />
+                            <span
+                                className="mx-2 text-sm select-none"
+                                style={{ color: accentColor || "white" }}
+                            >
+                                {current + 1} / {slides.length}
+                            </span>
+                            <CarouselControl
+                                type="next"
+                                title="Go to next slide"
+                                handleClick={handleNextClick}
+                                accentColor={accentColor}
+                            />
+                        </>
+                    )}
                 </div>
             </div>
         </div>

@@ -49,6 +49,11 @@ export const projects: ProjectData[] = [
                 icon: "github",
             },
             {
+                label: "VisuWorld DevPost",
+                url: "https://devpost.com/software/visuworld",
+                icon: "external",
+            },
+            {
                 label: "VisuWorld Create Page",
                 url: "https://create.visuworld.tech",
                 icon: "external",
@@ -173,6 +178,11 @@ export const projects: ProjectData[] = [
                 icon: "github",
             },
             {
+                label: "AirJam DevPost",
+                url: "https://devpost.com/software/airjam",
+                icon: "external",
+            },
+            {
                 label: "AirJam Studio",
                 url: "https://play.airjam.studio",
                 icon: "external",
@@ -223,6 +233,11 @@ export const projects: ProjectData[] = [
                 label: "VoiceBoard Repository",
                 url: "https://github.com/DVidal1205/voiceboard",
                 icon: "github",
+            },
+            {
+                label: "VoiceBoard DevPost",
+                url: "https://devpost.com/software/voiceboard-83vn1e",
+                icon: "external",
             },
             {
                 label: "VoiceBoard Draw Page",
@@ -365,6 +380,11 @@ export const projects: ProjectData[] = [
                 icon: "github",
             },
             {
+                label: "Lootcode DevPost",
+                url: "https://devpost.com/software/lootcode",
+                icon: "external",
+            },
+            {
                 label: "Lootcode Website",
                 url: "https://www.lootcode.dev",
                 icon: "external",
@@ -372,6 +392,11 @@ export const projects: ProjectData[] = [
             {
                 label: "Linux FOSS Article",
                 url: "/features/lootcode.pdf",
+                icon: "external",
+            },
+            {
+                label: "Lootcode YouTube Demo",
+                url: "https://youtu.be/gGHtOWyCOKs?si=wygJs686zVxPF2_p",
                 icon: "external",
             },
         ],
@@ -533,24 +558,16 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("ucf-activities-bot"),
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "UCF Activities Bot Discord Interface",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Event Scraping Dashboard",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Raspberry Pi Deployment",
+                src: "/projects/event-bot.png",
+                title: "UCF Activities Bot Discord",
             },
         ],
         colors: {
-            cardBackground: "#F8F9FA",
-            cardText: "#202124",
-            panelBackground: "#FFFFFF",
-            panelText: "#202124",
-            accent: "#4285F4",
+            cardBackground: "#1b1a1e",
+            cardText: "#FFFFFF",
+            panelBackground: "#1b1a1e",
+            panelText: "#FFFFFF",
+            accent: "#5663f0",
         },
         links: [
             {
@@ -570,26 +587,24 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("wordle-desktop"),
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
+                src: "/projects/wordle.png",
                 title: "Wordle Desktop Game Interface",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Qt GUI Implementation",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Game Mechanics",
             },
         ],
         colors: {
-            cardBackground: "#E7F3FF",
-            cardText: "#1C2B33",
-            panelBackground: "#F0F8FF",
-            panelText: "#1C2B33",
-            accent: "#1877F2",
+            cardBackground: "#fbfffe",
+            cardText: "#7a7b7f",
+            panelBackground: "#fbfffe",
+            panelText: "#7a7b7f",
+            accent: "#6aab65",
         },
-        links: [],
+        links: [
+            {
+                label: "Wordle Desktop Repository",
+                url: "https://github.com/DVidal1205/misc/tree/main/WordleQt",
+                icon: "github",
+            },
+        ],
         skills: ["C++", "Qt", "Qt Creator"],
     },
     {
@@ -601,29 +616,26 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("dndttk"),
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
+                src: "/projects/dndttk.png",
                 title: "DNDTTK Character Generator",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Tkinter GUI Interface",
-            },
-            {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "D&D Character Creation",
             },
         ],
         colors: {
-            cardBackground: "#F5F5F7",
-            cardText: "#1D1D1F",
-            panelBackground: "#FBFBFD",
-            panelText: "#1D1D1F",
-            accent: "#007AFF",
+            cardBackground: "#e0c99a",
+            cardText: "#FFFFFF",
+            panelBackground: "#e0c99a",
+            panelText: "#FFFFFF",
+            accent: "#e16e22",
         },
         links: [
             {
-                label: "Devpost",
-                url: "https://devpost.com/software/dungeons-and-dragons-npc-generator",
+                label: "DNDTTK Repository",
+                url: "https://github.com/DVidal1205/misc/tree/main/DNDTTK",
+                icon: "github",
+            },
+            {
+                label: "DNDTTK DevPost",
+                url: "https://devpost.com/software/dungeons-and-dragons-npc-generator?_gl=1*1dje4jn*_gcl_au*MTIwNTY3OTk3OS4xNzUxOTk3MjQ4*_ga*Mjk3MDEyMTUzLjE3NTE5OTcyNDg.*_ga_0YHJK3Y10M*czE3NTI4NjUxODYkbzUkZzEkdDE3NTI4NjU0MTAkajM4JGwwJGgw",
                 icon: "external",
             },
         ],
