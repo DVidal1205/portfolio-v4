@@ -3,11 +3,9 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 import { Calendar, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export interface ProjectData {
     id: string;
@@ -39,77 +37,11 @@ interface ProjectCardProps {
     onSelect: (project: ProjectData) => void;
 }
 
-function parseHighlight(text: string) {
-    // Convert all literal \n to real newlines, then remove any remaining stray backslashes
-    let normalized = text.replace(/\\n/g, "\n");
-    normalized = normalized.replace(/\\/g, "");
-    // Split into paragraphs on double newlines
-    const paragraphs = normalized.split(/\n\n/);
-    return paragraphs.map((para, pi) => {
-        // Split paragraph into lines on single newline
-        const lines = para.split(/\n/);
-        return (
-            <p key={pi} className={pi > 0 ? "mt-2" : undefined}>
-                {lines.map((line, li) => {
-                    // Regex to match **highlight**, [text](url), or plain text
-                    const regex = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^\)]+\))/g;
-                    const parts = line.split(regex);
-                    return (
-                        <React.Fragment key={li}>
-                            {parts.map((part, i) => {
-                                if (/^\*\*[^*]+\*\*$/.test(part)) {
-                                    // Highlight
-                                    return (
-                                        <span
-                                            key={i}
-                                            className="bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent font-semibold"
-                                        >
-                                            {part.replace(/\*\*/g, "")}
-                                        </span>
-                                    );
-                                } else if (
-                                    /^\[[^\]]+\]\([^\)]+\)$/.test(part)
-                                ) {
-                                    // Markdown link
-                                    const match = part.match(
-                                        /^\[([^\]]+)\]\(([^\)]+)\)$/
-                                    );
-                                    if (match) {
-                                        const [, text, url] = match;
-                                        return (
-                                            <Link
-                                                key={i}
-                                                href={url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-primary-500 font-semibold underline hover:text-primary-400 transition-colors"
-                                            >
-                                                {text}
-                                            </Link>
-                                        );
-                                    }
-                                }
-                                // Plain text
-                                return part;
-                            })}
-                            {li < lines.length - 1 && <br />}
-                        </React.Fragment>
-                    );
-                })}
-            </p>
-        );
-    });
-}
-
 export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
     const [hoveredId, setHoveredId] = useState<string | null>(null);
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+        <div
             className="h-full"
             onMouseEnter={() => setHoveredId(project.id)}
             onMouseLeave={() => setHoveredId(null)}
@@ -216,6 +148,6 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }

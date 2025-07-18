@@ -7,7 +7,7 @@ import { workshopItems } from "@/constants/workshops";
 export default function FeaturesPage() {
     return (
         <>
-            <div className="min-h-screen pb-4 md:pb-10 pt-24 md:pt-36">
+            <div className="min-h-screen pb-4 md:pb-10 pt-20 md:pt-24">
                 <div className="text-center mb-8">
                     <h1 className="text-2xl md:text-4xl font-bold gradient-text bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent mb-2 animate-fade-up delay-100">
                         As Seen On...
