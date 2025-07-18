@@ -8,45 +8,70 @@ export const projects: ProjectData[] = [
         description:
             "Winner of Best use of Google Gemini, VisuWorld is a unique approach to generative 3D scene creation using LLMs and Google Gemini.",
         longDescription:
-            "**Winner of Best use of Google Gemini** at Bitcamp 2025 Hackathon! VisuWorld is a **revolutionary approach to generative 3D scene creation** using Large Language Models and Google Gemini.\n\nKey achievements:\n• **Hackathon winner** - Best use of Google Gemini\n• **Invited to pitch** to Google Deepmind team\n• **Innovative 3D generation** using LLMs and computer vision\n• **Real-time scene creation** with natural language input\n\nTechnical highlights:\n• **Advanced GLSL shaders** for real-time 3D rendering\n• **WebGL integration** with Three.js for browser-based 3D\n• **RAG implementation** for enhanced context understanding\n• **Gemini API integration** for intelligent scene generation\n\nBuilt with: [React](https://reactjs.org), [Three.js](https://threejs.org), [WebGL](https://webgl.org), [Google Gemini](https://ai.google.dev/gemini)",
+            "**Winner of Best use of Google Gemini** at Bitcamp 2025 Hackathon! VisuWorld is a **revolutionary approach to generative 3D scene creation** using Large Language Models and Google Gemini.\n\nKey achievements:\n• **Hackathon winner** - Best use of Google Gemini\n• **Invited to pitch** to Google Deepmind team\n• **Innovative 3D generation** using LLMs and a **GLSL** parsing layer.\n• **Real-time scene creation** with natural language input\n\nTechnical highlights:\n• **Advanced GLSL shaders** for real-time 3D rendering\n• **WebGL integration** with Three.js for browser-based 3D\n• **RAG implementation** for enhanced context understanding\n• **Gemini API integration** for intelligent scene generation\n",
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
+                src: "/projects/visuworld-ocean.png",
+                title: "VisuWorld Ocean Scene",
+            },
+            {
+                src: "/projects/visuworld-scene.png",
                 title: "VisuWorld 3D Scene Generation",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Gemini Integration Interface",
+                src: "/projects/visuworld-gallery.png",
+                title: "VisuWorld Public Gallery",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Real-time 3D Rendering",
+                src: "/projects/visuworld-mandelbulb.png",
+                title: "VisuWorld Mandelbulb Scene",
+            },
+            {
+                src: "/projects/visuworld-raymarching.png",
+                title: "VisuWorld Raymarching Scene",
             },
         ],
         colors: {
-            cardBackground: "#1A1A1A",
+            cardBackground: "#1e2939",
             cardText: "#FFFFFF",
-            panelBackground: "#0A0A0A",
+            panelBackground: "#1e2939",
             panelText: "#FFFFFF",
-            accent: "#76B900",
+            accent: "#e42fc4",
         },
         links: [
             {
-                label: "Live Demo",
+                label: "VisuWorld Create Page",
                 url: "https://create.visuworld.tech",
+                icon: "external",
+            },
+            {
+                label: "VisuWorld Gallery Page",
+                url: "https://create.visuworld.tech/gallery",
+                icon: "external",
+            },
+            {
+                label: "MLH Developer Showcase (LinkedIn)",
+                url: "https://www.linkedin.com/posts/major-league-hacking_builtwithmlh-hackathonlife-geminiai-activity-7340441943610376193-8Ml0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
+                icon: "external",
+            },
+            {
+                label: "MLH Developer Showcase (Instagram)",
+                url: "https://www.instagram.com/reel/DK-KKhqygNS/",
                 icon: "external",
             },
         ],
         skills: [
+            "Gemini",
+            "RAG",
+            "GLSL",
             "React",
+            "Next.js",
             "Tailwind",
             "TypeScript",
+            "FastAPI",
             "MongoDB",
-            "Gemini",
-            "GLSL",
             "WebGL",
             "Three.js",
-            "RAG",
         ],
     },
     {
@@ -59,24 +84,32 @@ export const projects: ProjectData[] = [
             "CodeJoust is a **gamified DSA learning platform** designed to make competitive programming engaging and social. The platform enables developers to practice Data Structures and Algorithms with friends in an interactive, competitive environment.\n\nKey features:\n• **Real-time multiplayer** coding challenges with friends\n• **Gamified learning** with points, leaderboards, and achievements\n• **LeetCode integration** for comprehensive problem sets\n• **WebSocket communication** for live competition updates\n\nTechnical implementation:\n• **Real-time synchronization** using WebSockets\n• **JWT authentication** for secure user sessions\n• **Email notifications** via Resend for challenge invites\n• **MongoDB** for flexible data storage and user progress tracking\n\nBuilt with: [React](https://reactjs.org), [Express](https://expressjs.com), [MongoDB](https://mongodb.com), [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)",
         images: [
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "CodeJoust Multiplayer Interface",
+                src: "/projects/codejoust-match.png",
+                title: "CodeJoust Game Match",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "Real-time Competition Dashboard",
+                src: "/projects/codejoust-account.png",
+                title: "CodeJoust Elo Dashboard",
             },
             {
-                src: "/placeholder.svg?height=400&width=600",
-                title: "LeetCode Integration",
+                src: "/projects/codejoust-problems.png",
+                title: "CodeJoust Problem Page",
+            },
+            {
+                src: "/projects/codejoust-lobby.png",
+                title: "CodeJoust Lobby",
+            },
+            {
+                src: "/projects/codejoust-leaderboard.png",
+                title: "CodeJoust Leaderboard",
             },
         ],
         colors: {
-            cardBackground: "#F8F9FA",
-            cardText: "#202124",
-            panelBackground: "#FFFFFF",
-            panelText: "#202124",
-            accent: "#4285F4",
+            cardBackground: "#000000",
+            cardText: "#FFFFFF",
+            panelBackground: "#000000",
+            panelText: "#FFFFFF",
+            accent: "#74d4f4",
         },
         links: [
             {

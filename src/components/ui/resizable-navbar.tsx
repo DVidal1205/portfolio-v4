@@ -1,6 +1,7 @@
 "use client";
 import TransitionLink from "@/components/ui/transition-link";
 import { useFriend } from "@/hooks/useFriend";
+import { useProjectPanelState } from "@/hooks/usePanelOpen";
 import { cn } from "@/lib/utils";
 import { IconBrain, IconMenu2, IconX } from "@tabler/icons-react";
 import {
@@ -14,7 +15,6 @@ import { usePathname } from "next/navigation";
 import React, { useRef, useState } from "react";
 
 // Import the project panel state
-import { useProjectPanelState } from "@/app/projects/page";
 
 interface NavbarProps {
     children: React.ReactNode;
