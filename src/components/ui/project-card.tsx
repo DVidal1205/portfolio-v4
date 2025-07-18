@@ -60,27 +60,22 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
                 }}
             >
                 <div className="relative aspect-[16/9] overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10 opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-primary-500/10 mix-blend-overlay z-10" />
-
                     <Image
                         src={project.images[0]?.src || "/placeholder.svg"}
                         alt={project.title}
                         fill
-                        className="object-cover transition-all duration-700 ease-out group-hover:scale-105 group-hover:brightness-110"
+                        className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         placeholder="blur"
                         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNWExOWU1IiBvcGFjaXR5PSIwLjIiLz48L3N2Zz4="
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-bg-purple-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20" />
-
-                    <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-bg-purple-900/90 to-transparent z-20" />
-
-                    <div className="absolute bottom-0 left-0 right-0 p-3 z-30">
-                        <h3 className="text-lg font-semibold text-white transition-all duration-500 group-hover:from-primary-400 group-hover:to-secondary-400">
-                            {project.title}
-                        </h3>
+                    <div className="absolute bottom-0 left-0 right-0 p-1 z-30">
+                        <div className="bg-black/40 backdrop-blur-sm rounded-lg p-2 inline-block">
+                            <h3 className="text-base font-semibold text-white drop-shadow-lg transition-all duration-500 group-hover:from-primary-400 group-hover:to-secondary-400">
+                                {project.title}
+                            </h3>
+                        </div>
                     </div>
                 </div>
 

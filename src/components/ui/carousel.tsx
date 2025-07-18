@@ -82,7 +82,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             }}
         >
             <div
-                className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-lg overflow-hidden transition-all duration-150 ease-out"
+                className="absolute top-0 left-0 w-full h-full rounded-lg overflow-hidden transition-all duration-150 ease-out"
                 style={{
                     transform:
                         current === index
@@ -98,7 +98,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     </div>
                 )}
                 <Image
-                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-600 ease-in-out"
+                    className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out hover:scale-105"
                     style={{
                         opacity: current === index ? 1 : 0.7,
                     }}
@@ -110,14 +110,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     width={1000}
                     height={1000}
                 />
-                {current === index && (
-                    <div className="absolute inset-0 bg-black/20 transition-all duration-1000" />
-                )}
 
                 {/* Title positioned at bottom right */}
                 {current === index && (
-                    <div className="absolute bottom-2 md:bottom-12 right-1 p-2 bg-black/70 rounded backdrop-blur-sm">
-                        <h2 className="text-xs md:text-sm font-semibold text-white">
+                    <div className="absolute bottom-2 md:bottom-12 right-1 p-2 bg-black/50 rounded backdrop-blur-sm">
+                        <h2 className="text-xs md:text-sm font-semibold text-white drop-shadow-lg">
                             {title}
                         </h2>
                     </div>
@@ -137,16 +134,26 @@ const CarouselControl = ({
     type,
     title,
     handleClick,
-}: CarouselControlProps) => {
+    accentColor,
+}: CarouselControlProps & { accentColor?: string }) => {
     return (
         <button
-            className={`w-8 h-8 flex items-center mx-1 justify-center bg-white/20 hover:bg-white/30 border border-white/30 rounded-full focus:border-white/50 focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+            className={`w-8 h-8 flex items-center mx-1 justify-center border rounded-full focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
                 type === "previous" ? "rotate-180" : ""
             }`}
+            style={{
+                backgroundColor: accentColor
+                    ? `${accentColor}20`
+                    : "rgba(255, 255, 255, 0.2)",
+                borderColor: accentColor
+                    ? `${accentColor}40`
+                    : "rgba(255, 255, 255, 0.3)",
+                color: accentColor ? accentColor : "white",
+            }}
             title={title}
             onClick={handleClick}
         >
-            <IconArrowNarrowRight className="text-white w-4 h-4" />
+            <IconArrowNarrowRight className="w-4 h-4" />
         </button>
     );
 };
@@ -155,12 +162,14 @@ interface CarouselProps {
     slides: SlideData[];
     current?: number;
     setCurrent?: (idx: number) => void;
+    accentColor?: string;
 }
 
 export default function Carousel({
     slides,
     current: controlledCurrent,
     setCurrent: controlledSetCurrent,
+    accentColor,
 }: CarouselProps) {
     const [uncontrolledCurrent, setUncontrolledCurrent] = useState(0);
     const isControlled =
@@ -190,7 +199,14 @@ export default function Carousel({
     const slideWidth = 100 / slides.length;
 
     return (
-        <div className="relative overflow-hidden w-full h-full">
+        <div
+            className="relative overflow-hidden w-full h-full rounded-xl"
+            style={{
+                boxShadow: accentColor
+                    ? `0 0 20px ${accentColor}40`
+                    : undefined,
+            }}
+        >
             <div
                 className="relative w-full h-full flex flex-col items-center justify-center"
                 aria-labelledby={`carousel-heading-${id}`}
@@ -225,14 +241,19 @@ export default function Carousel({
                         type="previous"
                         title="Go to previous slide"
                         handleClick={handlePreviousClick}
+                        accentColor={accentColor}
                     />
-                    <span className="mx-2 text-white text-sm select-none">
+                    <span
+                        className="mx-2 text-sm select-none"
+                        style={{ color: accentColor || "white" }}
+                    >
                         {current + 1} / {slides.length}
                     </span>
                     <CarouselControl
                         type="next"
                         title="Go to next slide"
                         handleClick={handleNextClick}
+                        accentColor={accentColor}
                     />
                 </div>
             </div>
