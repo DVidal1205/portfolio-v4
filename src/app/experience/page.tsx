@@ -1,9 +1,32 @@
 import { Metadata } from "next";
 
+const pageTitle = "Experience | Dylan Vidal";
+const pageDescription =
+    "A timeline of my professional experiences in a variety of different environments - startups, non-profits, large tech companies, and even university positions.";
+
 export const metadata: Metadata = {
-    title: "Experience | Dylan Vidal",
-    description:
-        "A timeline of my professional experiences in a variety of different environments - startups, non-profits, large tech companies, and university positions.",
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+        title: pageTitle,
+        description: pageDescription,
+        url: "https://dvidal.dev/experience",
+        type: "website",
+        images: [
+            {
+                url: "/banner.png",
+                width: 1200,
+                height: 630,
+                alt: pageTitle,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: pageTitle,
+        description: pageDescription,
+        images: ["/banner.png"],
+    },
 };
 
 import ExperienceCard from "@/components/ui/experience-card";

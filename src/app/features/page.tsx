@@ -1,9 +1,32 @@
 import { Metadata } from "next";
 
+const pageTitle = "Features | Dylan Vidal";
+const pageDescription =
+    "A showcase of my key features and involvements, from Hackathons to workshops and community leadership.";
+
 export const metadata: Metadata = {
-    title: "Features | Dylan Vidal",
-    description:
-        "A showcase of my key features and involvements, from Hackathons to workshops and community leadership.",
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+        title: pageTitle,
+        description: pageDescription,
+        url: "https://dvidal.dev/features",
+        type: "website",
+        images: [
+            {
+                url: "/banner.png",
+                width: 1200,
+                height: 630,
+                alt: pageTitle,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: pageTitle,
+        description: pageDescription,
+        images: ["/banner.png"],
+    },
 };
 
 import FeatureCard from "@/components/ui/feature-card";

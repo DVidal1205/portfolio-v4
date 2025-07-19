@@ -1,9 +1,34 @@
+"use client";
+
 import { Metadata } from "next";
 
+const pageTitle = "Projects | Dylan Vidal";
+const pageDescription =
+    "A collection of my software engineering projects, showcasing my skills in AI, web development, and more.";
+
 export const metadata: Metadata = {
-    title: "Projects | Dylan Vidal",
-    description:
-        "A collection of my software engineering projects, showcasing my skills in AI, web development, and more.",
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+        title: pageTitle,
+        description: pageDescription,
+        url: "https://dvidal.dev/projects",
+        type: "website",
+        images: [
+            {
+                url: "/banner.png",
+                width: 1200,
+                height: 630,
+                alt: pageTitle,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: pageTitle,
+        description: pageDescription,
+        images: ["/banner.png"],
+    },
 };
 
 import ProjectCard, { type ProjectData } from "@/components/ui/project-card";

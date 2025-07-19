@@ -3,10 +3,33 @@ import { allSkills, shuffleArray, skillColors } from "@/constants/skills";
 import { Metadata } from "next";
 import { useMemo } from "react";
 
+const pageTitle = "Skills | Dylan Vidal";
+const pageDescription =
+    "An overview of my technical skills, including programming languages, frameworks, and tools.";
+
 export const metadata: Metadata = {
-    title: "Skills | Dylan Vidal",
-    description:
-        "An overview of my technical skills, including programming languages, frameworks, and tools.",
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+        title: pageTitle,
+        description: pageDescription,
+        url: "https://dvidal.dev/skills",
+        type: "website",
+        images: [
+            {
+                url: "/banner.png",
+                width: 1200,
+                height: 630,
+                alt: pageTitle,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: pageTitle,
+        description: pageDescription,
+        images: ["/banner.png"],
+    },
 };
 
 export default function SkillsPage() {
