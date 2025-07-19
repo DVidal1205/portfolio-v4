@@ -113,7 +113,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
                 {/* Title positioned at bottom right */}
                 {current === index && (
-                    <div className="absolute bottom-2 md:bottom-12 right-1 p-2 bg-black/50 rounded backdrop-blur-sm">
+                    <div className="absolute bottom-18 right-1 p-2 bg-black/50 rounded backdrop-blur-sm">
                         <h2 className="text-xs md:text-sm font-semibold text-white drop-shadow-lg">
                             {title}
                         </h2>

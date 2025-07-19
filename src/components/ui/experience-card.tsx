@@ -98,7 +98,6 @@ interface ExperienceCardProps {
 export default function ExperienceCard({
     experience,
     index,
-    isLast,
 }: ExperienceCardProps) {
     const [isExpanded, setIsExpanded] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
@@ -127,21 +126,18 @@ export default function ExperienceCard({
             className="relative mb-8 md:mb-12"
         >
             {/* Timeline Line - Hidden on mobile, visible on md+ */}
-            {/* Removed static line */}
-            {!isLast && (
-                <motion.div
-                    className="hidden md:block absolute left-6 top-16 w-0.5 bg-border"
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={
-                        isInView
-                            ? { height: "100%", opacity: 1 }
-                            : { height: 0, opacity: 0 }
-                    }
-                    transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
-                    style={{ willChange: "height, opacity" }}
-                />
-            )}
-
+            {/* Always render line to extend timeline */}
+            <motion.div
+                className="hidden md:block absolute left-6 top-16 w-0.5 bg-border"
+                initial={{ height: 0, opacity: 0 }}
+                animate={
+                    isInView
+                        ? { height: "100%", opacity: 1 }
+                        : { height: 0, opacity: 0 }
+                }
+                transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
+                style={{ willChange: "height, opacity" }}
+            />
             {/* Timeline Node - Hidden on mobile, visible on md+ */}
             <motion.div
                 className="hidden md:block absolute left-4 top-8 w-5 h-5 rounded-full border-4 border-background z-10 shadow-lg"
@@ -150,7 +146,6 @@ export default function ExperienceCard({
                 animate={isInView ? { scale: 1 } : { scale: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 + 0.5 }}
             />
-
             {/* Content Card */}
             <div className="md:ml-16">
                 <motion.div
@@ -470,10 +465,11 @@ export default function ExperienceCard({
                                     duration: 0.4,
                                     ease: "easeInOut",
                                 }}
-                                className="overflow-hidden"
+                                className="overflow-hidden relative z-20"
                                 style={{
                                     backgroundColor:
                                         experience.colors.cardColor,
+                                    marginTop: "-1px",
                                 }}
                             >
                                 <div
