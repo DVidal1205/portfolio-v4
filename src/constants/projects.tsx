@@ -490,6 +490,11 @@ export const projects: ProjectData[] = [
                 url: "https://github.com/compbiolabucf",
                 icon: "github",
             },
+            {
+                label: "UCF Computational Bioinformatics Lab",
+                url: "http://genome.ucf.edu/cbb/new_look/pages/software.php",
+                icon: "external",
+            },
         ],
         skills: [
             "Python",

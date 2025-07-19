@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
     return (
         <div className="min-h-screen bg-background pt-20 md:pt-24 pb-4 md:pb-20">
-            <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
                 <div className="text-center mb-8">
                     <h1 className="text-2xl md:text-4xl font-bold gradient-text bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent mb-2 animate-fade-up delay-100">
                         Projects

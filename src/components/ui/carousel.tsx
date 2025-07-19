@@ -208,10 +208,10 @@ export default function Carousel({
             }}
         >
             <div
-                className="relative w-full h-full flex flex-col items-center justify-center gap-4"
+                className="relative w-full h-full flex flex-col items-center justify-center"
                 aria-labelledby={`carousel-heading-${id}`}
             >
-                <div className="relative w-full aspect-video overflow-hidden">
+                <div className="relative w-full aspect-video overflow-hidden mb-6">
                     <ul
                         className="absolute flex transition-transform duration-1000 ease-in-out h-full"
                         style={{
@@ -236,7 +236,7 @@ export default function Carousel({
                     </ul>
                 </div>
 
-                <div className="flex justify-center items-center h-8">
+                <div className="flex justify-center items-center h-8 relative z-30 mt-4">
                     {slides.length > 1 && (
                         <>
                             <CarouselControl

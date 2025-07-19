@@ -23,7 +23,7 @@ export default function WorkshopCard({
     return (
         <Card
             className={cn(
-                "w-full max-w-7xl mx-auto overflow-hidden transition-all duration-500 border border-primary-200 bg-bg-purple-50 dark:bg-bg-purple-900",
+                "w-full max-w-6xl mx-auto overflow-hidden transition-all duration-500 border border-primary-200 bg-bg-purple-50 dark:bg-bg-purple-900",
                 "hover:shadow-[0_10px_30px_rgba(122,92,255,0.25)] hover:border-primary-300 hover:cursor-pointer",
                 "animate-fade-up animate-duration-[800ms] animate-delay-[100ms]",
                 "group relative"
