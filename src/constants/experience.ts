@@ -386,7 +386,7 @@ export const experiences: TimelineExperience[] = [
         description:
             "As an Honors Orientation Ambassador, I was responsible for advising incoming Honors Computer Science students during registration. Meeting with my students over the course of a month, I gave professional assistance with registering for classes, and provided guidance on how to navigate computer science at UCF.",
         responsibilities: [
-            "Served as an academic advisor of 20 Computer Science students for course registration at UCF.",
+            "Served as an academic advisor of **20** Computer Science students for course registration at UCF.",
             "Worked our in-person orientation sessions, where students were introduced to the Honors College.",
             "Provided a friendly face and positive attitude to help incoming students feel welcome at the Burnett Honors College.",
         ],
