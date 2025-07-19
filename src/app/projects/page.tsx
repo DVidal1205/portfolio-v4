@@ -1,25 +1,14 @@
-import ProjectCard, { ProjectData } from "@/components/ui/project-card";
-import ProjectPanel from "@/components/ui/project-panel";
-import { projects } from "@/constants/projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Projects - Dylan Vidal | Software Engineer Portfolio",
+    title: "Projects | Dylan Vidal",
     description:
-        "Explore my software engineering projects including VisuWorld, CodeJoust, AirJam, VoiceBoard, and more. Full-stack development, AI/ML, and innovative solutions.",
-    keywords: [
-        "software engineer projects",
-        "full-stack development",
-        "AI projects",
-        "machine learning",
-        "web development",
-        "React projects",
-        "TypeScript",
-        "Python development",
-        "hackathon projects",
-        "portfolio",
-    ],
+        "A collection of my software engineering projects, showcasing my skills in AI, web development, and more.",
 };
+
+import ProjectCard, { type ProjectData } from "@/components/ui/project-card";
+import ProjectPanel from "@/components/ui/project-panel";
+import { projects } from "@/constants/projects";
 
 export default function ProjectsPage() {
     return (

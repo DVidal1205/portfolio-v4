@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Features | Dylan Vidal",
+    description:
+        "A showcase of my key features and involvements, from Hackathons to workshops and community leadership.",
+};
+
 import FeatureCard from "@/components/ui/feature-card";
 import { LinkPreview } from "@/components/ui/link-preview";
 import WorkshopCard from "@/components/ui/workshop-card";

@@ -19,15 +19,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Dylan Vidal",
-    description: "Dylan Vidal's Personal Website",
+    title: "About | Dylan Vidal",
+    description:
+        "Software Engineer at NVIDIA, President of Knight Hacks, and 3rd Year Computer Science Student at UCF. Passionate about helping others break into tech, and building impactful performant software.",
+    keywords: [
+        "Dylan Vidal",
+        "Software Engineer",
+        "NVIDIA",
+        "Knight Hacks",
+        "AI Research",
+        "Computer Vision",
+        "Machine Learning",
+        "UCF",
+        "University of Central Florida",
+        "GitHub Campus Expert",
+        "Python",
+        "React",
+        "Next.js",
+        "Computer Science",
+    ],
+    authors: [{ name: "Dylan Vidal" }],
+    creator: "Dylan Vidal",
+    publisher: "Dylan Vidal",
+
     icons: {
         icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/favicon.ico",
     },
     openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "https://dvidal.dev",
+        title: "About | Dylan Vidal",
+        description:
+            "Software Engineer at NVIDIA, President of Knight Hacks, and 3rd Year Computer Science Student at UCF. Passionate about helping others break into tech, and building impactful performant software.",
+        siteName: "Dylan Vidal",
         images: [
             {
-                url: "/headshot.png",
+                url: "/banner.png",
+                alt: "Dylan Vidal - Software Engineer",
             },
         ],
     },

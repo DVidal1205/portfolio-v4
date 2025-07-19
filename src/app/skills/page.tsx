@@ -1,6 +1,13 @@
 import FallingText from "@/components/ui/falling-text";
 import { allSkills, shuffleArray, skillColors } from "@/constants/skills";
+import { Metadata } from "next";
 import { useMemo } from "react";
+
+export const metadata: Metadata = {
+    title: "Skills | Dylan Vidal",
+    description:
+        "An overview of my technical skills, including programming languages, frameworks, and tools.",
+};
 
 export default function SkillsPage() {
     // Randomize skills order for better color distribution

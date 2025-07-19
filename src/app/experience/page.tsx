@@ -1,4 +1,10 @@
-"use client";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Experience | Dylan Vidal",
+    description:
+        "A timeline of my professional experiences in a variety of different environments - startups, non-profits, large tech companies, and university positions.",
+};
 
 import ExperienceCard from "@/components/ui/experience-card";
 import { experiences } from "@/constants/experience";
@@ -15,7 +21,7 @@ export default function ExperiencePage() {
                         A comprehensive overview of my professional journey from
                         start to finish. I&apos;ve gotten to work in a variety
                         of different environments - startups, non-profits, large
-                        companies, and even university positions!
+                        tech companies, and even university positions!
                     </p>
                 </div>
                 <div className="relative">
