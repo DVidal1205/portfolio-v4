@@ -12,6 +12,10 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("visuworld"),
         images: [
             {
+                src: "/projects/visuworld.gif",
+                title: "VisuWorld",
+            },
+            {
                 src: "/projects/visuworld-ocean.png",
                 title: "VisuWorld Ocean Scene",
                 infoDialog: (
@@ -105,6 +109,10 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("codejoust"),
         images: [
             {
+                src: "/projects/codejoust.gif",
+                title: "CodeJoust",
+            },
+            {
                 src: "/projects/codejoust-match.png",
                 title: "CodeJoust Game Match",
             },
@@ -160,8 +168,8 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("airjam"),
         images: [
             {
-                src: "/projects/airjam-play.png",
-                title: "AirJam Music Interface",
+                src: "/projects/airjam.gif",
+                title: "AirJam",
             },
             {
                 src: "/projects/airjam-team.png",
@@ -173,9 +181,9 @@ export const projects: ProjectData[] = [
             },
         ],
         colors: {
-            cardBackground: "#203434",
+            cardBackground: "#192e2e",
             cardText: "#FFFFFF",
-            panelBackground: "#203434",
+            panelBackground: "#192e2e",
             panelText: "#FFFFFF",
             accent: "#476ab4",
         },
@@ -216,6 +224,10 @@ export const projects: ProjectData[] = [
             "Winner of Google's Social Good Challenge, Voiceboard AI makes whiteboarding accessible to all by using speech-to-diagram technology.",
         longDescription: readProjectMarkdown("voiceboard"),
         images: [
+            {
+                src: "/projects/voiceboard.gif",
+                title: "VoiceBoard",
+            },
             {
                 src: "/projects/voiceboard-dashboard.png",
                 title: "VoiceBoard Dashboard Interface",
@@ -272,6 +284,10 @@ export const projects: ProjectData[] = [
             "Forge is the Knight Hacks monorepo, and contains all of our organizations core infrastructure. Built and maintained by the Knight Hacks team.",
         longDescription: readProjectMarkdown("forge"),
         images: [
+            {
+                src: "/projects/forge.gif",
+                title: "Forge",
+            },
             {
                 src: "/projects/forge-blade.png",
                 title: "Knight Hacks Monolith Application",
@@ -350,6 +366,10 @@ export const projects: ProjectData[] = [
             "Winner of the Knight Hacks Projects Program, Lootcode aims to make learning DSA fun and engaging with a fantasy D&D-esque campaign.",
         longDescription: readProjectMarkdown("lootcode"),
         images: [
+            {
+                src: "/projects/lootcode.gif",
+                title: "Lootcode",
+            },
             {
                 src: "/projects/lootcode-dashboard.png",
                 title: "Lootcode World Map",
@@ -489,9 +509,10 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("wildspace-web"),
         images: [
             {
-                src: "/projects/wildspace-web-landing.png",
-                title: "Wildspace Web Landing Page",
+                src: "/projects/wildspace-web.gif",
+                title: "Wildspace Web",
             },
+
             {
                 src: "/projects/wildspace-web-character.png",
                 title: "Character Page",
@@ -619,15 +640,15 @@ export const projects: ProjectData[] = [
         longDescription: readProjectMarkdown("dndttk"),
         images: [
             {
-                src: "/projects/dndttk.png",
+                src: "/projects/dnd-ttk.png",
                 title: "DNDTTK Character Generator",
             },
         ],
         colors: {
-            cardBackground: "#e0c99a",
-            cardText: "#FFFFFF",
-            panelBackground: "#e0c99a",
-            panelText: "#FFFFFF",
+            cardBackground: "#e1d8b9",
+            cardText: "#3a3a3a",
+            panelBackground: "#e1d8b9",
+            panelText: "#3a3a3a",
             accent: "#e16e22",
         },
         links: [

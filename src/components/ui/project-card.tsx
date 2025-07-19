@@ -85,15 +85,23 @@ export default function ProjectCard({ project, projectId }: ProjectCardProps) {
                 }}
             >
                 <div className="relative aspect-[16/9] overflow-hidden">
-                    <Image
-                        src={project.images[0]?.src || "/placeholder.svg"}
-                        alt={project.title}
-                        fill
-                        className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        placeholder="blur"
-                        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNWExOWU1IiBvcGFjaXR5PSIwLjIiLz48L3N2Zz4="
-                    />
+                    {project.images[0]?.src?.endsWith(".gif") ? (
+                        <img
+                            src={project.images[0].src}
+                            alt={project.title}
+                            className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                        />
+                    ) : (
+                        <Image
+                            src={project.images[0]?.src || "/placeholder.svg"}
+                            alt={project.title}
+                            fill
+                            className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNWExOWU1IiBvcGFjaXR5PSIwLjIiLz48L3N2Zz4="
+                        />
+                    )}
 
                     <div className="absolute bottom-0 left-0 right-0 p-1 z-30">
                         <div className="bg-black/40 backdrop-blur-sm rounded-lg p-2 inline-block">
