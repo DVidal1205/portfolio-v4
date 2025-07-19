@@ -105,7 +105,7 @@ export default function ProjectCard({ project, projectId }: ProjectCardProps) {
 
                     <div className="absolute bottom-0 left-0 right-0 p-1 z-30">
                         <div className="bg-black/40 backdrop-blur-sm rounded-lg p-2 inline-block">
-                            <h3 className="text-base font-semibold text-white drop-shadow-lg transition-all duration-500 group-hover:from-primary-400 group-hover:to-secondary-400">
+                            <h3 className="text-sm md:text-base font-semibold text-white drop-shadow-lg transition-all duration-500 group-hover:from-primary-400 group-hover:to-secondary-400">
                                 {project.title}
                             </h3>
                         </div>
@@ -125,7 +125,7 @@ export default function ProjectCard({ project, projectId }: ProjectCardProps) {
                     >
                         <Calendar className="h-3 w-3" /> {project.period}
                     </div>
-                    <p className="text-sm mb-4 line-clamp-3">
+                    <p className="text-xs md:text-sm mb-4 line-clamp-3">
                         {project.description}
                     </p>
 
