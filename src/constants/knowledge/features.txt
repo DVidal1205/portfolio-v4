@@ -1,0 +1,86 @@
+# Workshops
+
+## Full Stack 101 (April 2025)
+**Description:** The second workshop in a 2 part series on building web pages and web apps. This workshop goes beyond static pages and introduces functional databases, APIs, and other key concepts via the T3 Stack.
+**Concepts Covered:** React, TypeScript, Tailwind CSS, Next.js, tRPC, PostgreSQL, Drizzle, SSR, CSR, Authentication, SEO
+**Additional Info:** Just like Web Development 101, this workshop also started as a private workshop for my mentees. The only difference is this workshop went over a TON of refinements and optimizations before ever making it to Knight Hacks, but I am happy with where it ended up.
+
+---
+
+## Web Development 101 (March 2025)
+**Description:** The first workshop in a 2 part series on building web pages and web apps. This workshop covers the basics of static site technologies and how to use them to build a simple web page like a personal portfolio.
+**Concepts Covered:** HTML, JSX, CSS, JavaScript, TypeScript, React, Tailwind CSS, Next.js, SEO, SSR, CSR, Vercel, Hosting
+**Additional Info:** I actually started this workshop as a private workshop for my mentees from Knight Hacks. Before proceeding to part 2 (Full Stack 101), I actually required them to make a static portfolio as an entry ticket. I was SUPER impressed with what they came up with!
+
+---
+
+## Self-Hosting Crash Course (February 2025)
+**Description:** A workshop diving into the complexities of website hosting and the spectrum of bare-metal to full-cloud solutions. Demonstrates how to self-host a website on a VPS using Coolify.
+**Concepts Covered:** VPS, Coolify, Docker, Nginx, SSL, DNS, SSH, Cloudflare, Cloud Providers
+**Additional Info:** I actually demo'd using Coolify live by deploying a full-stack web app to a OVH VPS - database, frontend, and backend included. This workshop was with a bit of a smaller crowd due to weather, but was a lot of fun and super chill.
+
+---
+
+## UCF Spring 2025 Foundation Exam Review (Part 3) (January 2025)
+**Description:** A workshop diving into Data Structures and Algorithms of the UCF Spring 2025 Foundation Exam. Covers the basics of the exam, the topics covered, and the format of the exam.
+**Concepts Covered:** Data Structures, Algorithms, Time Complexity, Space Complexity, C Programming, Bitwise Operations, Heaps, Tries, Hashing, Hash Tables, Permutations
+
+---
+
+## UCF Spring 2025 Foundation Exam Review (Part 2) (January 2025)
+**Description:** A workshop diving into Data Structures and Algorithms of the UCF Spring 2025 Foundation Exam. Covers the basics of the exam, the topics covered, and the format of the exam.
+**Concepts Covered:** Data Structures, Algorithms, Time Complexity, Space Complexity, C Programming, Recurrence Relations, Algorithm Analysis, Sorting Algorithms, Binary Search, Binary Search Trees, AVL Trees
+
+---
+
+## Intro to Databases (December 2024)
+**Description:** A workshop diving into the basics of databases and how to use them to store and retrieve data. Covers the basics of SQL and NoSQL databases, their tradeoffs, and basic CRUD operations.
+**Concepts Covered:** SQL, NoSQL, SQL vs NoSQL, CRUD, ERDs, Horizontal Scaling, Vertical Scaling, Sharding, Relational vs Non-Relational, ACID
+
+---
+
+## Intro GUI Applications (September 2024)
+**Description:** A workshop diving into the basics of GUI applications and how to use them to build a simple GUI application. Covers the basics of layouts, widgets, and event handling with Tkinter.
+**Concepts Covered:** Tkinter, Layouts, Widgets, Event Handling, Event Driven Programming
+
+---
+
+## UCF Summer 2024 Foundation Exam Review (Part 1) (May 2024)
+**Description:** My very first workshop! A workshop diving into Data Structures and Algorithms of the UCF Summer 2024 Foundation Exam. Covers the basics of the exam, the topics covered, and the format of the exam.
+**Concepts Covered:** Data Structures, Algorithms, Time Complexity, Space Complexity, C Programming, Dynamic Memory Allocation, Pointers, Linked Lists, Stacks, Queues, Recursion
+**Additional Info:** I was actually taking the Foundation Exam myself when teaching this workshop! Luckily I got an 89% (passing score), otherwise I probably would have been giving some pretty bad advice.
+
+---
+
+# Features
+
+## HackCon 2025 Speaker Series (August 2025)
+**Description:** Every August, Major League Hacking hosts HackCon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.
+
+---
+
+## GitHub Campus Expert (June 2025)
+**Description:** I am a member of the GitHub Campus Experts program, which helps me empower my local community at UCF to break into the tech industry with the support of GitHub.
+
+---
+
+## MLH Developer Showcase - VisuWorld (June 2025)
+**Description:** A showcase of our project, VisuWorld, by the Major League Hacking Developer Showcase Series. First place winner of the Google Gemini Challenge.
+**Additional Info:** Believe it or not, this project was also selected to be pitched to Google Deepmind for their weekly internal Friday Developer Showcase series. During the pitch, we live generated a Mountain Scene using Gemini 2.5 Pro - the Demo Gods were clearly in our favor!
+
+---
+
+## Knight Hacks Wins Multiple Awards from Bitcamp XI (May 2025)
+**Description:** An interview with myself and our Treasurer, Adrian, about Knight Hacks' grand success at Bitcamp XI. Despite only being 3% of the hacker population, we took home ~23% of the prizes.
+
+---
+
+## What is Knight Hacks? (October 2024)
+**Description:** Appeared in a short video about the Knight Hacks Hackathon, filmed during Knight Hacks VII. Aimed to introduce our Hackathon to the Florida hackers community.
+**Additional Info:** This video was filmed on-site over the entire course of the Knight Hacks VII Hackathon by Ryan Baez. It was a super fun experience and I am grateful for being able to spread the mission of Knight Hacks!
+
+---
+
+## Linux Magazine for Open Source Software - Lootcode (August 2024)
+**Description:** A short article with myself and the team behind Lootcode, a gamified DSA learning platform and 1st place winner of Knight Hacks Projects Showcase. Written by Nate Drake.
+**Additional Info:** This article was written by Nate Drake, a contributor to the Linux FOSS Magazine. We gained recognition for this article after our app soared in popularity overnight - with over 55,000 page views in the first month, and a total of 550 hours of play time to date. 

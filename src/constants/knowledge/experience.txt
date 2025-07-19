@@ -1,0 +1,124 @@
+## President at Knight Hacks (February 2024 - Present)
+
+**Location:** Orlando, FL
+
+**Description:** Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as President to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.
+
+**Responsibilities:**
+- Manage a non-profit organization with **500+** members and **$40,000** dollars in yearly revenue focused on creating confident, capable, and passionate developers.
+- Organized the Knight Hacks VII Hackathon for over **1500+** registrants and **547** attendees, with a total of **94** projects submitted.
+- Lead a team of **45** students to achieve deliverables such as **60** technical workshops a year and **100+** member mentorship.
+- Revamped the mentorship program, expanding the number of participants by **58%** compared to previous school year.
+- Personally secured nearly **$25,000** for the organization by networking with numerous **Fortune 500** companies over 2 years.
+
+**Skills:** Leadership, Event Planning, Team Management, Fundraising, Community Building, Public Speaking, Project Management, Mentorship
+
+---
+
+## Software Engineer Intern at NVIDIA (May 2025 - Present)
+
+**Location:** Santa Clara, CA
+
+**Description:** Contributing to the autonomous hardware recovery team (formerly Shoreline.io) for NVIDIA Mission Control, the software layer for AI factories. Working on log analysis pipelines and real-time monitoring systems.
+
+**Responsibilities:**
+- Contribute to the autonomous hardware recovery team for [NVIDIA Mission Control](https://blogs.nvidia.com/blog/mission-control-software/), the software layer for AI factories.
+- Developed a log analysis pipeline that automatically identified and filtered noisy logs, reducing time-to-debug by **60%**.
+- Leveraged fine-tuned Llama models to generate **semantic embeddings** for clustering and identifying noisy log patterns.
+- Engineered a daily **CRON** service to generate noisy log reports and grep pattern files, streamlining daily debugging tasks.
+- Integrated with real-time **Loki** logs from **Grafana**, and automatically published log anomalies to **Confluence** and **Slack** for immediate developer visibility.
+
+**Skills:** Python, Log Analysis, Machine Learning, Llama Models, CRON, Loki, Grafana, Confluence, Slack, AI Infrastructure
+
+---
+
+## Campus Expert at GitHub (May 2025 - Present)
+
+**Location:** Orlando, FL
+
+**Description:** As a GitHub for the University of Central Florida, I will be interfacing with the GitHub education team to help bring software development resources to my local community, Knight Hacks. I am super excited to help others pave their paths and find their voices in tech.
+
+**Responsibilities:**
+- Serve as an advocate for technologists and developers at the University of Central Florida.
+- Plan events on-campus to help make software development accessible to the early-technologist community.
+- Interface with GitHub Education as a Campus Expert to help bring resources and information to my local campus community.
+
+**Skills:** Community Building, Event Planning, GitHub, Education, Public Speaking, Networking, Student Advocacy
+
+---
+
+## Software Engineer Intern at Pheratech Systems (December 2024 - April 2025)
+
+**Location:** Orlando, FL
+
+**Description:** Researched Embodied General Intelligence and Sociobehavioral Robots for crisis and natural disaster search and rescue. Worked on computer vision and inventory management systems.
+
+**Responsibilities:**
+- Researched Embodied General Intelligence and Sociobehavioral Robots for crisis and natural disaster search and rescue.
+- Developed an internal inventory management system, reducing unnecessary wasteful restock purchases by **40%**.
+- Trained custom **YOLOv8** object detection models with a resulting **97%** accuracy in recognizing target objects.
+- Aided in securing pre-seed funding by contributing to multiple high-impact technical projects across the company.
+
+**Skills:** Python, Computer Vision, YOLOv8, Machine Learning, Robotics, AI Research, Inventory Management, Embedded Systems
+
+---
+
+## Founding Engineer at DormDevs LLC. (April 2024 - January 2025)
+
+**Location:** Orlando, FL
+
+**Description:** As a co-founder of DormDevs, I strive to create high-quality website solutions for businesses packaged with analytics and SEO optimization. Furthermore, we serve as a platform for aspiring student developers to gain real-world experience in web development through shadowing and coop opportunities
+
+**Responsibilities:**
+- Empowered businesses with powerful insights and uplifted students with contracted work opportunities.
+- Developed a business facing dashboard with real time analytics, billing, and a ticketing system for routine maintenance.
+- Hosted and deployed open source analytics, authentication, and database on a Linux VPS.
+- Managed a team of contracted freelance developers sourced from local colleges and universities.
+- Partenered with businesses of various sizes throughout Florida to provide web development services.
+
+**Skills:** Web Development, Analytics, SEO, Linux VPS, Team Management, Business Development, Client Relations, Freelance Management
+
+---
+
+## Undergraduate Researcher at UCF Computational Bioinformatics Laboratory (March 2024 - August 2024)
+
+**Location:** Orlando, FL
+
+**Description:** Working in the Computational Bioinformatics Laboratory at UCF, my research focuses on the development of algorithms for the analysis of complex biological data with a focus on RNA-sequencing, Alternative Splicing Detection, and gene quantification.
+
+**Responsibilities:**
+- Reduced the runtime of the AS-Quant and APA-Scan laboratory pipelines by **75%** by leveraging concurrency and parallelism in Python
+- Assisted in data collection, sanitization, and transformation using numpy and pandas.
+- Researched Machine Learning solutions for cancer detection with processed RNA-Seq data.
+
+**Skills:** Python, Bioinformatics, RNA-Sequencing, Machine Learning, Data Analysis, Numpy, Pandas, Research
+
+---
+
+## Honors Team Leader at UCF Burnett Honors College (July 2024 - December 2024)
+
+**Location:** Orlando, FL
+
+**Description:** Honors Symposium is a core component of the Honors Curriculum at UCF, where incoming students learn what it means to be apart of the Honors community. I served as a mentor and instructor to 16 students, helping them navigate their first year at UCF, and created an environment where they could feel welcome and make friends.
+
+**Responsibilities:**
+- Led a **15** student breakout room during the Honors Symposium, facilitating discussions and answering questions.
+- Planned monthly social events for all Symposium students to help them make friends and feel welcome at UCF.
+- Performed administrative tasks for the breakout room like creating and grading assignments
+
+**Skills:** Leadership, Mentorship, Event Planning, Student Development, Administration, Public Speaking, Community Building
+
+---
+
+## Honors Orientation Ambassador at UCF Burnett Honors College (May 2024 - July 2024)
+
+**Location:** Orlando, FL
+
+**Description:** As an Honors Orientation Ambassador, I was responsible for advising incoming Honors Computer Science students during registration. Meeting with my students over the course of a month, I gave professional assistance with registering for classes, and provided guidance on how to navigate computer science at UCF.
+
+**Responsibilities:**
+- Served as an academic advisor of **20** Computer Science students for course registration at UCF.
+- Worked our in-person orientation sessions, where students were introduced to the Honors College.
+- Provided a friendly face and positive attitude to help incoming students feel welcome at the Burnett Honors College.
+
+**Skills:** Academic Advising, Student Support, Course Registration, Orientation, Computer Science, Communication, Mentorship 

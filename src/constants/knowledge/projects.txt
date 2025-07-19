@@ -1,0 +1,238 @@
+## VisuWorld (Bitcamp XI Hackathon) - April 2025
+
+**Description:** Winner of Best use of Google Gemini, VisuWorld is a unique approach to generative 3D scene creation using LLMs and Google Gemini.
+
+**Details:** Winner of Best use of Google Gemini at Bitcamp 2025 Hackathon! VisuWorld is a revolutionary approach to generative 3D scene creation using Large Language Models and Google Gemini. VisuWorld takes a unique approach to 3D scene generation by using a GLSL parsing layer to generate 3D scenes from a natural language description - rather than a traditional diffusion based approach. We gathered over 36,000 GLSL samples from online, which were embedded and fed into a RAG pipeline to show Gemini core concepts. We also implemented a public gallery to allow users to view other scenes, the prompts that generated them, and use them as a starting point for their own scenes. This project got the attention of Google Deepmind and Paige Bailey, AI Developer Relations Lead. This got our team invited to a Google Deepmind Develope Showcase, where we were able to pitch our project to the team and get feedback (and some free swag). Not only was this project a huge success, but it was also the first travel Hackathon for Knight Hacks. As President, I was able to make history by bringing 25 members of our club across the east coast to compete in the Hackathon. Our accomplishments were featured in a UCF Today Article for our grand success. Even though we were only 3% of the total participants, we won nearly 25% of the prizes - GO KNIGHT HACKS!
+
+**Highlights:**
+- Hackathon winner - Best use of Google Gemini
+- Invited to pitch to Google Deepmind team
+- Innovative 3D generation using LLMs and a GLSL parsing layer.
+- Real-time scene creation with natural language input
+
+**Other Contributors:**
+- Leonard Gofman
+- Richard Phillips
+
+**Skills:** Gemini, RAG, GLSL, React, Next.js, Tailwind, TypeScript, FastAPI, MongoDB, WebGL, Three.js
+
+---
+
+## CodeJoust (February 2025 - Present)
+
+**Description:** CodeJoust is a platform made to help developers learn DSA by enabling them to practice with their friends in an real-time combat game.
+
+**Details:** CodeJoust was developed by a group of 7 for the University of Central Florida's COP4331C Web Development course. While the requirements for the project weren't necessarily high, we used them as an opportunity to build CodeJoust. We built a real-time combat game using WebSockets to handle game state, game room management, and online matchmaking. We were able to setup a custom Leetcode OAuth flow, so that users could login with their Leetcode account. This way, problems submitted through CodeJoust would also be recognized on a users Leetcode profile. We also implemented a full weighted elo system for matchmaking, so that users would be matched with others of similar skill level.
+
+**Highlights:**
+- Real-time multiplayer coding challenges with friends
+- Gamified learning with points, leaderboards, and achievements
+- LeetCode integration for comprehensive problem sets
+- WebSocket communication for live competition updates
+- Elo system for matchmaking
+
+**Other Contributors:**
+- Leonard Gofman
+- Luke Cullen
+- Max Grabov
+- Raudy Brito
+- Mohammed Mamdouh
+
+**Skills:** WebSockets, LeetCode, JWTs, React, Tailwind, TypeScript, Express, MongoDB, Resend
+
+---
+
+## AirJam (HackUSF 2025 Hackathon) April 2025
+
+**Description:** AirJam is an AI-powered music exploration tool that helps users make music, anytime, anywhere. Play up to 30 instruments with just your webcam.
+
+**Details:** AirJam is an AI-powered music exploration tool that let's you be a one man band, anytime, anywhere. We built this project for HackUSF 2025 after wanting to experiment with some real-time computer vision. By streaming frames from your webcam to a YOLO pose detection model via a WebSocket, we were able to detect hand gestures and map them to different instruments. We implemented over 30 different instruments via WebAudioFonts, spanning across a variety of different groups (percussion, strings, woodwinds, etc). We also implemented a repetition feature, so you can create a rhythmic beat for your main instrument. This project was a lot of fun, and was built in a 24-hour Hackathon (my team and I are used to 36-hour hackathons).
+
+**Highlights:**
+- Computer vision-powered instrument control
+- Real-time hand tracking with MediaPipe
+- YOLO object detection for gesture recognition
+- WebAudioFonts integration for authentic instrument sounds
+- 30+ instruments supported through gesture recognition
+
+**Other Contributors:**
+- Leonard Gofman
+- Luke Cullen
+
+**Skills:** OpenCV, YOLO, Mediapipe, WebAudioFonts, React, Tailwind, TypeScript, Python, FastAPI
+
+---
+
+## VoiceBoard (Shell Hacks 2024 Hackathon) September 2024
+
+**Description:** Winner of Google's Social Good Challenge, Voiceboard AI makes whiteboarding accessible to all by using speech-to-diagram technology.
+
+**Details:** Winner of Google's Hack for Social Good Challenge at Shell Hacks 2024! VoiceBoard AI makes whiteboarding accessible to everyone by converting speech into diagrams in real-time. We were able to send transcribed speech to a Google Gemini backend, which used the current state of the board and the users request to generate/modify diagrams using Mermaid.js.
+
+**Highlights:**
+- Accessibility breakthrough for users with motor disabilities
+- Speech-to-diagram conversion using advanced NLP
+- Real-time diagram generation with Mermaid.js
+- Google Gemini integration for intelligent diagram interpretation
+
+**Other Contributors:**
+- Leonard Gofman
+- Luke Cullen
+
+**Skills:** Gemini, Speech Recognition, Mermaid, React, Next.js, Tailwind, TypeScript, tRPC
+
+---
+
+## Forge (July 2024 - Present)
+
+**Description:** Forge is the Knight Hacks monorepo, and contains all of our organizations core infrastructure. Built and maintained by the Knight Hacks team.
+
+**Details:** Forge is the core infrastructure monorepo for Knight Hacks, and has a LOT of different projects and moving pieces. With every new elected executive team, Knight Hacks would often discard last years codebases and start again. We built Forge to centralize all of these lose projects to help with onboarding, maintenance, and data retention. We are also proud to state that Forge is almost entirely SaaS free, instead opting into Open Source Services. We focused on owning all of our core infrastructure to make hand-off easy - no more managing 10 different SaaS logins and services. Here are some of the cool projects I've helped build on Forge:
+
+- **Blade:** the centralized monolith application for all Knight Hacks projects. Before blade, we had a different database for each year, separate auth providers, and separate deployment systems. With Blade, we moved all functional logic for any web app into a single application to standardize data storage and authentication.
+- **Knight Hacks VIII:** the frontend marketing website for the Knight Hacks VIII 2025 Hackathon. This was a super fun UI/UX focused project, doing our best to make a thrilling impression that will get hackers excited to register. All backend logic was built directly into blade, and this was our first experiment of the multi-tenant architecture (it was a success).
+- **Guild:** sourcing user profiles from Blade, the Guild Collective is a webring project that allows users to connect with other users in the Knight Hacks community. This project was also built to help connect external users, like alumni, recruiters, or sponsors with current members.
+- **Club Site:** the frontend marketing website for the Knight Hacks organization. This is our top search result for the Knight Hacks organization, and is the first thing people see when they search for Knight Hacks. We use this site to showcase our programs, passion, and mission - bridging the gap between the classroom and the tech industry.
+- **T.K Discord Bot:** themed after our AI-robot mascot, T.K, this Discord bot helps with user engagement by sending out frequent reminders about our upcoming events. It also can be chatted with via commands, and sends daily memes and animal pictures to start some friendly conversation.
+
+**Highlights:**
+- Monorepo architecture for unified development workflow
+- Core organization tools and management systems
+- Coolify deployment for streamlined infrastructure management
+- Type-safe APIs with tRPC for reliable data communication
+- Self-rolled CI/CD with Coolify for streamlined deployment
+- Self-rolled Authentication with NextAuth.js
+- Self-rolled S3 Storage with Minio
+
+**Contributors:** [Forge Repository](https://github.com/KnightHacks/forge/graphs/contributors)
+
+**Skills:** Monorepo, UI/UX, User Management, TypeScript, React, Tailwind, Next.js, Coolify, tRPC, Drizzle, PostgreSQL
+
+---
+
+## Lootcode (February 2024 - May 2024)
+
+**Description:** Winner of the Knight Hacks Projects Program, Lootcode aims to make learning DSA fun and engaging with a fantasy D&D-esque campaign.
+
+**Details:** Lootcode is what I consider to be my first real project. I have worked on a handful in the past, but none have gotten me as excited, dedicated, and passionate as this one. Lootcode was a shared vision of myself, Leonard Gofman, and Luke Cullen. We teamed up to build Lootcode for the Knight Hacks Projects Program in 2023, which we won! I wanted to make another fantasy/TTRPG themed project, Leonard wanted to experiment with code-grade servers after getting into ICPC, and Luke wanted to do something gamified. Lootcode started as a pun based off the DSA platform Leetcode, and we ran with it. And it worked! We were actually able to create a secure, isolated code grade server using Docker and Zx Shell that supports 7 programming languages - C, C++, C#, Java, Python, Rust, and Go. Embark on an 82 problem journey through Algorion, a narratively rich world in ruin - that only you can save. We received recognition for Lootcode by the Linux Magazine for Free and Open Source Software which was a huge honor for us. We got a journalists attention after getting over 55,000 page views from soft promotion on Reddit. In total, we have over 2,000 users with over 750 hours of playtime.
+
+**Highlights:**
+- Gamified learning experience with rewards and progression
+- Interactive DSA challenges with real-time feedback
+- Linux-based execution environment for authentic development experience
+- Docker containerization for consistent and secure code execution
+- Zx shell integration for powerful command-line operations
+- Containerized execution for safe code running
+- Real-time feedback system for immediate learning
+- Type-safe APIs with tRPC for reliable data handling
+
+**Other Contributors:**
+- Leonard Gofman
+- Luke Cullen
+
+**Skills:** Linux, Docker, Zx Shell, TypeScript, React, Next.js, tRPC
+
+---
+
+## APA-Scan + AS-Quant (March 2024 - August 2024)
+
+**Description:** Built for my research position, the APA-Scan and AS-Quant pipelines use parallelized Python to assist in the analysis of large genetic datasets.
+
+**Details:** I built APA-Scan and AS-Quant for my research position at the University of Central Florida's Computational Biology and Bioinformatics Lab. Funny enough, I had actually never taken a biology class before this, so I had to learn a lot about the field. While biology isn't exactly my thing, I was able to learn a lot about the field and use parallelized Python to speed up their pre-existing tools by a whopping 75%.
+
+**Highlights:**
+- Parallelized processing for handling large genetic datasets
+- Managed data with Pandas and NumPy for efficient data manipulation
+- Optimized performance using Cython for computational bottlenecks
+- Integration with standard bioinformatics tools like Samtools
+
+**Skills:** Python, Multiprocessing, NumPy, Pandas, Samtools, Cython
+
+---
+
+## Wildspace Web (December 2023 - February 2024)
+
+**Description:** Wildspace Web is an AI-powered worldbuilding SaaS tool for dungeon masters that creates immersive and engaging worlds.
+
+**Details:** Wildspace Web is a continuation of the Project Wildspace project, but built as a SaaS instead of a desktop application. I wanted to take the ideas from Project Wildspace and expand to a web application with shareability in mind. Distributing a web application was as easy as sending a link, and character data would exist and be shareable across many different clients. Wildspace Web also included two new big features for world generation - context-aware image generation, and context tagging for multi-layered generations. This way, you could generate a new character, while passing in context of someone else to serve as a sibling, rival, or partner. Wildspace Web was also built with LangChain to enforce schema parsing (something quite difficult at the time).
+
+**Highlights:**
+- AI-powered world generation with customizable parameters
+- Comprehensive worldbuilding tools for DMs
+- Database-driven content with Prisma ORM
+- MySQL backend for reliable data storage
+- Stripe integration for payment processing
+- Context-aware image generation with DALL-E 3
+- Context tagging for multi-layered generations
+- LangChain schema parsing for better data handling
+
+**Skills:** OpenAI, Stripe, Next.js, TypeScript, React, Kinde Auth, Tailwind, tRPC, Prisma, MySQL
+
+---
+
+## Project Wildspace (Knight Hacks VI Hackathon) October 2023
+
+**Description:** Predecessor to Wildspace Web, built as a desktop app using PySide and Qt for the Knight Hacks VI Hackathon.
+
+**Details:** Project Wildspace was a continuation off the idea I tested with DNDTTK at Shell Hacks 2023. I wanted to take the idea of a D&D character generator and expand it to a full AI-powered worldbuilder. The last application was not generative - it just randomly selected pre-determined fields. It was also only focused on characters. We implemented a desktop application built with PySide and Qt that allows users to generate immersive worlds for tabletop roleplaying games using Generative AI. Built with LangChain on top of the GPT-3.5 API (a marvel at the time...) We also were able to implement many different types of generations - NPC, Building, Town, Encounters, Groups, and Dungeons from an inputted World File.
+
+**Highlights:**
+- AI-powered world generation using LangChain
+- Desktop application built with PySide and Qt
+- Proof of concept for AI in tabletop gaming
+- Professional packaging with Inno Installer
+- Prompt engineering for better contextualized world generation
+
+**Other Contributors:**
+- Leonard Gofman
+- Vlada Bondarenko
+
+**Skills:** PySide, Qt, LangChain, Python, Inno Installer
+
+---
+
+## UCF Activities Bot (November 2023 - December 2023)
+
+**Description:** A Discord bot that scrapes the UCF Events Calendar and posts events every morning. Viewed daily by over 3000 UCF students.
+
+**Details:** The UCF Activities Bot was a Discord automation tool I built my freshman year at UCF after being frustrated with the lack of a centralized way to find events on campus. I wanted to make a bot that would scrape the UCF Events Calendar daily and post upcoming events to multiple Discord servers. Over a month, I learned web-scraping with Selenium, how to develop a Discord bot with Nextcord, and how to deploy a Raspberry Pi to keep the bot running 24/7. Scattered among a handful of different servers, these alerts are now a staple for many students to find events on campus.
+
+**Highlights:**
+- 3000+ UCF students served across various Discord servers
+- Daily event updates automatically posted every morning
+- Web scraping automation using Selenium for reliable data collection
+- Raspberry Pi deployment for 24/7 operation
+
+**Skills:** Python, Selenium, Nextcord, Raspbian
+
+---
+
+## DNDTTK (Shell Hacks 2023 Hackathon) September 2023
+
+**Description:** My first Hackathon project, DNDTTK is a Dungeons and Dragons themed character generator built with Tkinter.
+
+**Details:** DNDTTK was made at my very first Hackathon, Shell Hacks 2023. The story of its development is actually quite funny. Initially, I had a team of 4 with some people from Knight Hacks - we wanted to build an AR app in Unity (terrible idea). It took us the first 12 of 36 hours just to set up the GitHub repository, so we gave up and did our own things. I saw a quick Tkinter video on LinkedIn Learning, and learned all I needed in the remaining 24 hours to make something. While it is not pretty, and no where near optimized, it was a fantastic learning experience (and I actually used it in my D&D games before making Project Wildspace, and Wildspace Web).
+
+**Highlights:**
+- First GUI application using Python and Tkinter
+- D&D character generation with authentic game mechanics
+- Hackathon project for ShellHacks 2023
+- Underdog project after wasting 12 hours on Unity...
+
+**Skills:** Python, Tkinter
+
+---
+
+## Wordle Desktop (August 2023 - September 2023)
+
+**Description:** A clone of the popular game Wordle, and my first desktop application built with Qt in C++. Built for my first GUI-based project.
+
+**Details:** Wordle Desktop was my very first desktop application built with Qt in C++. About a year into software development, I was getting annoyed with being confined to the CLI - it felt mundane, and unimpressive. Since I took a few C++ classes, I reached for a C++ native GUI framework, and Qt was the first one I found.
+
+**Highlights:**
+- First GUI application using Qt and C++
+- Wordle game clone with complete game mechanics
+- Qt Creator IDE for modern C++ development
+- Cross-platform compatibility through Qt framework
+
+**Skills:** C++, Qt, Qt Creator

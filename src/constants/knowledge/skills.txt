@@ -1,0 +1,179 @@
+# Programming Languages
+- Python
+- JavaScript
+- TypeScript
+- Java
+- C++
+- C
+- C#
+- SQL
+- PHP
+- GLSL
+- HTML
+- CSS
+- JSX
+- Cython
+
+# Tools & Technologies
+- Git
+- GitHub
+- Docker
+- Linux
+- Grafana
+- Loki
+- Confluence
+- Vercel
+- Node.js
+- Bun
+- pnpm
+- Coolify
+- Monorepo
+- WebSockets
+- JWTs
+- Express
+- Resend
+- OpenCV
+- YOLO
+- Mediapipe
+- WebAudioFonts
+- Mermaid
+- Drizzle
+- Zx Shell
+- Samtools
+- Stripe
+- Kinde Auth
+- PySide
+- Inno Installer
+- Selenium
+- Nextcord
+- Raspbian
+- Tkinter
+- Qt Creator
+- Nginx
+- SSL
+- DNS
+- SSH
+- Cloudflare
+
+# Application Development
+- React
+- Next.js
+- Tailwind CSS
+- tRPC
+- Prisma
+- NextAuth
+- Three.js
+- Shadcn UI
+- FastAPI
+- MongoDB
+- PostgreSQL
+- CI/CD
+- Express.js
+- Qt
+- PySide6
+- Pygame
+- PyQt5
+- WebGL
+- SSR
+- CSR
+- Hosting
+- VPS
+- Cloud Providers
+- ERDs
+- Horizontal Scaling
+- Vertical Scaling
+- Sharding
+- Relational vs Non-Relational
+- ACID
+- Layouts
+- Widgets
+- Event Handling
+- Event Driven Programming
+
+# AI & Machine Learning
+- PyTorch
+- Scikit-learn
+- Pandas
+- NumPy
+- LangChain
+- Gemini
+- Google ADK
+- Jupyter Notebooks
+- Computer Vision
+- RAG
+- LLMs
+- Deep Learning
+- Neural Networks
+- Agentic AI
+- Speech Recognition
+- Multiprocessing
+- OpenAI
+- Llama Models
+- AI Research
+- Robotics
+- Embedded Systems
+- Bioinformatics
+- RNA-Sequencing
+- Data Analysis
+- Prompt engineering
+
+# Leadership & Soft Skills
+- Team Management
+- Project Management
+- Product
+- Organizational Leadership
+- Fundraising
+- Marketing
+- Strategy
+- Non-Profit
+- Community Engagement
+- Branding
+- Public Speaking
+- Event Planning
+- Mentorship
+- Education
+- Networking
+- Student Advocacy
+- Web Development
+- Analytics
+- SEO
+- Linux VPS
+- Business Development
+- Client Relations
+- Freelance Management
+- Research
+- Student Development
+- Administration
+- Academic Advising
+- Student Support
+- Course Registration
+- Orientation
+- Communication
+- UI/UX
+- User Management
+
+# Data Structures & Algorithms
+- Data Structures
+- Algorithms
+- Time Complexity
+- Space Complexity
+- C Programming
+- Bitwise Operations
+- Heaps
+- Tries
+- Hashing
+- Hash Tables
+- Permutations
+- Recurrence Relations
+- Algorithm Analysis
+- Sorting Algorithms
+- Binary Search
+- Binary Search Trees
+- AVL Trees
+- Dynamic Memory Allocation
+- Pointers
+- Linked Lists
+- Stacks
+- Queues
+- Recursion
+- LeetCode 
