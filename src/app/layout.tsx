@@ -2,6 +2,7 @@ import FriendDetector from "@/components/layout/friend-detector";
 import TransitionWrapper from "@/components/layout/transition-wrapper";
 import Footer from "@/components/ui/footer";
 import { NavbarHome } from "@/components/ui/navbar";
+import VoiceAgent from "@/components/ui/voice-agent-wrapper";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist_Mono, Sora } from "next/font/google";
@@ -82,6 +83,7 @@ export default function RootLayout({
                     <TransitionWrapper>{children}</TransitionWrapper>
                 </main>
                 <Footer />
+                <VoiceAgent />
                 <Analytics />
             </body>
         </html>
