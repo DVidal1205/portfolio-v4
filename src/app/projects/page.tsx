@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from "next";
 
 const pageTitle = "Projects | Dylan Vidal";
@@ -17,8 +15,6 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "/banner.png",
-                width: 1200,
-                height: 630,
                 alt: pageTitle,
             },
         ],
