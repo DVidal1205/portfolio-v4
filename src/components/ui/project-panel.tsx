@@ -222,7 +222,7 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
 
                         <div className="p-4 md:p-6">
                             <div
-                                className="relative aspect-video rounded-xl overflow-hidden mb-6"
+                                className="relative w-full h-64 md:h-96 lg:h-[29rem] rounded-xl mb-6 overflow-visible"
                                 style={{
                                     backgroundColor:
                                         selectedProject.colors.panelBackground,

@@ -225,7 +225,7 @@ export const StickyScroll = ({
                             animate={{ opacity: activeCard === 0 ? 1 : 0.3 }}
                             className="mt-8 lg:hidden"
                         >
-                            <div className="h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
+                            <div className="h-80 md:h-[24rem] w-full lg:h-[33rem] lg:w-[51rem] overflow-visible rounded-md">
                                 <Carousel
                                     slides={passionImages}
                                     current={passionCurrent}
@@ -302,7 +302,7 @@ export const StickyScroll = ({
                             animate={{ opacity: activeCard === 1 ? 1 : 0.3 }}
                             className="mt-8 lg:hidden"
                         >
-                            <div className="h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
+                            <div className="h-80 md:h-[24rem] w-full lg:h-[33rem] lg:w-[51rem] overflow-visible rounded-md">
                                 <Carousel
                                     slides={peopleImages}
                                     current={peopleCurrent}
@@ -368,7 +368,7 @@ export const StickyScroll = ({
                             animate={{ opacity: activeCard === 2 ? 1 : 0.3 }}
                             className="mt-8 lg:hidden"
                         >
-                            <div className="h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md">
+                            <div className="h-80 md:h-[24rem] w-full lg:h-[33rem] lg:w-[51rem] overflow-visible rounded-md">
                                 <Carousel
                                     slides={progressImages}
                                     current={progressCurrent}
@@ -383,7 +383,7 @@ export const StickyScroll = ({
             {/* Desktop sticky carousel */}
             <div
                 className={cn(
-                    "sticky top-[15rem] hidden h-64 md:h-96 w-full lg:h-[29rem] lg:w-[51rem] overflow-hidden rounded-md lg:block",
+                    "sticky top-[15rem] hidden h-80 md:h-[24rem] w-full lg:h-[33rem] lg:w-[51rem] overflow-visible rounded-md lg:block",
                     contentClassName
                 )}
             >

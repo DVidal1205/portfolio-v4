@@ -113,7 +113,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
                 {/* Title positioned at bottom right */}
                 {current === index && (
-                    <div className="absolute bottom-4 md:bottom-18 right-1 p-2 bg-black/50 rounded backdrop-blur-sm">
+                    <div className="absolute bottom-2 right-1 p-2 bg-black/50 rounded backdrop-blur-sm">
                         <h2 className="text-xs md:text-sm font-semibold text-white drop-shadow-lg">
                             {title}
                         </h2>
@@ -199,14 +199,7 @@ export default function Carousel({
     const slideWidth = 100 / slides.length;
 
     return (
-        <div
-            className="relative overflow-hidden w-full h-full rounded-xl"
-            style={{
-                boxShadow: accentColor
-                    ? `0 0 20px ${accentColor}40`
-                    : undefined,
-            }}
-        >
+        <div className="relative w-full h-full rounded-xl">
             <div
                 className="relative w-full h-full flex flex-col items-center justify-center"
                 aria-labelledby={`carousel-heading-${id}`}
@@ -236,7 +229,7 @@ export default function Carousel({
                     </ul>
                 </div>
 
-                <div className="flex justify-center items-center h-8 relative z-30 mt-4">
+                <div className="flex justify-center items-center h-8 relative z-30 mt-1">
                     {slides.length > 1 && (
                         <>
                             <CarouselControl
