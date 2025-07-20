@@ -35,7 +35,7 @@ export default function SkillsPage() {
     const shuffledSkills = useMemo(() => shuffleArray(allSkills), []);
 
     return (
-        <div className="min-h-screen pb-4 md:pb-10 pt-24 md:pt-36">
+        <div className="min-h-screen pt-20 p-4 md:pt-24">
             <div className="text-center mb-8">
                 <h1 className=" text-2xl md:text-4xl animate-fade-up delay-100 font-bold gradient-text bg-gradient-to-r from-primary-400 via-secondary-400 to-primary-400 bg-clip-text text-transparent mb-2">
                     My Skills
