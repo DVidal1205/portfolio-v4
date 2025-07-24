@@ -14,21 +14,11 @@ export interface FeatureItem {
     infoDialog?: React.ReactNode;
 }
 
-/* 
-google ai agent bake off
-bitcamp ucf today
-knight hacks ucf today
-visuworld developer mlh
-hackcon mlh
-linux foss magazine
-what is knight hacks
-*/
-
 export const featuredItems: FeatureItem[] = [
     {
-        name: "HackCon 2025 Speaker Series",
+        name: "Hackcon 2025 Speaker Series",
         description:
-            "Every August, Major League Hacking hosts HackCon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.",
+            "Every August, Major League Hacking hosts Hackcon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.",
         date: "August 2025",
         image: "/features/hackcon.png",
         links: [

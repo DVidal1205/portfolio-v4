@@ -426,8 +426,8 @@ As President, I had the honor of making club history by taking 25 of our members
 
 ---
 
-## HackCon 2025 Speaker Series (August 2025)
-**Description:** Every August, Major League Hacking hosts HackCon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.
+## Hackcon 2025 Speaker Series (August 2025)
+**Description:** Every August, Major League Hacking hosts Hackcon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.
 
 ---
 
