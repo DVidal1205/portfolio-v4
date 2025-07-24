@@ -43,6 +43,27 @@ export const featuredItems: FeatureItem[] = [
         ],
     },
     {
+        name: "Google Cloud AI Agent Bake Off",
+        description:
+            "I built an AI Fashion Agent in only 3-hours on the pilot episode of Google Cloud's AI Agent Bake Off Series. This event was a BLAST and I learned so much about the Google AI Ecosystem. Check out the full episode!",
+        date: "July 2025",
+        image: "/features/bakeoff.png",
+        links: [
+            {
+                label: "Full Episode",
+                url: "https://www.youtube.com/watch?v=UPFk3_FUKtI",
+            },
+            {
+                label: "LinkedIn Trailer",
+                url: "https://www.youtube.com/watch?v=UPFk3_FUKtI",
+            },
+            {
+                label: "Dylan & Luis Introduction",
+                url: "https://x.com/GoogleCloudTech/status/1948065585570382033",
+            },
+        ],
+    },
+    {
         name: "GitHub Campus Expert",
         description:
             "I am a member of the GitHub Campus Experts program, which helps me empower my local community at UCF to break into the tech industry with the support of GitHub.",

@@ -54,6 +54,11 @@
 
 # Features
 
+## Google Cloud AI Agent Bake Off (July 2025)
+**Description:** I built an AI Fashion Agent in only 3-hours on the pilot episode of Google Cloud's AI Agent Bake Off Series. This event was a BLAST and I learned so much about the Google AI Ecosystem. Check out the full episode!
+
+---
+
 ## HackCon 2025 Speaker Series (August 2025)
 **Description:** Every August, Major League Hacking hosts HackCon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.
 
