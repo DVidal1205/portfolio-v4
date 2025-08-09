@@ -66,7 +66,7 @@ export const experiences: TimelineExperience[] = [
         description:
             "Contributing to the autonomous hardware recovery team (formerly Shoreline.io) for NVIDIA Mission Control, the software layer for AI factories. Working on log analysis pipelines and real-time monitoring systems.",
         responsibilities: [
-            "Contribute to the autonomous hardware recovery team for [NVIDIA Mission Control](https://blogs.nvidia.com/blog/mission-control-software/), the software layer for AI factories.",
+            "Contributed to the autonomous hardware recovery team for [NVIDIA Mission Control](https://blogs.nvidia.com/blog/mission-control-software/), the software layer for AI factories.",
             "Overhauled **Kubernetes / Helm** infrastructure to achieve zero-downtime rolling upgrades, fully eliminating **10 hours** of scheduled maintenance per year per customer and accelerating development environment build times by **93%**.",
             "Implemented industry standard horizontal scaling techniques to core services, increasing traffic bandwidth by upwards of **85%**.",
             "Optimized network flow by modifying **NGINX** ingress patterns and service-to-service communication, reducing latency by **45%**.",
