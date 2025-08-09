@@ -44,7 +44,9 @@ export const programmingSkills: string[] = [
 export const toolsSkills: string[] = [
     "Git",
     "GitHub",
+    "GitLab",
     "Docker",
+    "Podman",
     "Linux",
     "Grafana",
     "Loki",
@@ -55,6 +57,9 @@ export const toolsSkills: string[] = [
     "pnpm",
     "Coolify",
     "Monorepo",
+    "Kubernetes",
+    "Helm",
+    "CRON",
 ];
 
 export const appdevSkills: string[] = [
