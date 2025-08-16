@@ -68,9 +68,9 @@ export const experiences: TimelineExperience[] = [
         responsibilities: [
             "Contributed to the autonomous hardware recovery team for [NVIDIA Mission Control](https://blogs.nvidia.com/blog/mission-control-software/), the software layer for AI factories.",
             "Overhauled **Kubernetes / Helm** infrastructure to achieve zero-downtime rolling upgrades, fully eliminating **10 hours** of scheduled maintenance per year per customer and accelerating development environment build times by **93%**.",
-            "Implemented industry standard horizontal scaling techniques to core services, increasing traffic bandwidth by upwards of **85%**.",
-            "Optimized network flow by modifying **NGINX** ingress patterns and service-to-service communication, reducing latency by **45%**.",
-            "Developed a log analysis tool that automatically identifies and filters noisy logs, reducing time-to-debug of core services by **60%**.",
+            "Implemented industry standard horizontal scaling techniques to core services, increasing traffic bandwidth.",
+            "Optimized network flow by modifying **NGINX** ingress patterns and service-to-service communication, reducing latency.",
+            "Developed a log analysis tool that automatically identifies and filters noisy logs, reducing time-to-debug of core services.",
             "Leveraged fine-tuned Llama models to generate **semantic embeddings** for clustering and identifying noisy log patterns.",
             "Engineered a daily **CRON** service to generate noisy log reports and grep pattern files, streamlining daily debugging tasks.",
             "Integrated with real-time **Loki** logs from **Grafana**, and automatically published log anomalies to **Confluence** and **Slack** for immediate developer visibility.",
