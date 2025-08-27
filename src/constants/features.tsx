@@ -18,7 +18,7 @@ export const featuredItems: FeatureItem[] = [
     {
         name: "Hackcon 2025 Speaker Series",
         description:
-            "Every August, Major League Hacking hosts Hackcon: a 3-day conference for Hackathon Organizers around the globe. I will be speaking on how to make their Event an Experience.",
+            "Every August, Major League Hacking hosts Hackcon: a 3-day conference for Hackathon Organizers around the globe. I was selected to speak on teaching organizers about making their events memorable and unforgettable experiences.",
         date: "August 2025",
         image: "/features/hackcon.png",
         links: [
