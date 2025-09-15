@@ -15,6 +15,17 @@ if (typeof window !== "undefined") {
 
 const aboutImages = [
     {
+        title: "My First Speaker Event (Hackcon 2025)",
+        src: "/about/hackcon.png",
+        infoDialog: (
+            <InfoDialog
+                title="My First Speaker Event (Hackcon 2025)"
+                text="This picture was taken at the **Hackcon 2025** Speaker Series, where I was able to speak on teaching organizers about making their events memorable and unforgettable experiences. I was able to share my experiences as a Hackathon Organizer and how I was able to make my events more engaging and memorable for participants."
+                image="/about/hackcon.png"
+            />
+        ),
+    },
+    {
         title: "My Headshot",
         src: "/headshot.png",
         infoDialog: (

@@ -16,6 +16,31 @@ export interface FeatureItem {
 
 export const featuredItems: FeatureItem[] = [
     {
+        name: "MLH Top 50 2025",
+        description:
+            "The MLH Top 50 is a list of 50 members of the Global Hackathon Community. Hackers, Organizers, and Alumni from around the globe are recognized each year on this esteemed list for their contributions to the Hacker community.",
+        date: "September 2025",
+        image: "/features/mlh-top50.png",
+        links: [
+            {
+                label: "Dylan Vidal - MLH Top 50 2025",
+                url: "https://top.mlh.io/2025/profiles/dylan-vidal",
+            },
+            {
+                label: "MLH Top 50 2025",
+                url: "https://top.mlh.io/2025",
+            },
+            {
+                label: "YouTube Reveal",
+                url: "https://www.youtube.com/watch?v=VCqnQssZ1u0",
+            },
+            {
+                label: "LinkedIn Announcement",
+                url: "https://www.linkedin.com/posts/major-league-hacking_50-hackers-endless-impact-every-year-activity-7373392377643835392-Q6qO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
+            },
+        ],
+    },
+    {
         name: "Hackcon 2025 Speaker Series",
         description:
             "Every August, Major League Hacking hosts Hackcon: a 3-day conference for Hackathon Organizers around the globe. I was selected to speak on teaching organizers about making their events memorable and unforgettable experiences.",
@@ -27,7 +52,7 @@ export const featuredItems: FeatureItem[] = [
                 url: "https://www.linkedin.com/posts/dylanvidal1205_super-excited-to-share-that-i-will-be-speaking-activity-7349206575451942912-vT6A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
             },
             {
-                label: "Slides (WIP)",
+                label: "Slides",
                 url: "/features/hackcon.pdf",
             },
         ],
@@ -58,11 +83,15 @@ export const featuredItems: FeatureItem[] = [
         description:
             "I am a member of the GitHub Campus Experts program, which helps me empower my local community at UCF to break into the tech industry with the support of GitHub.",
         date: "June 2025",
-        image: "/features/ghce.png",
+        image: "/features/ghce.jpg",
         links: [
             {
                 label: "GitHub Campus Experts Profile",
                 url: "https://githubcampus.expert/DVidal1205/",
+            },
+            {
+                label: "GitHub Campus Experts Program",
+                url: "https://github.com/education/students/campus-expert/",
             },
         ],
     },
