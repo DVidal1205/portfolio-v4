@@ -4,6 +4,149 @@ import { readProjectMarkdown } from "@/lib/markdown";
 
 export const projects: ProjectData[] = [
     {
+        id: "vl-adk",
+        title: "VL-ADK",
+        period: "ShellHacks 2025 Hackathon",
+        description:
+            "Winner of NVIDIA, Microsoft, and Waymo challenges, VL-ADK explores the new frontier of VLAs and Physical Agents.",
+        longDescription: readProjectMarkdown("vl-adk"),
+        images: [
+            {
+                src: "/projects/vl-adk.gif",
+                title: "VL-ADK",
+            },
+            {
+                src: "/projects/vl-adk-hotdog.png",
+                title: "Hotdog the Robot",
+                infoDialog: (
+                    <InfoDialog
+                        title="VL-ADK - Hotdog the Robot"
+                        text="Hotdog is the name of our lovable little robot who carried us to victory. He is a two wheeled differential drive robot, built with a Jetson Orin Nano on the JetBot platform."
+                        image="/projects/vl-adk-hotdog.png"
+                    />
+                ),
+            },
+            {
+                src: "/projects/vl-adk-team.png",
+                title: "VL-ADK Team",
+            },
+            {
+                src: "/projects/vl-adk-winning.png",
+                title: "VL-ADK Winning",
+            },
+            {
+                src: "/projects/vl-adk-console.png",
+                title: "VL-ADK Console",
+            },
+        ],
+        colors: {
+            cardBackground: "#2f3948",
+            cardText: "#dbdfe6",
+            panelBackground: "#2f3948",
+            panelText: "#dbdfe6",
+            accent: "#02c653",
+        },
+        links: [
+            {
+                label: "VL-ADK Demo Video",
+                url: "https://youtu.be/0t4X0DoKbsc",
+                icon: "external",
+            },
+            {
+                label: "VL-ADK Repository",
+                url: "https://github.com/VL-ADK/VL-ADK",
+                icon: "github",
+            },
+            {
+                label: "VL-ADK DevPost",
+                url: "https://devpost.com/software/vl-adk",
+                icon: "external",
+            },
+        ],
+        skills: [
+            "Google ADK",
+            "NVIDIA Nemotron",
+            "Gemini",
+            "YoloE",
+            "React",
+            "Tailwind",
+            "WebSockets",
+            "Networking",
+            "NVIDIA Jetson Orin Nano",
+            "NVIDIA RTX 5080 Graphics Card",
+            "NVIDIA Jetbot Platform",
+        ],
+    },
+    {
+        id: "tapestry",
+        title: "Tapestry",
+        period: "SASE Stem Connect 25 Hackathon",
+        description:
+            "Tapestry is an AI-powered life exploration tool that helps users explore their future and plan for success.",
+        longDescription: readProjectMarkdown("tapestry"),
+        images: [
+            {
+                src: "/projects/tapestry.gif",
+                title: "Tapestry",
+            },
+            {
+                src: "/projects/tapestry-graph.png",
+                title: "Tapestry Life Graph",
+                infoDialog: (
+                    <InfoDialog
+                        title="Tapestry - Life Graph"
+                        text="This life graph was made using the React ForceGraph3D library. Each node represents a stage in life, and the edges are the time to get there. Each node was generated using Google ADK, and informed based on your interview and past nodes."
+                        image="/projects/tapestry-graph.png"
+                    />
+                ),
+            },
+            {
+                src: "/projects/tapestry-node.png",
+                title: "Tapestry Node",
+            },
+            {
+                src: "/projects/tapestry-interview.png",
+                title: "Tapestry Interview",
+            },
+        ],
+        colors: {
+            cardBackground: "#14111a",
+            cardText: "#e8e8ea",
+            panelBackground: "#14111a",
+            panelText: "#e8e8ea",
+            accent: "#155dfc",
+        },
+        links: [
+            {
+                label: "Tapestry Demo Video",
+                url: "https://youtu.be/S5coG-T5vyE",
+                icon: "external",
+            },
+            {
+                label: "Tapestry Repository",
+                url: "https://github.com/Tapastry/tapestry",
+                icon: "github",
+            },
+            {
+                label: "VisuWorld DevPost",
+                url: "https://devpost.com/software/tapestry-s5u2oj",
+                icon: "external",
+            },
+        ],
+        skills: [
+            "Google ADK",
+            "Gemini",
+            "React",
+            "Tailwind",
+            "Next.js",
+            "NextAuth",
+            "FastAPI",
+            "PostgreSQL",
+            "MinIO",
+            "Docker",
+        ],
+    },
+    {
         id: "visuworld",
         title: "VisuWorld",
         period: "Bitcamp XI Hackathon",
