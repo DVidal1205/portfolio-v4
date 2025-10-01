@@ -61,7 +61,7 @@ export const experiences: TimelineExperience[] = [
         id: "exp2",
         title: "Software Engineer Intern",
         company: "NVIDIA",
-        period: "May 2025 - Present",
+        period: "May 2025 - August 2025",
         location: "Santa Clara, CA",
         description:
             "Contributing to the autonomous hardware recovery team (formerly Shoreline.io) for NVIDIA Mission Control, the software layer for AI factories. Working on log analysis pipelines and real-time monitoring systems.",

@@ -1,5 +1,12 @@
 # Workshops
 
+
+## MLH Top 50 2025 (September 2025)
+**Description:** The Major League Hacking Top 50 is a list of 50 members of the Global Hackathon Community. Hackers, Organizers, and Alumni from around the globe are recognized each year on this esteemed list for their contributions to the Hacker community.
+
+---
+
+
 ## Full Stack 101 (April 2025)
 **Description:** The second workshop in a 2 part series on building web pages and web apps. This workshop goes beyond static pages and introduces functional databases, APIs, and other key concepts via the T3 Stack.
 **Concepts Covered:** React, TypeScript, Tailwind CSS, Next.js, tRPC, PostgreSQL, Drizzle, SSR, CSR, Authentication, SEO
