@@ -140,15 +140,15 @@ export const experiences: TimelineExperience[] = [
         achievements: [],
         images: [
             {
-                src: "/experience/github.png",
+                src: "/features/ghce.jpg",
                 title: "GitHub Campus Expert",
             },
         ],
         companyLogo: "/experience/github-logo.png",
         colors: {
-            cardColor: "#f0f6fc",
+            cardColor: "#0d1117",
             accent: "#d71e3c",
-            textColor: "#0d1117",
+            textColor: "#ffffff",
         },
         links: [
             {
@@ -187,6 +187,7 @@ export const experiences: TimelineExperience[] = [
             "Researched Embodied General Intelligence and Sociobehavioral Robots for crisis and natural disaster search and rescue. Worked on computer vision and inventory management systems.",
         responsibilities: [
             "Researched Embodied General Intelligence and Sociobehavioral Robots for crisis and natural disaster search and rescue.",
+            "Rearchitected public facing company website, increasing SEO visibility by **10x**.",
             "Developed an internal inventory management system, reducing unnecessary wasteful restock purchases by **40%**.",
             "Trained custom **YOLOv8** object detection models with a resulting **97%** accuracy in recognizing target objects.",
             "Aided in securing pre-seed funding by contributing to multiple high-impact technical projects across the company.",
@@ -194,7 +195,7 @@ export const experiences: TimelineExperience[] = [
         achievements: [],
         images: [
             {
-                src: "/experience/pheratech.png",
+                src: "/experience/pheratech.gif",
                 title: "Pheratech Systems",
             },
         ],
