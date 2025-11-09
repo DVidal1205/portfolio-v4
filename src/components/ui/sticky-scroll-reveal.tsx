@@ -19,6 +19,14 @@ const passionImages = [
         ),
     },
     {
+        title: "Knight Hacks VIII",
+        src: "/about/passion/kh-viii.png",
+    },
+    {
+        title: "Tabling for New Knight Hacks Members",
+        src: "/about/passion/tabling.png",
+    },
+    {
         title: "Elected President for 2024-2025",
         src: "/about/passion/elections25.jpg",
         infoDialog: (
@@ -43,6 +51,28 @@ const passionImages = [
 ];
 
 const peopleImages = [
+    {
+        title: "Knight Hacks VIII Organizing Team",
+        src: "/about/people/kh-viii.png",
+        infoDialog: (
+            <InfoDialog
+                title="Knight VII Organizing Team"
+                text="Some of the amazing Knight Hacks Organizing Team that made Knight Hacks VIII the resounding success it was.\n\nLeft to Right: Kenny, Ricky, Daniel, Carfos, Lewin, Dylan, Khanh, Adrian, Sam, Leonard, Carlos, Faris, Luke, Kai"
+                image="/about/people/kh-viii.png"
+            />
+        ),
+    },
+    {
+        title: "Knight Hacks @ Hackcon 2025",
+        src: "/about/people/mlh-hackcon.png",
+        infoDialog: (
+            <InfoDialog
+                title="Knight Hacks @ Hackcon 2025"
+                text="Every year, Major League Hacking invites organizers from around the world to kickback and network at Hackcon at Camp Pontiac. This is a highlight event for the team every year, and I am happy that we got to bring out 10 organizers to Hackcon 2025!"
+                image="/about/people/mlh-hackcon.png"
+            />
+        ),
+    },
     {
         title: "Knight Hacks @ Bitcamp XI",
         src: "/about/people/bitcampxi.jpg",
@@ -109,6 +139,21 @@ const progressImages = [
                 title="Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)"
                 text="One of the many **Knight Hacks** wins at **Bitcamp XI**, my team and I won **1st Place** in both the **Prettiest Hack Challenge** and the **Best Use of Google Gemini** challenge. The most recent of my grand successes, this win was a huge moment for my team and I. We spent **18 hours**, or half the event, just coming up with an idea. And while that was super annoying, this showed me that I am held back not by my abilities, but by an idea. I felt that, given enough time and resources, I was on the path to being able to build **anything**. \\n\\n We built **VisuWorld**, a web-app that uses a RAG-empowered Google Gemini pipeline to generate 3D scenes using GLSL shader code as a parsing layer. This project gained a lot of attention, and has been [featured](https://www.linkedin.com/posts/major-league-hacking_builtwithmlh-hackathonlife-geminiai-ugcPost-7340441876530937856-sYp5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk) by MLH and pitched to the **Google Deepmind** team for their developer showcase series. This was a big inflection point for me and my career as I started gaining **visibility** for myself and my work."
                 image="/about/progress/bigwin.jpg"
+            />
+        ),
+    },
+    {
+        title: "NVIDIA Ignite Class of 2025",
+        src: "/about/progress/nvidia.png",
+    },
+    {
+        title: "Triple Win (VL-ADK @ ShellHacks 2025)",
+        src: "/projects/vl-adk-winning.png",
+        infoDialog: (
+            <InfoDialog
+                title="Triple Win (VL-ADK @ ShellHacks 2025)"
+                text="At ShellHacks 2025, our Project VL-ADK won **THREE** different challenges: **1st place** in the NVIDIA Hack for the Future challenge, **2nd place** in the Microsoft AI for Good challenge, and **3rd place** in the Waymo Reimagining Navigation challenge.\n\nAnother Dylan Luke Leonard success :)"
+                image="/projects/vl-adk-winning.png"
             />
         ),
     },

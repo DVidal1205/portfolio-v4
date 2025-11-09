@@ -15,6 +15,28 @@ if (typeof window !== "undefined") {
 
 const aboutImages = [
     {
+        title: "Opening Ceremony @ Knight Hacks VIII",
+        src: "/about/kh-viii-crowd.png",
+        infoDialog: (
+            <InfoDialog
+                title="Opening Ceremony @ Knight Hacks VIII"
+                text="This picture was taken at the opening ceremony for Knight Hacks VIII, where I set the tone for the weekend and welcomed nearly 1,000 hackers to UCF for a weekend full of innovating and building!"
+                image="/about/kh-viii-crowd.png"
+            />
+        ),
+    },
+    {
+        title: "NVIDIA Intern Picture w/ Jensen Huang",
+        src: "/about/jensen.png",
+        infoDialog: (
+            <InfoDialog
+                title="NVIDIA Intern Picture w/ Jensen Huang"
+                text="No... this is not AI Generated. At the end of my Internship at NVIDIA, we got to meet and chat with Jensen!"
+                image="/about/jensen.png"
+            />
+        ),
+    },
+    {
         title: "My First Speaker Event (Hackcon 2025)",
         src: "/about/hackcon.png",
         infoDialog: (
@@ -26,7 +48,7 @@ const aboutImages = [
         ),
     },
     {
-        title: "My Headshot",
+        title: "My First Headshot",
         src: "/headshot.png",
         infoDialog: (
             <InfoDialog
@@ -281,8 +303,8 @@ export function About() {
                                     achieving that goal.
                                 </div>
                                 <div className="text-foreground text-sm md:text-lg mt-6">
-                                    Professionally, I am a Software Engineer
-                                    Intern at{" "}
+                                    Professionally, I was a former and returning
+                                    Software Engineer Intern at{" "}
                                     <LinkPreview
                                         url="https://www.nvidia.com/"
                                         className="text-primary-500 hover:text-primary-400 underline transition-colors"

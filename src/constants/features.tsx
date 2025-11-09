@@ -16,6 +16,65 @@ export interface FeatureItem {
 
 export const featuredItems: FeatureItem[] = [
     {
+        name: "We Are Knight Hacks",
+        description:
+            "Our post-event promo for Knight Hacks VIII, which welcomed nearly 1,000 hackers from across the globe. This event was my last Hackathon as President, and I was super happy to have seen it so well documented.",
+        date: "October 2025",
+        image: "/features/we-are-kh.png",
+        links: [
+            {
+                label: "YouTube",
+                url: "https://www.youtube.com/watch?v=OzW_4QeCfM0",
+            },
+            {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/posts/knight-hacks_knighthacks-technology-development-activity-7389696750027980800-ZvGD",
+            },
+            {
+                label: "Instagram",
+                url: "https://www.instagram.com/p/DQcJqIdkQAI",
+            },
+        ],
+    },
+    {
+        name: "Knight Hacks, Hack Days, and Hackathons - UCF Today",
+        description:
+            "An interview with myself, Leonard Gofman, and Richard Phillips, discussing what it is like to be an undergraduate technologist and how to make an impact and overcome impostor syndrome.",
+        date: "October 2025",
+        image: "/features/ucftoday.png",
+        links: [
+            {
+                label: "UCF Today",
+                url: "https://www.ucf.edu/news/knight-hacks-hack-days-and-hackathons/",
+            },
+            {
+                label: "UCF Department of Computer Science",
+                url: "https://www.linkedin.com/posts/ucfcomputersci_ahead-of-their-annual-hackathon-this-friday-activity-7386857062489628672-mOaS",
+            },
+            {
+                label: "UCF College of Engineering and Computer Science",
+                url: "https://www.linkedin.com/posts/ucfcecs_ahead-of-their-annual-hackathon-this-friday-activity-7386826807259611136-3ovw",
+            },
+        ],
+    },
+    {
+        name: "VL-ADK Showcase",
+        description:
+            "In wake of our resounding success at ShellHacks 2025 with our project VL-ADK, we were invited to interview with INIT, the organizing team, to highlight our achievement and understand VL-ADK.",
+        date: "September 2025",
+        image: "/projects/vl-adk-hotdog.png",
+        links: [
+            {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/posts/init-fiu_shellhacks-initatfiu-vladk-activity-7385053244114440192-fRa9",
+            },
+            {
+                label: "Instagram",
+                url: "https://www.instagram.com/p/DP2fD7CjNc2/",
+            },
+        ],
+    },
+    {
         name: "MLH Top 50 2025",
         description:
             "The MLH Top 50 is a list of 50 members of the Global Hackathon Community. Hackers, Organizers, and Alumni from around the globe are recognized each year on this esteemed list for their contributions to the Hacker community.",
@@ -121,7 +180,7 @@ export const featuredItems: FeatureItem[] = [
         ),
     },
     {
-        name: "Knight Hacks Wins Multiple Awards from Bitcamp XI",
+        name: "Knight Hacks Wins Multiple Awards from Bitcamp XI - UCF Today",
         description:
             "An interview with myself and our Treasurer, Adrian, about Knight Hacks' grand success at Bitcamp XI. Despite only being 3% of the hacker population, we took home ~23% of the prizes.",
         date: "May 2025",
