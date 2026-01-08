@@ -7,6 +7,7 @@ export const projects: ProjectData[] = [
         id: "vl-adk",
         title: "VL-ADK",
         period: "ShellHacks 2025 Hackathon",
+        winner: true,
         description:
             "Winner of NVIDIA, Microsoft, and Waymo challenges, VL-ADK explores the new frontier of VLAs and Physical Agents.",
         longDescription: readProjectMarkdown("vl-adk"),
@@ -83,6 +84,7 @@ export const projects: ProjectData[] = [
         period: "SASE Stem Connect 25 Hackathon",
         description:
             "Tapestry is an AI-powered life exploration tool that helps users explore their future and plan for success.",
+        winner: true,
         longDescription: readProjectMarkdown("tapestry"),
         images: [
             {
@@ -150,6 +152,7 @@ export const projects: ProjectData[] = [
         id: "visuworld",
         title: "VisuWorld",
         period: "Bitcamp XI Hackathon",
+        winner: true,
         description:
             "Winner of Best use of Google Gemini, VisuWorld is a unique approach to generative 3D scene creation using LLMs and Google Gemini.",
         longDescription: readProjectMarkdown("visuworld"),
@@ -247,6 +250,7 @@ export const projects: ProjectData[] = [
         id: "codejoust",
         title: "CodeJoust",
         period: "February 2025 - Present",
+        winner: false,
         description:
             "CodeJoust is a platform made to help developers learn DSA by enabling them to practice with their friends in an real-time combat game.",
         longDescription: readProjectMarkdown("codejoust"),
@@ -306,6 +310,7 @@ export const projects: ProjectData[] = [
         id: "airjam",
         title: "AirJam",
         period: "HackUSF 2025 Hackathon",
+        winner: false,
         description:
             "AirJam is an AI-powered music exploration tool that helps users make music, anytime, anywhere. Play up to 30 instruments with just your webcam.",
         longDescription: readProjectMarkdown("airjam"),
@@ -365,6 +370,7 @@ export const projects: ProjectData[] = [
         period: "Shell Hacks 2024 Hackathon",
         description:
             "Winner of Google's Social Good Challenge, Voiceboard AI makes whiteboarding accessible to all by using speech-to-diagram technology.",
+        winner: true,
         longDescription: readProjectMarkdown("voiceboard"),
         images: [
             {
@@ -423,6 +429,7 @@ export const projects: ProjectData[] = [
         id: "forge",
         title: "Forge",
         period: "July 2024 - Present",
+        winner: false,
         description:
             "Forge is the Knight Hacks monorepo, and contains all of our organizations core infrastructure. Built and maintained by the Knight Hacks team.",
         longDescription: readProjectMarkdown("forge"),
@@ -504,6 +511,7 @@ export const projects: ProjectData[] = [
     {
         id: "lootcode",
         title: "Lootcode",
+        winner: true,
         period: "February 2024 - May 2024",
         description:
             "Winner of the Knight Hacks Projects Program, Lootcode aims to make learning DSA fun and engaging with a fantasy D&D-esque campaign.",
@@ -610,6 +618,7 @@ export const projects: ProjectData[] = [
     {
         id: "apa-scan",
         title: "APA-Scan + AS-Quant",
+        winner: false,
         period: "March 2024 - August 2024",
         description:
             "Built for my research position, the APA-Scan and AS-Quant pipelines use parallelized Python to assist in the analysis of large genetic datasets.",
@@ -651,6 +660,7 @@ export const projects: ProjectData[] = [
     {
         id: "wildspace-web",
         title: "Wildspace Web",
+        winner: false,
         period: "December 2023 - February 2024",
         description:
             "Wildspace Web is an AI-powered worldbuilding SaaS tool for dungeon masters that creates immersive and engaging worlds.",
@@ -714,6 +724,7 @@ export const projects: ProjectData[] = [
     {
         id: "project-wildspace",
         title: "Project Wildspace",
+        winner: false,
         period: "Knight Hacks VI Hackathon",
         description:
             "Predecessor to Wildspace Web, built as a desktop app using PySide and Qt for the Knight Hacks VI Hackathon.",
@@ -760,6 +771,7 @@ export const projects: ProjectData[] = [
     {
         id: "ucf-activities-bot",
         title: "UCF Activities Bot",
+        winner: false,
         period: "November 2023 - December 2023",
         description:
             "A Discord bot that scrapes the UCF Events Calendar and posts events every morning. Viewed daily by over 3000 UCF students.",
@@ -782,6 +794,7 @@ export const projects: ProjectData[] = [
     {
         id: "dndttk",
         title: "DNDTTK",
+        winner: false,
         period: "Shell Hacks 2023 Hackathon",
         description:
             "My first Hackathon project, DNDTTK is a Dungeons and Dragons themed character generator built with Tkinter.",
@@ -816,6 +829,7 @@ export const projects: ProjectData[] = [
     {
         id: "wordle-desktop",
         title: "Wordle Desktop",
+        winner: false,
         period: "August 2023 - September 2023",
         description:
             "A clone of the popular game Wordle, and my first desktop application built with Qt in C++. Built for my first GUI-based project.",

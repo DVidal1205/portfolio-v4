@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Calendar, ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight, Trophy } from "lucide-react";
 import Image from "next/image";
 import { ReactElement, useState } from "react";
 
@@ -12,6 +12,7 @@ export interface ProjectData {
     title: string;
     period: string;
     description: string;
+    winner: boolean;
     longDescription: string;
     images: {
         src: string;
@@ -101,6 +102,30 @@ export default function ProjectCard({ project, projectId }: ProjectCardProps) {
                             placeholder="blur"
                             blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNWExOWU1IiBvcGFjaXR5PSIwLjIiLz48L3N2Zz4="
                         />
+                    )}
+
+                    {project.winner && (
+                        <div className="absolute top-2 right-2 z-30">
+                            <Badge
+                                className="flex items-center gap-1.5 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all duration-500 group-hover:scale-110 group-hover:-translate-y-1 group-hover:rotate-3 group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)]"
+                                style={{
+                                    backgroundColor: `${project.colors.accent}E6`,
+                                    borderColor: project.colors.accent,
+                                    color:
+                                        project.colors.cardBackground ||
+                                        "#FFFFFF",
+                                    boxShadow:
+                                        hoveredId === project.id
+                                            ? `0 8px 20px ${project.colors.accent}60`
+                                            : undefined,
+                                }}
+                            >
+                                <Trophy className="h-4 w-4 transition-transform duration-500 group-hover:rotate-12" />
+                                <span className="font-semibold text-sm">
+                                    Winner
+                                </span>
+                            </Badge>
+                        </div>
                     )}
 
                     <div className="absolute bottom-0 left-0 right-0 p-1 z-30">
