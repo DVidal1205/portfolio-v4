@@ -12,6 +12,42 @@ export interface WorkshopItem {
 
 export const workshopItems: WorkshopItem[] = [
     {
+        name: "Projects & Hackathons",
+        description:
+            "This workshop was delivered to Kickstart, the Knight Hacks mentorship program, and goes over what types of projects help with learning software development while still delivering portfolio value. Then, I cover how to win Hackathons.",
+        date: "September 2025",
+        image: "/features/workshops/resumes.png",
+        conceptsCovered: [
+            "Resumes",
+            "Recruiting",
+            "Professional Development",
+            "Mentorship",
+        ],
+        youtubeLink: "https://www.youtube.com/watch?v=AibhU5btRVs",
+    },
+    {
+        name: "Building Good Resumes",
+        description:
+            "This workshop was delivered to Kickstart, the Knight Hacks mentorship program, and tackles how to approach building a resume that will help land a tech job.",
+        date: "August 2025",
+        image: "/features/workshops/resumes.png",
+        conceptsCovered: [
+            "Resumes",
+            "Recruiting",
+            "Professional Development",
+            "Mentorship",
+        ],
+        youtubeLink: "https://www.youtube.com/watch?v=GK9Xig7fZFA",
+        infoDialog: (
+            <InfoDialog
+                title="Resume Building"
+                text="This is actually the **6th** Resume workshop I've run for Knight Hacks - so it's gotten quite good over time!"
+                image="/features/workshops/resumes.png"
+                className="bg-none border-none bg-transparent p-0"
+            />
+        ),
+    },
+    {
         name: "Full Stack 101",
         description:
             "The second workshop in a 2 part series on building web pages and web apps. This workshop goes beyond static pages and introduces functional databases, APIs, and other key concepts via the T3 Stack.",
