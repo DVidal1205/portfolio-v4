@@ -1,4 +1,4 @@
-**Winner of Google's Hack for Social Good Challenge** at Shell Hacks 2024! VoiceBoard AI makes **whiteboarding accessible to everyone** by converting speech into diagrams in real-time. We were able to send transcribed speech to a **Google Gemini** backend, which used the current state of the board and the users request to generate/modify diagrams using **Mermaid.js**.
+**Winner of Google's Hack for Social Good Challenge** at Shell Hacks 2024 (1st of 97 projects)! VoiceBoard AI makes **whiteboarding accessible to everyone** by converting speech into diagrams in real-time. We were able to send transcribed speech to a **Google Gemini** backend, which used the current state of the board and the users request to generate/modify diagrams using **Mermaid.js**.
 
 Highlights:
 • **Accessibility breakthrough** for users with motor disabilities

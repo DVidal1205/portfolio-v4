@@ -1,4 +1,4 @@
-Lootcode is what I consider to be my first **real** project. I have worked on a handful in the past, but none have gotten me as excited, dedicated, and passionate as this one. Lootcode was a shared vision of myself, Leonard Gofman, and Luke Cullen. We teamed up to build Lootcode for the **Knight Hacks Projects Program** in 2023, which we won!
+Lootcode is what I consider to be my first **real** project. I have worked on a handful in the past, but none have gotten me as excited, dedicated, and passionate as this one. Lootcode was a shared vision of myself, Leonard Gofman, and Luke Cullen. We teamed up to build Lootcode for the **Knight Hacks Projects Program** in 2023, which we won (1st of 14 projects)!
 
 I wanted to make another fantasy/TTRPG themed project, Leonard wanted to experiment with code-grade servers after getting into ICPC, and Luke wanted to do something gamified. Lootcode started as a pun based off the DSA platform **Leetcode**, and we ran with it. And it worked! We were actually able to create a secure, isolated code grade server using **Docker** and **Zx Shell** that supports **7 programming languages** - C, C++, C#, Java, Python, Rust, and Go
 

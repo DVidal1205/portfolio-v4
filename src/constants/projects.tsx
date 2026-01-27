@@ -4,6 +4,81 @@ import { readProjectMarkdown } from "@/lib/markdown";
 
 export const projects: ProjectData[] = [
     {
+        id: "restory",
+        title: "ReStory",
+        period: "SwampHacks XI Hackathon",
+        winner: true,
+        description:
+            "Winner of 1st Place Best Overall, ReStory is a multi-modal AI wearable that helps people with Alzheimer's remember the people they love.",
+        longDescription: readProjectMarkdown("restory"),
+        images: [
+            {
+                src: "/projects/restory.gif",
+                title: "ReStory",
+            },
+            {
+                src: "/projects/restory-side.jpg",
+                title: "ReStory Wearable",
+            },
+            {
+                src: "/projects/restory-face-id.jpg",
+                title: "ReStory One Shot Face Recognition",
+            },
+            {
+                src: "/projects/restory-mobile.jpg",
+                title: "ReStory Mobile Dashboard",
+            },
+            {
+                src: "/projects/restory-face-panel.jpg",
+                title: "ReStory Face ID Dashboard",
+            }
+        ],
+        colors: {
+            cardBackground: "#1a1a2e",
+            cardText: "#FFFFFF",
+            panelBackground: "#1a1a2e",
+            panelText: "#FFFFFF",
+            accent: "#4a90e2",
+        },
+        links: [
+            {
+                label: "ReStory Demo Video",
+                url: "https://youtu.be/en1dfKUXFkk",
+                icon: "external",
+            },
+            {
+                label: "ReStory Repository",
+                url: "https://github.com/retromonos/SwampHacks11FIH",
+                icon: "github",
+            },
+            {
+                label: "ReStory DevPost",
+                url: "https://devpost.com/software/restory",
+                icon: "external",
+            },
+        ],
+        skills: [
+            "ChromaDB",
+            "CUDA",
+            "CUDNN",
+            "Embeddings",
+            "FastAPI",
+            "Gemini",
+            "NumPy",
+            "OpenCV",
+            "OpenRouter",
+            "Python",
+            "PyTorch",
+            "Raspberry Pi 5",
+            "SpeechBrain",
+            "WebSockets",
+            "WhisperX",
+            "InsightFace",
+            "ECAPA-TDNN",
+            "ArcFace",
+        ],
+    },
+    {
         id: "vl-adk",
         title: "VL-ADK",
         period: "ShellHacks 2025 Hackathon",
@@ -130,7 +205,7 @@ export const projects: ProjectData[] = [
                 icon: "github",
             },
             {
-                label: "VisuWorld DevPost",
+                label: "Tapestry DevPost",
                 url: "https://devpost.com/software/tapestry-s5u2oj",
                 icon: "external",
             },
