@@ -8,6 +8,32 @@ import { LinkPreview } from "./link-preview";
 
 const passionImages = [
     {
+        title: "Passing the Torch @ 2026-2027 Elections",
+        src: "/about/passion/elections27.jpg",
+    },
+    {
+        title: "Elected President for 2025-2026",
+        src: "/about/passion/elections26.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Elected President for 2025-2026"
+                text="After serving roughly 4 months as a re-elected **President** of **Knight Hacks**, the elections for the 2025-2026 school year came. At this point, I went well beyond just proving myself as a new face in the organization. To most, the organization was the best it has ever been. \\n\\n With a **unanimous** vote by the general body of the club, I was re-elected to serve a **second term** as President. Up to this point, the organization has **never** had a President run twice, let alone be re-elected. Alongside me was one of my own mentees, [Daniel Efres](https://www.linkedin.com/in/daniel-efres/), who was elected as the **Secretary** of the club, with my other mentee [Carlos Lopez](https://www.linkedin.com/in/carloselopezjr/) as runner-up in the first-ever runoff election in the clubs history. Along Daniel served my two close friends, [Leonard](https://www.linkedin.com/in/leonard-gofman-208578236/) and [Adrian](https://www.linkedin.com/in/adrianosoriob/), serving as **Vice President** and **Treasurer** respectively."
+                image="/about/passion/elections26.jpg"
+            />
+        ),
+    },
+    {
+        title: "Elected President for 2024-2025",
+        src: "/about/passion/elections25.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Elected President for 2024-2025"
+                text="At the end of my very **first year** at UCF, I was elected as Secretary of **Knight Hacks**. It was rather unheard of for a freshman to assume leadersip in a student-ran organization, but I didn't let that stop me. Up to this point, I'd have attended every single **Knight Hacks** event but a few, and my determination was clear. \\n\\n About 4 months later, I was re-elected as the **President** of Knight Hacks after a board vacancy opened, making me the youngest President in the club's history. In our first year, our board was able to completely re-imagine the limits of the organization and ran an amazing Hackathon for **550+** hackers from all throughout Florida. In only one year, I'd have gone from **hacker** to **organizer**. It was the **passion** for the club and the culture that kept me going."
+                image="/about/passion/elections25.jpg"
+            />
+        ),
+    },
+    {
         title: "My Knight Hacks Mentorship Group (Kickstart-1)",
         src: "/about/passion/mentorship.jpg",
         infoDialog: (
@@ -25,28 +51,6 @@ const passionImages = [
     {
         title: "Tabling for New Knight Hacks Members",
         src: "/about/passion/tabling.png",
-    },
-    {
-        title: "Elected President for 2024-2025",
-        src: "/about/passion/elections25.jpg",
-        infoDialog: (
-            <InfoDialog
-                title="Elected President for 2024-2025"
-                text="At the end of my very **first year** at UCF, I was elected as Secretary of **Knight Hacks**. It was rather unheard of for a freshman to assume leadersip in a student-ran organization, but I didn't let that stop me. Up to this point, I'd have attended every single **Knight Hacks** event but a few, and my determination was clear. \\n\\n About 4 months later, I was re-elected as the **President** of Knight Hacks after a board vacancy opened, making me the youngest President in the club's history. In our first year, our board was able to completely re-imagine the limits of the organization and ran an amazing Hackathon for **550+** hackers from all throughout Florida. In only one year, I'd have gone from **hacker** to **organizer**. It was the **passion** for the club and the culture that kept me going."
-                image="/about/passion/elections25.jpg"
-            />
-        ),
-    },
-    {
-        title: "Elected President for 2025-2026",
-        src: "/about/passion/elections26.jpg",
-        infoDialog: (
-            <InfoDialog
-                title="Elected President for 2025-2026"
-                text="After serving roughly 4 months as a re-elected **President** of **Knight Hacks**, the elections for the 2025-2026 school year came. At this point, I went well beyond just proving myself as a new face in the organization. To most, the organization was the best it has ever been. \\n\\n With a **unanimous** vote by the general body of the club, I was re-elected to serve a **second term** as President. Up to this point, the organization has **never** had a President run twice, let alone be re-elected. Alongside me was one of my own mentees, [Daniel Efres](https://www.linkedin.com/in/daniel-efres/), who was elected as the **Secretary** of the club, with my other mentee [Carlos Lopez](https://www.linkedin.com/in/carloselopezjr/) as runner-up in the first-ever runoff election in the clubs history. Along Daniel served my two close friends, [Leonard](https://www.linkedin.com/in/leonard-gofman-208578236/) and [Adrian](https://www.linkedin.com/in/adrianosoriob/), serving as **Vice President** and **Treasurer** respectively."
-                image="/about/passion/elections26.jpg"
-            />
-        ),
     },
 ];
 
@@ -106,17 +110,40 @@ const peopleImages = [
             />
         ),
     },
+    {
+        title: "Knight Hacks @ SwampHacks XI",
+        src: "/about/people/swamphacksxi.png",
+    },
 ];
 
 const progressImages = [
     {
-        title: "First Hackathon (Shell Hacks 2023)",
-        src: "/about/progress/firsthackathon.jpg",
+        title: "First Overall Win (SwampHacks XI)",
+        src: "/about/progress/overall.jpeg",
+    },
+    {
+        title: "Triple Win (VL-ADK @ ShellHacks 2025)",
+        src: "/projects/vl-adk-winning.png",
         infoDialog: (
             <InfoDialog
-                title="First Hackathon (Shell Hacks 2023)"
-                text="**Shell Hacks 2023** was my first experience of the Hackathon Culture in Florida. At this point of my journey, I had only been programming for about **5 months**, and I was extremely **intimidated**. But, I thought why not give it a shot, and so I did. I was exposed to this opportunity in my first weeks of school by **Knight Hacks**, so I had a community to fall back on. \\n\\n The project was a **disaster**, and it took us the first 12 hours just to set up a GitHub repository. We all ended up splitting up and making our own solo projects, but it was still the **best learning experience** I had thus far in my journey through software."
-                image="/about/progress/firsthackathon.jpg"
+                title="Triple Win (VL-ADK @ ShellHacks 2025)"
+                text="At ShellHacks 2025, our Project VL-ADK won **THREE** different challenges: **1st place** in the NVIDIA Hack for the Future challenge, **2nd place** in the Microsoft AI for Good challenge, and **3rd place** in the Waymo Reimagining Navigation challenge.\n\nAnother Dylan Luke Leonard success :)"
+                image="/projects/vl-adk-winning.png"
+                />
+            ),
+    },
+    {
+        title: "NVIDIA Ignite Class of 2025",
+        src: "/about/progress/nvidia.png",
+    },
+    {
+        title: "Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)",
+        src: "/about/progress/bigwin.jpg",
+        infoDialog: (
+            <InfoDialog
+                title="Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)"
+                text="One of the many **Knight Hacks** wins at **Bitcamp XI**, my team and I won **1st Place** in both the **Prettiest Hack Challenge** and the **Best Use of Google Gemini** challenge. The most recent of my grand successes, this win was a huge moment for my team and I. We spent **18 hours**, or half the event, just coming up with an idea. And while that was super annoying, this showed me that I am held back not by my abilities, but by an idea. I felt that, given enough time and resources, I was on the path to being able to build **anything**. \\n\\n We built **VisuWorld**, a web-app that uses a RAG-empowered Google Gemini pipeline to generate 3D scenes using GLSL shader code as a parsing layer. This project gained a lot of attention, and has been [featured](https://www.linkedin.com/posts/major-league-hacking_builtwithmlh-hackathonlife-geminiai-ugcPost-7340441876530937856-sYp5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk) by MLH and pitched to the **Google Deepmind** team for their developer showcase series. This was a big inflection point for me and my career as I started gaining **visibility** for myself and my work."
+                image="/about/progress/bigwin.jpg"
             />
         ),
     },
@@ -132,28 +159,13 @@ const progressImages = [
         ),
     },
     {
-        title: "Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)",
-        src: "/about/progress/bigwin.jpg",
+        title: "First Hackathon (Shell Hacks 2023)",
+        src: "/about/progress/firsthackathon.jpg",
         infoDialog: (
             <InfoDialog
-                title="Winner of Google Gemini Challenge (VisuWorld @ Bitcamp XI)"
-                text="One of the many **Knight Hacks** wins at **Bitcamp XI**, my team and I won **1st Place** in both the **Prettiest Hack Challenge** and the **Best Use of Google Gemini** challenge. The most recent of my grand successes, this win was a huge moment for my team and I. We spent **18 hours**, or half the event, just coming up with an idea. And while that was super annoying, this showed me that I am held back not by my abilities, but by an idea. I felt that, given enough time and resources, I was on the path to being able to build **anything**. \\n\\n We built **VisuWorld**, a web-app that uses a RAG-empowered Google Gemini pipeline to generate 3D scenes using GLSL shader code as a parsing layer. This project gained a lot of attention, and has been [featured](https://www.linkedin.com/posts/major-league-hacking_builtwithmlh-hackathonlife-geminiai-ugcPost-7340441876530937856-sYp5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk) by MLH and pitched to the **Google Deepmind** team for their developer showcase series. This was a big inflection point for me and my career as I started gaining **visibility** for myself and my work."
-                image="/about/progress/bigwin.jpg"
-            />
-        ),
-    },
-    {
-        title: "NVIDIA Ignite Class of 2025",
-        src: "/about/progress/nvidia.png",
-    },
-    {
-        title: "Triple Win (VL-ADK @ ShellHacks 2025)",
-        src: "/projects/vl-adk-winning.png",
-        infoDialog: (
-            <InfoDialog
-                title="Triple Win (VL-ADK @ ShellHacks 2025)"
-                text="At ShellHacks 2025, our Project VL-ADK won **THREE** different challenges: **1st place** in the NVIDIA Hack for the Future challenge, **2nd place** in the Microsoft AI for Good challenge, and **3rd place** in the Waymo Reimagining Navigation challenge.\n\nAnother Dylan Luke Leonard success :)"
-                image="/projects/vl-adk-winning.png"
+                title="First Hackathon (Shell Hacks 2023)"
+                text="**Shell Hacks 2023** was my first experience of the Hackathon Culture in Florida. At this point of my journey, I had only been programming for about **5 months**, and I was extremely **intimidated**. But, I thought why not give it a shot, and so I did. I was exposed to this opportunity in my first weeks of school by **Knight Hacks**, so I had a community to fall back on. \\n\\n The project was a **disaster**, and it took us the first 12 hours just to set up a GitHub repository. We all ended up splitting up and making our own solo projects, but it was still the **best learning experience** I had thus far in my journey through software."
+                image="/about/progress/firsthackathon.jpg"
             />
         ),
     },

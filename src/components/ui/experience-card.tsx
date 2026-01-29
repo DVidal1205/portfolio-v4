@@ -165,9 +165,11 @@ export default function ExperienceCard({
                                 alt={experience.images[0].title}
                                 fill
                                 className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, (max-width: 1280px) 70vw, 60vw"
                                 quality={100}
                                 priority={index < 2}
+                                placeholder="blur"
+                                blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMWExYTJlIiBvcGFjaXR5PSIwLjMiLz48L3N2Zz4="
                             />
                         )}
 

@@ -3,23 +3,28 @@ import { TimelineExperience } from "@/components/ui/experience-card";
 export const experiences: TimelineExperience[] = [
     {
         id: "exp1",
-        title: "President",
+        title: "Dev Lead, Former President 2024 - 2026",
         company: "Knight Hacks",
         period: "February 2024 - Present",
         location: "Orlando, FL",
         description:
             "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as President to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
         responsibilities: [
-            "Manage a non-profit organization with **500+** members and **$40,000** dollars in yearly revenue focused on creating confident, capable, and passionate developers.",
-            "Organized the Knight Hacks VII Hackathon for over **1500+** registrants and **547** attendees, with a total of **94** projects submitted.",
+            "Revamped organizational web infrastructure, migrating from a single server to a distributed system of micro services increasing application availability by **67%**.",
+            "Led a team of **12** software engineers to complete biweekly development sprints across various features.",
+            "Orchestrated a CI/CD pipeline for core services hosted on **Microsoft Azure** ensuring a positive developer experience and application availability.",
+            "Maintained a large mono-repository with **6** applications and **4** services through enforcing code-quality best practices.",
+            "Managed a non-profit organization with **800+** members, **1,500+** hackers, and **$75,000** dollars in yearly revenue focused on creating confident, capable, and passionate developers.",
+            "Organized the Knight Hacks VIII Hackathon for over **1700+** registrants and **1,024** attendees, with a total of **189** projects submitted.",
+            "Organized the Knight Hacks VII Hackathon for over **1200+** registrants and **547** attendees, with a total of **94** projects submitted.",
             "Lead a team of **45** students to achieve deliverables such as **60** technical workshops a year and **100+** member mentorship.",
             "Revamped the mentorship program, expanding the number of participants by **58%** compared to previous school year.",
-            "Personally secured nearly **$25,000** for the organization by networking with numerous **Fortune 500** companies over 2 years.",
+            "Personally secured nearly **$35,000** for the organization by networking with numerous **Fortune 500** companies over 2 years.",
         ],
         achievements: [],
         images: [
             {
-                src: "/experience/knighthacks.jpg",
+                src: "/about/people/bitcampxi.jpg",
                 title: "Knight Hacks Leadership",
             },
         ],

@@ -14,9 +14,10 @@ interface SlideProps {
     index: number;
     current: number;
     handleSlideClick: (index: number) => void;
+    onImageClick?: (index: number) => void;
 }
 
-const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
+const Slide = ({ slide, index, current, handleSlideClick, onImageClick }: SlideProps) => {
     const slideRef = useRef<HTMLLIElement>(null);
 
     const xRef = useRef(0);
@@ -98,7 +99,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     </div>
                 )}
                 <Image
-                    className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out hover:scale-105 cursor-pointer"
                     style={{
                         opacity: current === index ? 1 : 0.7,
                     }}
@@ -109,6 +110,12 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
                     decoding="sync"
                     width={1000}
                     height={1000}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        if (current === index && onImageClick) {
+                            onImageClick(index);
+                        }
+                    }}
                 />
 
                 {/* Title positioned at bottom right */}
@@ -163,6 +170,7 @@ interface CarouselProps {
     current?: number;
     setCurrent?: (idx: number) => void;
     accentColor?: string;
+    onImageClick?: (index: number) => void;
 }
 
 export default function Carousel({
@@ -170,6 +178,7 @@ export default function Carousel({
     current: controlledCurrent,
     setCurrent: controlledSetCurrent,
     accentColor,
+    onImageClick,
 }: CarouselProps) {
     const [uncontrolledCurrent, setUncontrolledCurrent] = useState(0);
     const isControlled =
@@ -223,6 +232,7 @@ export default function Carousel({
                                     index={index}
                                     current={current}
                                     handleSlideClick={handleSlideClick}
+                                    onImageClick={onImageClick}
                                 />
                             </div>
                         ))}

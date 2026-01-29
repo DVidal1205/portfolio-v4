@@ -16,6 +16,27 @@ export interface FeatureItem {
 
 export const featuredItems: FeatureItem[] = [
     {
+        name: "Guest on WhoInvitedAbe",
+        description:
+            "A podcast episode where I was invited to discuss my journey as a software engineer and leader, and my outlook on the future of tech and AI. Hosted by Abraham Gomez, Customer Engineer at Google who I met at the ADK Bake Off.",
+        date: "January 2026",
+        image: "/features/whoinvitedabe.png",
+        links: [
+            {
+                label: "YouTube Epsiode",
+                url: "https://m.youtube.com/watch?v=DeKNolBKEkc",
+            },
+            {
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/posts/goabego_knighthacks-activity-7422673636983119873-hVYl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
+            },
+            {
+                label: "WhoInvitedAbe Podcast",
+                url: "https://www.youtube.com/@WhoInvitedAbe",
+            },
+        ],
+    },
+    {
         name: "We Are Knight Hacks",
         description:
             "Our post-event promo for Knight Hacks VIII, which welcomed nearly 1,000 hackers from across the globe. This event was my last Hackathon as President, and I was super happy to have seen it so well documented.",
