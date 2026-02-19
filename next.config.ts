@@ -2,6 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     /* config options here */
+    async headers() {
+        return [
+            {
+                source: "/resume.pdf",
+                headers: [
+                    {
+                        key: "X-Robots-Tag",
+                        value: "noindex, nofollow, noarchive, nosnippet",
+                    },
+                ],
+            },
+        ];
+    },
     images: {
         domains: [
             "assets.aceternity.com",
