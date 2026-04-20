@@ -1,5 +1,5 @@
 ---
-title: The framework for coming up with a project idea you'll actually finish
+title: The Framework for Coming Up with a Project Idea You'll Actually Finish
 description: Most project advice sends you straight into tutorial hell. Here's what to do instead.
 tags:
     - career
@@ -11,7 +11,7 @@ Most project advice is structured wrong. You get a list of ideas, you pick one, 
 
 ---
 
-## The skill-first trap
+# The skill-first trap
 
 The standard approach goes like this:
 
@@ -36,7 +36,7 @@ None of this means skill-first projects are worthless. You're still picking up t
 
 ---
 
-## Go idea-first
+# The idea-first approach
 
 Forget the tech stack. Completely. Don't think about it yet. Here's the order that actually works:
 
