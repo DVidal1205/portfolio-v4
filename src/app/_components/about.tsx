@@ -133,7 +133,7 @@ export function About() {
                             end: "top 30%",
                             toggleActions: "play none none reverse",
                         },
-                    }
+                    },
                 );
             }
 
@@ -160,7 +160,7 @@ export function About() {
                             end: "top 25%",
                             toggleActions: "play none none reverse",
                         },
-                    }
+                    },
                 );
             }
 
@@ -185,7 +185,7 @@ export function About() {
                             end: "top 30%",
                             toggleActions: "play none none reverse",
                         },
-                    }
+                    },
                 );
             }
 
@@ -210,7 +210,7 @@ export function About() {
                             end: "top 25%",
                             toggleActions: "play none none reverse",
                         },
-                    }
+                    },
                 );
             }
 
@@ -282,9 +282,9 @@ export function About() {
                                     </LinkPreview>
                                     , where I am a second-year student pursuing
                                     a Bachelor of Science in Computer Science. I
-                                    am the President of the{" "}
+                                    am the former President of the{" "}
                                     <LinkPreview
-                                        url="https://club.knighthacks.org/"
+                                        url="https://www.instagram.com/knighthacks"
                                         className="text-primary-500 hover:text-primary-400 underline transition-colors"
                                     >
                                         Knight Hacks

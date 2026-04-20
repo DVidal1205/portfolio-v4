@@ -1,7 +1,15 @@
+import { getAllBlogPostMeta } from "@/lib/blog";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://dvidal.dev";
+
+    const blogPosts = getAllBlogPostMeta().map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: "yearly" as const,
+        priority: 0.6,
+    }));
 
     return [
         {
@@ -34,5 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly",
             priority: 0.5,
         },
+        {
+            url: `${baseUrl}/blog`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.7,
+        },
+        ...blogPosts,
     ];
 }

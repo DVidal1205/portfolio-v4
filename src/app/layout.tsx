@@ -5,7 +5,7 @@ import { NavbarHome } from "@/components/ui/navbar";
 import ConvaiWidget from "@/components/ui/voice-agent";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
-import { Geist_Mono, Sora } from "next/font/google";
+import { Geist_Mono, Instrument_Serif, Sora } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 
@@ -19,10 +19,17 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+const instrumentSerif = Instrument_Serif({
+    subsets: ["latin"],
+    weight: "400",
+    style: ["normal", "italic"],
+    variable: "--font-instrument-serif",
+});
+
 export const metadata: Metadata = {
     title: "About | Dylan Vidal",
     description:
-        "Software Engineer at NVIDIA, President of Knight Hacks, and 3rd Year Computer Science Student at UCF. Passionate about helping others break into tech, and building impactful performant software.",
+        "Software Engineer at NVIDIA, former President of Knight Hacks, and 3rd Year Computer Science Student at UCF. Passionate about helping others break into tech, and building impactful performant software.",
     keywords: [
         "Dylan Vidal",
         "Software Engineer",
@@ -54,7 +61,7 @@ export const metadata: Metadata = {
         url: "https://dvidal.dev",
         title: "About | Dylan Vidal",
         description:
-            "Software Engineer at NVIDIA, President of Knight Hacks, and 3rd Year Computer Science Student at UCF. Passionate about helping others break into tech, and building impactful performant software.",
+            "Software Engineer at NVIDIA, former President of Knight Hacks, and 3rd Year Computer Science Student at UCF. Passionate about helping others break into tech, and building impactful performant software.",
         siteName: "Dylan Vidal",
         images: [
             {
@@ -73,7 +80,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${sora.variable} ${geistMono.variable} antialiased w-screen max-w-screen text-foreground overflow-x-hidden`}
+                className={`${sora.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased w-screen max-w-screen text-foreground overflow-x-hidden`}
             >
                 <Suspense fallback={null}>
                     <FriendDetector />

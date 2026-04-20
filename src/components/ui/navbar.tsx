@@ -40,6 +40,10 @@ export function NavbarHome() {
             name: "Features",
             link: "/features",
         },
+        {
+            name: "Blog",
+            link: "/blog",
+        },
     ];
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,7 +55,25 @@ export function NavbarHome() {
                     <NavbarLogo />
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-2">
-                        <FriendContent>
+                        <FriendContent
+                            fallback={
+                                <Link
+                                    href="https://www.instagram.com/dvidal.dev"
+                                    target="_blank"
+                                >
+                                    <NavbarButton
+                                        as="button"
+                                        variant="secondary"
+                                        className="flex items-center px-2 py-2 lg:px-3 lg:py-3"
+                                    >
+                                        <IconBrandInstagram
+                                            size={24}
+                                            className="lg:w-[30px] lg:h-[30px]"
+                                        />
+                                    </NavbarButton>
+                                </Link>
+                            }
+                        >
                             <Link
                                 href="https://www.instagram.com/dylanvidal1205/"
                                 target="_blank"
@@ -157,7 +179,22 @@ export function NavbarHome() {
                             </TransitionLink>
                         ))}
                         <div className="flex w-full gap-3 flex-wrap justify-center">
-                            <FriendContent>
+                            <FriendContent
+                                fallback={
+                                    <Link
+                                        href="https://www.instagram.com/dvidal.dev"
+                                        target="_blank"
+                                    >
+                                        <NavbarButton
+                                            as="button"
+                                            variant="secondary"
+                                            className="flex items-center"
+                                        >
+                                            <IconBrandInstagram size={30} />
+                                        </NavbarButton>
+                                    </Link>
+                                }
+                            >
                                 <Link
                                     href="https://www.instagram.com/dylanvidal1205/"
                                     target="_blank"
