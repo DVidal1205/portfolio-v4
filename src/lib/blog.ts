@@ -8,6 +8,9 @@ export type { BlogPost, BlogPostMeta } from "./blog-shared";
 export { formatBlogDate, resolveBlogImage } from "./blog-shared";
 
 const BLOG_DIR = path.join(process.cwd(), "src", "blog");
+interface BlogQueryOptions {
+    includeUnpublished?: boolean;
+}
 
 function ensureStringArray(value: unknown): string[] {
     if (Array.isArray(value)) {
@@ -35,7 +38,17 @@ function formatDate(value: unknown): string {
     return new Date().toISOString().slice(0, 10);
 }
 
-export function getAllBlogSlugs(): string[] {
+function isPublished(value: unknown): boolean {
+    if (typeof value === "boolean") return value;
+    if (typeof value === "string") {
+        const normalized = value.trim().toLowerCase();
+        if (["false", "0", "no"].includes(normalized)) return false;
+        if (["true", "1", "yes"].includes(normalized)) return true;
+    }
+    return true;
+}
+
+function getMarkdownSlugs(): string[] {
     if (!fs.existsSync(BLOG_DIR)) return [];
     return fs
         .readdirSync(BLOG_DIR)
@@ -43,12 +56,21 @@ export function getAllBlogSlugs(): string[] {
         .map((file) => file.replace(/\.md$/, ""));
 }
 
-export function getBlogPost(slug: string): BlogPost | null {
+export function getAllBlogSlugs(options: BlogQueryOptions = {}): string[] {
+    return getAllBlogPosts(options).map((post) => post.slug);
+}
+
+export function getBlogPost(
+    slug: string,
+    options: BlogQueryOptions = {}
+): BlogPost | null {
     const filePath = path.join(BLOG_DIR, `${slug}.md`);
     if (!fs.existsSync(filePath)) return null;
 
     const raw = fs.readFileSync(filePath, "utf8");
     const { data, content } = matter(raw);
+    const published = isPublished(data.published);
+    if (!options.includeUnpublished && !published) return null;
     const stats = readingTime(content);
 
     return {
@@ -65,9 +87,9 @@ export function getBlogPost(slug: string): BlogPost | null {
     };
 }
 
-export function getAllBlogPosts(): BlogPost[] {
-    return getAllBlogSlugs()
-        .map((slug) => getBlogPost(slug))
+export function getAllBlogPosts(options: BlogQueryOptions = {}): BlogPost[] {
+    return getMarkdownSlugs()
+        .map((slug) => getBlogPost(slug, options))
         .filter((post): post is BlogPost => post !== null)
         .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
