@@ -6,7 +6,7 @@ tags:
     - projects
     - advice
 date: 2026-04-20
-published: false
+published: true
 ---
 
 Most project advice is structured wrong. You get a list of ideas, you pick one, you follow a tutorial, and a few weeks later you've got a half-finished repo you'll never open again. That's not a you problem. That's the advice being broken.
