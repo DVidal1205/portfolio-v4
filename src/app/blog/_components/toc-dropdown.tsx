@@ -77,7 +77,7 @@ export default function TocDropdown({ items }: TocDropdownProps) {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -8, scale: 0.98 }}
                         transition={{ duration: 0.18, ease: "easeOut" }}
-                        className="absolute z-30 top-[calc(100%+8px)] right-0 w-[min(88vw,24rem)] rounded-md border border-white/10 bg-background p-3 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.85)]"
+                        className="absolute z-30 top-[calc(100%+8px)] left-0 md:left-auto md:right-0 w-[min(88vw,24rem)] rounded-md border border-white/10 bg-background p-3 shadow-[0_20px_50px_-30px_rgba(0,0,0,0.85)]"
                     >
                         <ul className="space-y-1.5 max-h-[min(50vh,22rem)] overflow-y-auto pr-1">
                             {items.map((item, index) => (
