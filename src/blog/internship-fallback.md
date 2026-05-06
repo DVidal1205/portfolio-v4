@@ -9,8 +9,6 @@ date: 2026-05-05
 published: true
 ---
 
-# No Internship This Summer? Here's What I Would Do Instead
-
 The summer between my freshman and sophomore year, I didn't have a software engineering internship. No manager. No return offer to chase. No company Slack. No midpoint review. Nothing that made the summer feel official.
 
 At the time, that was scary. I knew from being around Knight Hacks that most freshmen don't get internships, so it wasn't like I thought I was the only person this had ever happened to. But knowing something is normal doesn't make it feel good when it's your calendar that's empty.
