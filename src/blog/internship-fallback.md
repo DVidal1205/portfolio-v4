@@ -9,8 +9,6 @@ date: 2026-05-05
 published: true
 ---
 
-# No Internship This Summer? Here's What I Would Do Instead
-
 The summer between my freshman and sophomore year, I didn't have a software engineering internship.
 
 No manager. No return offer to chase. No company Slack. No midpoint review. Nothing that made the summer feel official.
