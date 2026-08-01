@@ -2,8 +2,57 @@ import { TimelineExperience } from "@/components/ui/experience-card";
 
 export const experiences: TimelineExperience[] = [
     {
+        id: "exp0",
+        title: "Software Engineer Intern",
+        company: "NVIDIA",
+        period: "May 2026 - August 2026",
+        location: "Santa Clara, CA",
+        description:
+            "Building shared simulator infrastructure for NVIDIA systems-software teams, replacing dedicated development hardware with reusable, autoscaled GPU-system simulators.",
+        responsibilities: [
+            "Built a distributed pool of reusable GPU-system simulators for NVIDIA systems-software teams, replacing dedicated development hardware with shared infrastructure and reducing reserved inventory and cost.",
+            "Designed **5 Kubernetes CRDs/controllers** to autoscale simulators, cutting machine access time from **2.5+ hours** to seconds.",
+            "Engineered a **12-stage** simulator lifecycle to keep reservations available, and recovered unhealthy pods gracefully in the background.",
+            "Enabled **5 projects** across NVIDIA systems software, including firmware, control plane, observability, and agentic development.",
+            "Bundled a **Prometheus/Loki/Alloy/Grafana** stack with **7-day logs** and **15-second metrics** for real-time observability.",
+        ],
+        achievements: [],
+        images: [
+            {
+                src: "/experience/nvidia-2026.png",
+                title: "NVIDIA Intern Competition Champions",
+                objectPosition: "center bottom",
+            },
+        ],
+        companyLogo: "/experience/nvidia-logo.png",
+        colors: {
+            cardColor: "#000000",
+            accent: "#78bc04",
+            textColor: "#ffffff",
+        },
+        links: [
+            {
+                label: "NVIDIA",
+                url: "http://nvidia.com/",
+                icon: "external",
+            },
+        ],
+        skills: [
+            "Kubernetes",
+            "Controllers",
+            "CRDs",
+            "Prometheus",
+            "Loki",
+            "Alloy",
+            "Grafana",
+            "Distributed Systems",
+            "GPU Infrastructure",
+            "Systems Software",
+        ],
+    },
+    {
         id: "exp1",
-        title: "Dev Lead, Former President 2024 - 2026",
+        title: "Dev Lead, Former President",
         company: "Knight Hacks",
         period: "February 2024 - Present",
         location: "Orlando, FL",

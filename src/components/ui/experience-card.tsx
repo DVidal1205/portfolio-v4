@@ -74,6 +74,7 @@ export interface TimelineExperience {
     images: {
         src: string;
         title: string;
+        objectPosition?: string;
     }[];
     companyLogo?: string;
     colors: {
@@ -165,6 +166,16 @@ export default function ExperienceCard({
                                 alt={experience.images[0].title}
                                 fill
                                 className="object-cover transition-all duration-700 ease-out group-hover:scale-105"
+                                style={{
+                                    objectPosition:
+                                        experience.images[0].objectPosition ||
+                                        "center center",
+                                    transformOrigin:
+                                        experience.images[0].objectPosition ===
+                                        "center bottom"
+                                            ? "center bottom"
+                                            : "center center",
+                                }}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, (max-width: 1280px) 70vw, 60vw"
                                 quality={100}
                                 priority={index < 2}

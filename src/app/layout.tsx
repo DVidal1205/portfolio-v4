@@ -2,7 +2,6 @@ import FriendDetector from "@/components/layout/friend-detector";
 import TransitionWrapper from "@/components/layout/transition-wrapper";
 import Footer from "@/components/ui/footer";
 import { NavbarHome } from "@/components/ui/navbar";
-import ConvaiWidget from "@/components/ui/voice-agent";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist_Mono, Instrument_Serif, Sora } from "next/font/google";
@@ -90,7 +89,6 @@ export default function RootLayout({
                     <TransitionWrapper>{children}</TransitionWrapper>
                 </main>
                 <Footer />
-                <ConvaiWidget />
                 <Analytics />
             </body>
         </html>
