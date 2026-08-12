@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Calendar, ChevronLeft, ChevronRight, Code, ExternalLink, Github, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 interface ProjectPanelProps {
     projects: ProjectData[];
@@ -29,16 +29,45 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
         );
     };
 
-    const closePanel = () => setSelectedProject(null);
+    const setSelectedProjectFromId = useCallback(
+        (projectId: string, updateUrl = false) => {
+            const project = projects.find((p) => p.id === projectId);
+            if (!project) return;
+
+            setSelectedProject(project);
+
+            if (updateUrl) {
+                const url = new URL(window.location.href);
+                url.searchParams.set("selected", project.id);
+                window.history.replaceState({}, "", url.toString());
+            }
+        },
+        [projects]
+    );
+
+    const closePanel = () => {
+        setSelectedProject(null);
+
+        const url = new URL(window.location.href);
+        url.searchParams.delete("selected");
+        window.history.replaceState({}, "", url.toString());
+    };
+
+    useEffect(() => {
+        const selectedProjectId = new URLSearchParams(window.location.search).get(
+            "selected"
+        );
+
+        if (selectedProjectId) {
+            setSelectedProjectFromId(selectedProjectId);
+        }
+    }, [setSelectedProjectFromId]);
 
     // Listen for project selection events
     useEffect(() => {
         const handleProjectSelected = (event: CustomEvent) => {
             const projectId = event.detail.projectId;
-            const project = projects.find((p) => p.id === projectId);
-            if (project) {
-                setSelectedProject(project);
-            }
+            setSelectedProjectFromId(projectId, true);
         };
 
         window.addEventListener(
@@ -51,7 +80,7 @@ export default function ProjectPanel({ projects }: ProjectPanelProps) {
                 handleProjectSelected as EventListener
             );
         };
-    }, [projects]);
+    }, [setSelectedProjectFromId]);
 
     // Update panel state when selectedProject changes
     useEffect(() => {

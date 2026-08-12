@@ -287,16 +287,6 @@ export const projects: ProjectData[] = [
                 icon: "external",
             },
             {
-                label: "VisuWorld Create Page",
-                url: "https://create.visuworld.tech",
-                icon: "external",
-            },
-            {
-                label: "VisuWorld Gallery Page",
-                url: "https://create.visuworld.tech/gallery",
-                icon: "external",
-            },
-            {
                 label: "MLH Developer Showcase (LinkedIn)",
                 url: "https://www.linkedin.com/posts/major-league-hacking_builtwithmlh-hackathonlife-geminiai-activity-7340441943610376193-8Ml0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-LJhgBdttWmlGndCirvHh-7IA8zh0z8Sk",
                 icon: "external",
@@ -362,13 +352,7 @@ export const projects: ProjectData[] = [
             panelText: "#FFFFFF",
             accent: "#74d4f4",
         },
-        links: [
-            {
-                label: "CodeJoust",
-                url: "https://play.codejoust.xyz",
-                icon: "external",
-            },
-        ],
+        links: [],
         skills: [
             "WebSockets",
             "LeetCode",
@@ -665,11 +649,6 @@ export const projects: ProjectData[] = [
                 icon: "external",
             },
             {
-                label: "Lootcode Website",
-                url: "https://www.lootcode.dev",
-                icon: "external",
-            },
-            {
                 label: "Linux FOSS Article",
                 url: "/features/lootcode.pdf",
                 icon: "external",
@@ -771,11 +750,6 @@ export const projects: ProjectData[] = [
                 label: "Wildspace Web Repository",
                 url: "https://github.com/DVidal1205/wildspace-web",
                 icon: "github",
-            },
-            {
-                label: "Wildspace Web",
-                url: "https://www.projectwild.space",
-                icon: "external",
             },
             {
                 label: "YouTube Demo",
@@ -888,11 +862,6 @@ export const projects: ProjectData[] = [
             accent: "#e16e22",
         },
         links: [
-            {
-                label: "DNDTTK Repository",
-                url: "https://github.com/DVidal1205/misc/tree/main/DNDTTK",
-                icon: "github",
-            },
             {
                 label: "DNDTTK DevPost",
                 url: "https://devpost.com/software/dungeons-and-dragons-npc-generator",
